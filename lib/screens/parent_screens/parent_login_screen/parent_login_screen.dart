@@ -83,7 +83,7 @@ class ParentLoginScreen extends StatelessWidget {
                                                 Align(
                                                     alignment: Alignment.center,
                                                     child: Text(
-                                                        "Forgot password?",
+                                                        "",
                                                         style: CustomTextStyles
                                                             .bodySmallOrange600))
                                               ]))),
@@ -240,7 +240,7 @@ class ParentLoginScreen extends StatelessWidget {
                             Padding(
                                 padding: EdgeInsets.only(
                                     left: 8.h, top: 4.v, bottom: 4.v),
-                                child: Text("Email Address",
+                                child: Text("",
                                     style: CustomTextStyles
                                         .bodySmallInterBluegray500))
                           ]))),

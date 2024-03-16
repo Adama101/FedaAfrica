@@ -1,0 +1,71 @@
+name: fedaafrica
+description: A new Flutter project.
+version: 1.0.0+1
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+dependencies: 
+  flutter: 
+    sdk: flutter
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.9
+  smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
+  easy_date_timeline: ^1.0.2
+  intl: ^0.19.0
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+    - assets/images/
+  fonts: 
+    - family: Nunito
+      fonts: 
+        - asset: assets/fonts/NunitoRegular.ttf
+          weight: 400
+        - asset: assets/fonts/NunitoBold.ttf
+          weight: 700
+        - asset: assets/fonts/NunitoExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/NunitoMedium.ttf
+          weight: 500
+        - asset: assets/fonts/NunitoSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/NunitoLight.ttf
+          weight: 300
+        - asset: assets/fonts/NunitoBlack.ttf
+          weight: 900
+    - family: Inter
+      fonts: 
+        - asset: assets/fonts/InterRegular.ttf
+          weight: 400
+        - asset: assets/fonts/InterExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/InterMedium.ttf
+          weight: 500
+    - family: Lato
+      fonts: 
+        - asset: assets/fonts/LatoRegular.ttf
+          weight: 400
+        - asset: assets/fonts/LatoBold.ttf
+          weight: 700
+    - family: Poppins
+      fonts: 
+        - asset: assets/fonts/PoppinsRegular.ttf
+          weight: 400
+        - asset: assets/fonts/PoppinsMedium.ttf
+          weight: 500
+    - family: Roboto
+      fonts: 
+        - asset: assets/fonts/RobotoRomanRegular.ttf
+          weight: 400
+    - family: Work Sans
+      fonts: 
+        - asset: assets/fonts/WorkSansRomanMedium.ttf
+          weight: 500
+    - family: ABeeZee
+      fonts: 
+        - asset: assets/fonts/ABeeZeeRegular.ttf
+          weight: 400

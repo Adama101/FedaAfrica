@@ -18,13 +18,13 @@ class SplashScreenTwoScreen extends StatelessWidget {
                       _buildTwo(context),
                       SizedBox(height: 62.v),
                       Padding(
-                          padding: EdgeInsets.only(left: 81.h),
-                          child: Text("Gamified Design \r",
+                          padding: EdgeInsets.only(left: 135.h),
+                          child: Text("Gamified Design",
                               style: theme.textTheme.headlineSmall)),
                       SizedBox(height: 5.v),
                       Container(
                           width: 310.h,
-                          margin: EdgeInsets.only(left: 25.h, right: 38.h),
+                          margin: EdgeInsets.only(left: 35.h, right: 28.h),
                           child: Text(
                               "By earning badges, battling it out for the top spot on the leaderboard, exploring our interactive toolkit, and joining our daily trivia party, users are encouraged to play while they learn",
                               maxLines: 4,
@@ -64,14 +64,19 @@ class SplashScreenTwoScreen extends StatelessWidget {
             child: Padding(
                 padding: EdgeInsets.only(left: 25.h, right: 14.h),
                 child: Column(children: [
-                  CustomElevatedButton(text: "Next"),
+                  CustomElevatedButton(
+                    text: "Next",
+                    onPressed: () {
+                      onTapNext(context);
+                    },
+                  ),
                   SizedBox(height: 20.v),
                   CustomOutlinedButton(text: "Skip")
                 ]))));
   }
 
-  /// Navigates to the usertypeScreen when the action is triggered.
+  /// Navigates to the next screen
   onTapNext(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.usertypeScreen);
+    Navigator.pushNamed(context, AppRoutes.splashScreenThreeScreen);
   }
 }

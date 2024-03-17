@@ -65,8 +65,7 @@ class SetTaskScreenDialog extends StatelessWidget {
                             buttonStyle: CustomButtonStyles.fillPrimary,
                             buttonTextStyle: CustomTextStyles
                                 .titleSmallInterOnErrorContainer,
-                            onPressed: () {
-                              onTapFinish(context);
+                            onPressed: () {;
                             }),
                         Padding(
                             padding: EdgeInsets.symmetric(vertical: 13.v),

@@ -47,7 +47,7 @@ class SplashScreenOneScreen extends StatelessWidget {
   Widget _buildNine(BuildContext context) {
     return Container(
         width: double.maxFinite,
-        padding: EdgeInsets.symmetric(horizontal: 106.h, vertical: 56.v),
+        padding: EdgeInsets.symmetric(horizontal: 100.h, vertical: 50.v),
         decoration: AppDecoration.fillPrimary,
         child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
           SizedBox(height: 139.v),
@@ -58,7 +58,7 @@ class SplashScreenOneScreen extends StatelessWidget {
         ]));
   }
 
-  /// Navigates to the splashScreenTwoScreen when the action is triggered.
+  /// Navigates to the next screen
   onTapNext(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.splashScreenTwoScreen);
   }

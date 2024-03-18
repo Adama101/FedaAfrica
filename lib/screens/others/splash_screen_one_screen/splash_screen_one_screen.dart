@@ -38,6 +38,9 @@ class SplashScreenOneScreen extends StatelessWidget {
                   SizedBox(height: 20.v),
                   CustomOutlinedButton(
                       text: "Skip",
+                      onPressed: () {
+                        onTapSkip(context);
+                      },
                       margin: EdgeInsets.only(left: 26.h, right: 14.h)),
                   SizedBox(height: 5.v)
                 ]))));
@@ -61,5 +64,10 @@ class SplashScreenOneScreen extends StatelessWidget {
   /// Navigates to the next screen
   onTapNext(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.splashScreenTwoScreen);
+  }
+
+  /// Navigates to the usertypeScreen when the action is triggered.
+  onTapSkip(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.usertypeScreen);
   }
 }

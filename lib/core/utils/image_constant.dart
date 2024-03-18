@@ -28,6 +28,9 @@ class ImageConstant {
   // usertype_screen images
   static String imgHumaaansStanding = '$imagePath/img_humaaans_standing.png';
 
+  // usertype_screen images
+  static String child_frame= '$imagePath/child_frame.png';
+
   // child_intro_screen images
   static String imgGroup162333 = '$imagePath/img_group_162333.svg';
 

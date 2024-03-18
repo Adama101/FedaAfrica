@@ -75,14 +75,28 @@ class SplashScreenThreeScreen extends StatelessWidget {
         child: Padding(
             padding: EdgeInsets.only(left: 24.h, right: 16.h),
             child: Column(children: [
-              CustomElevatedButton(text: "Next"),
+              CustomElevatedButton(
+                  text: "Next",
+                  onPressed: () {
+                    onTapNext(context);
+                  }),
               SizedBox(height: 20.v),
-              CustomOutlinedButton(text: "Skip")
+              CustomOutlinedButton(
+                text: "Skip",
+                onPressed: () {
+                  onTapSkip(context);
+                },
+              )
             ])));
   }
 
   /// Navigates to the usertypeScreen when the action is triggered.
   onTapNext(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.usertypeScreen);
+  }
+
+  /// Navigates to the usertypeScreen when the action is triggered.
+  onTapSkip(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.usertypeScreen);
   }
 }

@@ -71,12 +71,22 @@ class SplashScreenTwoScreen extends StatelessWidget {
                     },
                   ),
                   SizedBox(height: 20.v),
-                  CustomOutlinedButton(text: "Skip")
+                  CustomOutlinedButton(
+                    text: "Skip",
+                    onPressed: () {
+                      onTapSkip(context);
+                    },
+                  )
                 ]))));
   }
 
   /// Navigates to the next screen
   onTapNext(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.splashScreenThreeScreen);
+  }
+
+  /// Navigates to the usertypeScreen when the action is triggered.
+  onTapSkip(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.usertypeScreen);
   }
 }

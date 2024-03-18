@@ -21,28 +21,26 @@ class UsertypescreenItemWidget extends StatelessWidget {
           onTapFrame!.call();
         },
         child: Container(
-          padding: EdgeInsets.symmetric(vertical: 10.v),
+          padding: EdgeInsets.symmetric(
+            horizontal: 10.h,
+            vertical: 10.v,
+          ),
           decoration: AppDecoration.outlineBlue.copyWith(
             borderRadius: BorderRadiusStyle.roundedBorder16,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 3.v),
+              SizedBox(height: 20.v),
               CustomImageView(
-                imagePath: ImageConstant.child_frame,
-                height: 100.v,
-                width: 100.h,
+                imagePath: ImageConstant.imgHumaaansStanding,
+                height: 90.v,
+                width: 60.h,
               ),
-              SizedBox(height: 5.v),
-              Align(
-                alignment: Alignment.center,
-                child: Text(
-                  "Parent",
-                  style: CustomTextStyles.titleSmallGray80001,
-                ),
+              SizedBox(height: 12.v),
+              Text(
+                "Parent",
+                style: CustomTextStyles.titleSmallGray80001,
               ),
             ],
           ),

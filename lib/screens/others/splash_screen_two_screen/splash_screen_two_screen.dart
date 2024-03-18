@@ -48,8 +48,8 @@ class SplashScreenTwoScreen extends StatelessWidget {
           SizedBox(height: 148.v),
           CustomImageView(
               imagePath: ImageConstant.imgHttpsLottief195x178,
-              height: 195.v,
-              width: 178.h)
+              height: 150.v,
+              width: 100.h)
         ]));
   }
 

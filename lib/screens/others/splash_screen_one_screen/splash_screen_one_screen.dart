@@ -1,3 +1,4 @@
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:fedaafrica/widgets/custom_elevated_button.dart';
 import 'package:fedaafrica/widgets/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
@@ -13,8 +14,20 @@ class SplashScreenOneScreen extends StatelessWidget {
             body: SizedBox(
                 width: double.maxFinite,
                 child: Column(children: [
-                  _buildNine(context),
-                  SizedBox(height: 55.v),
+                  _buildHttpsLottief(context),
+                  SizedBox(height: 30.v),
+                  SizedBox(
+                      height: 8.v,
+                      child: AnimatedSmoothIndicator(
+                          activeIndex: 0,
+                          count: 3,
+                          effect: ScrollingDotsEffect(
+                              spacing: 12,
+                              activeDotColor: theme.colorScheme.primary,
+                              dotColor: appTheme.gray40001,
+                              dotHeight: 8.v,
+                              dotWidth: 8.h))),
+                  SizedBox(height: 17.v),
                   Text("Bit Sized Learning",
                       style: theme.textTheme.headlineSmall),
                   SizedBox(height: 5.v),
@@ -38,30 +51,31 @@ class SplashScreenOneScreen extends StatelessWidget {
                   SizedBox(height: 20.v),
                   CustomOutlinedButton(
                       text: "Skip",
+                      margin: EdgeInsets.only(left: 26.h, right: 14.h),
                       onPressed: () {
                         onTapSkip(context);
-                      },
-                      margin: EdgeInsets.only(left: 26.h, right: 14.h)),
+                      }),
                   SizedBox(height: 5.v)
                 ]))));
   }
 
   /// Section Widget
-  Widget _buildNine(BuildContext context) {
+  Widget _buildHttpsLottief(BuildContext context) {
     return Container(
         width: double.maxFinite,
-        padding: EdgeInsets.symmetric(horizontal: 100.h, vertical: 50.v),
+        padding: EdgeInsets.symmetric(horizontal: 90.h, vertical: 56.v),
         decoration: AppDecoration.fillPrimary,
-        child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
-          SizedBox(height: 139.v),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          SizedBox(height: 100.v),
           CustomImageView(
               imagePath: ImageConstant.imgHttpsLottief,
-              height: 150.adaptSize,
-              width: 150.adaptSize)
+              height: 150.v,
+              width: 100.h,
+              alignment: Alignment.center)
         ]));
   }
 
-  /// Navigates to the next screen
+  /// Navigates to the splashScreenTwoScreen when the action is triggered.
   onTapNext(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.splashScreenTwoScreen);
   }

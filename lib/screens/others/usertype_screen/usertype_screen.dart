@@ -63,9 +63,7 @@ class UsertypeScreen extends StatelessWidget {
         itemCount: 1,
         itemBuilder: (context, index) {
           return parentUsertypescreenItemWidget(
-            onTapFrame: () {
-              _onTapFrame(context);
-            },
+            onTapFrame: () {},
           );
         },
       ),
@@ -83,16 +81,10 @@ class UsertypeScreen extends StatelessWidget {
         itemCount: 1,
         itemBuilder: (context, index) {
           return childUsertypescreenItemWidget(
-            onTapFrame: () {
-              _onTapFrame(context);
-            },
+            onTap_childFrame: () {},
           );
         },
       ),
     );
-  }
-
-  void _onTapFrame(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.parentLoginScreen);
   }
 }

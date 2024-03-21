@@ -18,7 +18,8 @@ class parentUsertypescreenItemWidget extends StatelessWidget {
       width: 158.h,
       child: GestureDetector(
         onTap: () {
-          onTapFrame!.call();
+          // Takes you the Parent Intro Screen 
+          Navigator.pushNamed(context, AppRoutes.parentLoginScreen);
         },
         child: _parentUsertypescreen(
           child: Container(
@@ -50,7 +51,7 @@ class parentUsertypescreenItemWidget extends StatelessWidget {
       ),
     );
   }
-  
+
   Widget _parentUsertypescreen({required Widget child}) {
     return Container(
       decoration: BoxDecoration(

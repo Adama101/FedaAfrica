@@ -15,7 +15,7 @@ class ImageConstant {
   static String imgGroup1000000958 = '$imagePath/img_group_1000000958.svg';
 
   // splash_screen_One images
-  static String imgHttpsLottief = '$imagePath/img_https_lottief.png';
+  static String wallet_Img = '$imagePath/imgHttpsLottief.png';
 
   // splash_screen_Two images
   static String imgHttpsLottief195x178 =
@@ -29,7 +29,7 @@ class ImageConstant {
   static String imgHumaaansStanding = '$imagePath/img_humaaans_standing.png';
 
   // usertype_screen images
-  static String child_frame= '$imagePath/child_frame.png';
+  static String child_frame = '$imagePath/child_frame.png';
 
   // child_intro_screen images
   static String imgGroup162333 = '$imagePath/img_group_162333.svg';
@@ -87,7 +87,7 @@ class ImageConstant {
   static String imgThumbsUp = '$imagePath/img_thumbs_up.svg';
 
   // child_login_screen images
-  static String imgObjects = '$imagePath/img_objects.png';
+  static String imgObjects = '$imagePath/OBJECTS.png';
 
   // progress_screen images
   static String imgGroup1000000996 = '$imagePath/img_group_1000000996.svg';

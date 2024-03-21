@@ -19,9 +19,10 @@ class ChildLoginScreen extends StatelessWidget {
                 padding: EdgeInsets.symmetric(vertical: 13.v),
                 child: Column(children: [
                   CustomImageView(
+                      //Welcome banner image
                       imagePath: ImageConstant.imgObjects,
-                      height: 82.v,
-                      width: 375.h),
+                      height: 150.v,
+                      width: 360.h),
                   Spacer(flex: 31),
                   Align(
                       alignment: Alignment.centerLeft,
@@ -41,6 +42,7 @@ class ChildLoginScreen extends StatelessWidget {
                           contentPadding: EdgeInsets.symmetric(
                               horizontal: 12.h, vertical: 14.v))),
                   Spacer(flex: 24),
+                  // "Continue Button"
                   CustomElevatedButton(
                       text: "Continue",
                       margin: EdgeInsets.only(left: 22.h, right: 18.h),
@@ -51,7 +53,7 @@ class ChildLoginScreen extends StatelessWidget {
                 ]))));
   }
 
-  /// Navigates to the childWelcomeScreen when the action is triggered.
+  //Navigates to the childWelcomeScreen when clicked "Continue Button"
   onTapContinue(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.childWelcomeScreen);
   }

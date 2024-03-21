@@ -14,7 +14,6 @@ import '../screens/others/terms_conditions_screen/terms_conditions_screen.dart';
 import '../screens/parent_screens/home_screen_one_screen/home_screen_one_screen.dart';
 import '../screens/parent_screens/add_child_screen_two_screen/add_child_screen_two_screen.dart';
 import '../screens/parent_screens/child_login_code_screen/child_login_code_screen.dart';
-import '../screens/child_screens/child_welcome_screen/child_welcome_screen.dart';
 import '../screens/child_screens/quizz_screen/quizz_screen.dart';
 import '../screens/child_screens/child_login_screen/child_login_screen.dart';
 import '../screens/child_screens/progress_screen/progress_screen.dart';
@@ -125,7 +124,7 @@ class AppRoutes {
     homeScreenOneScreen: (context) => HomeScreenOneScreen(),
     addChildScreenTwoScreen: (context) => AddChildScreenTwoScreen(),
     childLoginCodeScreen: (context) => ChildLoginCodeScreen(),
-    childWelcomeScreen: (context) => ChildWelcomeScreen(),
+    //childWelcomeScreen: (context) => ChildWelcomeScreen(),
     quizzScreen: (context) => QuizzScreen(),
     childLoginScreen: (context) => ChildLoginScreen(),
     progressScreen: (context) => ProgressScreen(),

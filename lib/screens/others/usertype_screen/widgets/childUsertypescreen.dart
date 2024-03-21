@@ -6,6 +6,7 @@ class childUsertypescreenItemWidget extends StatelessWidget {
   childUsertypescreenItemWidget({
     Key? key,
     this.onTapFrame,
+    required Null Function() onTap_childFrame,
   }) : super(
           key: key,
         );
@@ -18,7 +19,8 @@ class childUsertypescreenItemWidget extends StatelessWidget {
       width: 158.h,
       child: GestureDetector(
         onTap: () {
-          onTapFrame!.call();
+          // Takes you the Child Intro Screen 
+          Navigator.pushNamed(context, AppRoutes.childIntroScreen);
         },
         child: _childUsertypescreen(
           child: Container(
@@ -50,16 +52,19 @@ class childUsertypescreenItemWidget extends StatelessWidget {
       ),
     );
   }
-  
+
   Widget _childUsertypescreen({required Widget child}) {
-    return Container(
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: Colors.blue,
+    return GestureDetector(
+      onTap: onTapFrame,
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: const Color.fromARGB(255, 213, 215, 216),
+          ),
+          borderRadius: BorderRadius.circular(16),
         ),
-        borderRadius: BorderRadius.circular(16),
+        child: child,
       ),
-      child: child,
     );
   }
 }

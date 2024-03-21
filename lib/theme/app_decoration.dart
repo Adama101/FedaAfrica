@@ -6,6 +6,9 @@ class AppDecoration {
   static BoxDecoration get fillAmber => BoxDecoration(
         color: appTheme.amber500,
       );
+  static BoxDecoration get fillPink => BoxDecoration(
+        color: appTheme.pink50,
+      );
   static BoxDecoration get fillBlack => BoxDecoration(
         color: appTheme.black900.withOpacity(0.11),
       );
@@ -274,6 +277,24 @@ class AppDecoration {
         boxShadow: [
           BoxShadow(
             color: appTheme.black900.withOpacity(0.25),
+            spreadRadius: 2.h,
+            blurRadius: 2.h,
+            offset: Offset(
+              0,
+              4,
+            ),
+          ),
+        ],
+      );
+  static BoxDecoration get pink => BoxDecoration(
+        color: appTheme.pink50,
+        border: Border.all(
+          color: appTheme.pink50,
+          width: 2.h,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: appTheme.blue400,
             spreadRadius: 2.h,
             blurRadius: 2.h,
             offset: Offset(

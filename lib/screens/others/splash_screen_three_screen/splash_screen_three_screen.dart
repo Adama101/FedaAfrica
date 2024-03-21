@@ -55,14 +55,14 @@ class SplashScreenThreeScreen extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 52.h, vertical: 86.v),
         decoration: AppDecoration.fillPrimary,
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: 20.v),
               CustomImageView(
                   imagePath: ImageConstant.imgHttpsLottief183x250,
-                  height: 180.v,
-                  width: 250.h)
+                  height: 150.v,
+                  width: 110.h)
             ]));
   }
 

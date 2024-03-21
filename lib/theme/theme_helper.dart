@@ -322,7 +322,9 @@ class PrimaryColors {
   // Yellow
   Color get yellow50 => Color(0XFFFFFBED);
   Color get yellowA700 => Color(0XFFEED70B);
-}
+  // Pink
+  Color get pink50 => Color.fromARGB(255, 246, 193, 153);
+  Color get pink70 => Color.fromARGB(255, 206, 109, 109);}
 
 PrimaryColors get appTheme => ThemeHelper().themeColor();
 ThemeData get theme => ThemeHelper().themeData();

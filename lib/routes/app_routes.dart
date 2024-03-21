@@ -7,14 +7,12 @@ import '../screens/others/splash_screen_three_screen/splash_screen_three_screen.
 import '../screens/others/usertype_screen/usertype_screen.dart';
 import '../screens/others/change_password_screen/child_intro_screen/child_intro_screen.dart';
 import '../screens/parent_screens/info_screen/info_screen.dart';
-import '../screens/parent_screens/info_filled_screen/info_filled_screen.dart';
 import '../screens/others/set_password_screen/set_password_screen.dart';
 import '../screens/others/reset_password_screen/reset_password_screen.dart';
 import '../screens/others/terms_conditions_screen/terms_conditions_screen.dart';
 import '../screens/parent_screens/home_screen_one_screen/home_screen_one_screen.dart';
 import '../screens/parent_screens/add_child_screen_two_screen/add_child_screen_two_screen.dart';
 import '../screens/parent_screens/child_login_code_screen/child_login_code_screen.dart';
-import '../screens/child_screens/child_welcome_screen/child_welcome_screen.dart';
 import '../screens/child_screens/quizz_screen/quizz_screen.dart';
 import '../screens/child_screens/child_login_screen/child_login_screen.dart';
 import '../screens/child_screens/progress_screen/progress_screen.dart';
@@ -118,14 +116,13 @@ class AppRoutes {
     usertypeScreen: (context) => UsertypeScreen(),
     childIntroScreen: (context) => ChildIntroScreen(),
     infoScreen: (context) => InfoScreen(),
-    infoFilledScreen: (context) => InfoFilledScreen(),
     setPasswordScreen: (context) => SetPasswordScreen(),
     resetPasswordScreen: (context) => ResetPasswordScreen(),
     termsConditionsScreen: (context) => TermsConditionsScreen(),
     homeScreenOneScreen: (context) => HomeScreenOneScreen(),
     addChildScreenTwoScreen: (context) => AddChildScreenTwoScreen(),
     childLoginCodeScreen: (context) => ChildLoginCodeScreen(),
-    childWelcomeScreen: (context) => ChildWelcomeScreen(),
+    //childWelcomeScreen: (context) => ChildWelcomeScreen(),
     quizzScreen: (context) => QuizzScreen(),
     childLoginScreen: (context) => ChildLoginScreen(),
     progressScreen: (context) => ProgressScreen(),

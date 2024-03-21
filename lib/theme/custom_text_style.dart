@@ -117,7 +117,11 @@ class CustomTextStyles {
       );
   static get bodyMediumNunitoff000000 =>
       theme.textTheme.bodyMedium!.nunito.copyWith(
-        color: Color(0XFF000000),
+        color: Color(0XFF000000));
+
+  static get bodyMediumWhiteff000000 =>
+      theme.textTheme.bodyMedium!.nunito.copyWith(
+        color: Color.fromARGB(255, 255, 255, 255),
       );
   static get bodyMediumNunitoff00000013 =>
       theme.textTheme.bodyMedium!.nunito.copyWith(

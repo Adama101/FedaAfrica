@@ -7,7 +7,6 @@ import '../screens/others/splash_screen_three_screen/splash_screen_three_screen.
 import '../screens/others/usertype_screen/usertype_screen.dart';
 import '../screens/others/change_password_screen/child_intro_screen/child_intro_screen.dart';
 import '../screens/parent_screens/info_screen/info_screen.dart';
-import '../screens/parent_screens/info_filled_screen/info_filled_screen.dart';
 import '../screens/others/set_password_screen/set_password_screen.dart';
 import '../screens/others/reset_password_screen/reset_password_screen.dart';
 import '../screens/others/terms_conditions_screen/terms_conditions_screen.dart';
@@ -117,7 +116,6 @@ class AppRoutes {
     usertypeScreen: (context) => UsertypeScreen(),
     childIntroScreen: (context) => ChildIntroScreen(),
     infoScreen: (context) => InfoScreen(),
-    infoFilledScreen: (context) => InfoFilledScreen(),
     setPasswordScreen: (context) => SetPasswordScreen(),
     resetPasswordScreen: (context) => ResetPasswordScreen(),
     termsConditionsScreen: (context) => TermsConditionsScreen(),

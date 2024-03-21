@@ -71,6 +71,7 @@ class ParentLoginScreen extends StatelessWidget {
                                               children: [
                                                 Align(
                                                     alignment: Alignment.center,
+                                                    //Text to take gesture detector and onTap takes you to Reset Password
                                                     child: GestureDetector(
                                                         onTap: () {
                                                           onTapTxtForgotpassword(
@@ -80,12 +81,6 @@ class ParentLoginScreen extends StatelessWidget {
                                                             "Forgot password?",
                                                             style: CustomTextStyles
                                                                 .bodySmallOrange600))),
-                                                Align(
-                                                    alignment: Alignment.center,
-                                                    child: Text(
-                                                        "",
-                                                        style: CustomTextStyles
-                                                            .bodySmallOrange600))
                                               ]))),
                                   SizedBox(height: 39.v),
                                   CustomElevatedButton(
@@ -98,7 +93,6 @@ class ParentLoginScreen extends StatelessWidget {
                                   SizedBox(height: 95.v),
                                   RichText(
                                       text: TextSpan(children: [
-                                        TextSpan(text: " "),
                                         TextSpan(
                                             text: " or connect with",
                                             style: CustomTextStyles
@@ -108,6 +102,7 @@ class ParentLoginScreen extends StatelessWidget {
                                   SizedBox(height: 30.v),
                                   _buildGoogleLogo(context),
                                   SizedBox(height: 75.v),
+                                  //Text to take gesture detector onTap Logs User into account
                                   GestureDetector(
                                       onTap: () {
                                         onTapTxtByloggingyou(context);
@@ -148,9 +143,11 @@ class ParentLoginScreen extends StatelessWidget {
                                   SizedBox(height: 69.v),
                                   Align(
                                       alignment: Alignment.centerLeft,
+
+                                      //Text to take gesture detector onTap takes User to Create an account
                                       child: GestureDetector(
                                           onTap: () {
-                                            onTapTxtDonthaveanaccount(context);
+                                            onTapDonthaveanaccount(context);
                                           },
                                           child: Padding(
                                               padding:
@@ -162,7 +159,6 @@ class ParentLoginScreen extends StatelessWidget {
                                                             "Don’t have an account? ",
                                                         style: CustomTextStyles
                                                             .bodyLargeff000000),
-                                                    TextSpan(text: " "),
                                                     TextSpan(
                                                         text: "Register",
                                                         style: CustomTextStyles
@@ -177,13 +173,13 @@ class ParentLoginScreen extends StatelessWidget {
                                 ])))))));
   }
 
-  /// Section Widget
+  ///  AppBar Widget
   PreferredSizeWidget _buildAppBar(BuildContext context) {
     return CustomAppBar(
-        height: 81.v,
+        height: 100.v,
         leadingWidth: 50.h,
         leading: Container(
-            height: 42.adaptSize,
+            height: 50.adaptSize,
             width: 42.adaptSize,
             margin: EdgeInsets.only(left: 8.h, bottom: 17.v),
             child: Stack(alignment: Alignment.center, children: [
@@ -197,8 +193,8 @@ class ParentLoginScreen extends StatelessWidget {
                   child:
                       CustomImageView(imagePath: ImageConstant.imgArrowLeft)),
               CustomIconButton(
-                  height: 42.adaptSize,
-                  width: 42.adaptSize,
+                  height: 45.adaptSize,
+                  width: 45.adaptSize,
                   alignment: Alignment.center,
                   child: CustomImageView(imagePath: ImageConstant.imgArrowLeft))
             ])),
@@ -223,7 +219,7 @@ class ParentLoginScreen extends StatelessWidget {
         child: Container(
             height: 50.v,
             width: 329.h,
-            decoration: AppDecoration.outlineBlueGray
+            decoration: AppDecoration.fillWhiteA
                 .copyWith(borderRadius: BorderRadiusStyle.roundedBorder8),
             child: Stack(alignment: Alignment.center, children: [
               Align(
@@ -234,18 +230,19 @@ class ParentLoginScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             CustomImageView(
-                                imagePath: ImageConstant.imgEnvelope,
-                                height: 24.adaptSize,
+                                //Email Icon
+                                // imagePath: ImageConstant.imgEnvelope,
+                                // height: 24.adaptSize,
                                 width: 24.adaptSize),
-                            Padding(
-                                padding: EdgeInsets.only(
-                                    left: 8.h, top: 4.v, bottom: 4.v),
-                                child: Text("",
-                                    style: CustomTextStyles
-                                        .bodySmallInterBluegray500))
+                            // Padding(
+                            //     padding: EdgeInsets.only(
+                            //         left: 8.h, top: 4.v, bottom: 4.v),
+                            //     child: Text("",
+                            //         style: CustomTextStyles
+                            //             .bodySmallInterBluegray500))
                           ]))),
               CustomTextFormField(
-                  width: 329.h,
+                  width: 330.h,
                   controller: emailController,
                   hintText: "Email Address",
                   textInputType: TextInputType.emailAddress,
@@ -281,20 +278,6 @@ class ParentLoginScreen extends StatelessWidget {
                     height: 20.adaptSize,
                     width: 20.adaptSize,
                     alignment: Alignment.center),
-                Align(
-                    alignment: Alignment.center,
-                    child: Container(
-                        height: 50.v,
-                        width: 110.h,
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 43.h, vertical: 13.v),
-                        decoration: AppDecoration.outlineGray.copyWith(
-                            borderRadius: BorderRadiusStyle.roundedBorder8),
-                        child: CustomImageView(
-                            imagePath: ImageConstant.imgGoogleLogo,
-                            height: 20.adaptSize,
-                            width: 20.adaptSize,
-                            alignment: Alignment.center)))
               ]))),
       SizedBox(
           height: 50.v,
@@ -371,7 +354,9 @@ class ParentLoginScreen extends StatelessWidget {
 
   /// Navigates back to the previous screen.
   onTapBtnArrowLeft(BuildContext context) {
-    Navigator.pop(context);
+    Navigator.pop(
+      context,
+    );
   }
 
   /// Navigates to the resetPasswordScreen when the action is triggered.
@@ -390,7 +375,7 @@ class ParentLoginScreen extends StatelessWidget {
   }
 
   /// Navigates to the infoScreen when the action is triggered.
-  onTapTxtDonthaveanaccount(BuildContext context) {
+  onTapDonthaveanaccount(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.infoScreen);
   }
 }

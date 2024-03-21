@@ -7,7 +7,7 @@ import 'package:fedaafrica/core/app_export.dart';
 class ChildLoginScreen extends StatelessWidget {
   ChildLoginScreen({Key? key}) : super(key: key);
 
-  TextEditingController priceController = TextEditingController();
+  TextEditingController codeController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -34,8 +34,8 @@ class ChildLoginScreen extends StatelessWidget {
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 23.h),
                       child: CustomTextFormField(
-                          controller: priceController,
-                          hintText: "924A2L",
+                          controller: codeController,
+                          hintText: "*******",
                           hintStyle:
                               CustomTextStyles.bodyMediumNunitoBluegray500,
                           textInputAction: TextInputAction.done,

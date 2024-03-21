@@ -1,6 +1,6 @@
 import 'package:fedaafrica/widgets/custom_icon_button.dart';
-import 'package:fedaafrica/widgets/custom_text_form_field.dart';
 import 'package:fedaafrica/widgets/custom_elevated_button.dart';
+import 'package:fedaafrica/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
 
@@ -11,6 +11,10 @@ class InfoScreen extends StatelessWidget {
   TextEditingController fullNameController = TextEditingController();
 
   TextEditingController emailController = TextEditingController();
+
+  TextEditingController phoneNumberController = TextEditingController();
+
+  TextEditingController dobController = TextEditingController();
 
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
@@ -68,11 +72,11 @@ class InfoScreen extends StatelessWidget {
                                           style: theme.textTheme.bodyLarge!
                                               .copyWith(height: 1.50))),
                                   SizedBox(height: 54.v),
-                                  _buildContentConatiner1(context),
+                                  _name_Widget(context),
                                   SizedBox(height: 25.v),
-                                  _buildContentConatiner2(context),
+                                  _email_Widget(context),
                                   SizedBox(height: 32.v),
-                                  _buildContentConatiner4(context),
+                                  _phoneNumber_Widget(context),
                                   SizedBox(height: 12.v),
                                   Padding(
                                       padding: EdgeInsets.only(left: 4.h),
@@ -86,14 +90,14 @@ class InfoScreen extends StatelessWidget {
                                           style: CustomTextStyles
                                               .labelLargeDeeporangeA200)),
                                   SizedBox(height: 7.v),
-                                  _buildContentConatiner6(context),
+                                  _date_Widget(context),
                                   SizedBox(height: 5.v)
                                 ]))))),
             bottomNavigationBar: _buildNext(context)));
   }
 
-  /// Section Widget
-  Widget _buildContentConatiner1(BuildContext context) {
+  /// Full Name Section Widget
+  Widget _name_Widget(BuildContext context) {
     return Card(
         clipBehavior: Clip.antiAlias,
         elevation: 0,
@@ -111,36 +115,34 @@ class InfoScreen extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   child: Padding(
                       padding: EdgeInsets.only(left: 12.h),
-                      child: Row(children: [
-                        CustomImageView(
-                            imagePath: ImageConstant.imgUserBlueGray10003,
-                            height: 24.adaptSize,
-                            width: 24.adaptSize),
-                        Padding(
-                            padding: EdgeInsets.only(
-                                left: 8.h, top: 4.v, bottom: 4.v),
-                            child: Text("Full Name",
-                                style:
-                                    CustomTextStyles.bodySmallInterBluegray500))
-                      ]))),
-              CustomTextFormField(
-                  width: 329.h,
-                  controller: fullNameController,
-                  hintText: "Full Name",
-                  hintStyle: CustomTextStyles.bodySmallNunitoBluegray500,
-                  alignment: Alignment.center,
-                  prefix: Container(
-                      margin: EdgeInsets.fromLTRB(12.h, 13.v, 8.h, 13.v),
-                      child: CustomImageView(
-                          imagePath: ImageConstant.imgUserBlueGray10003,
-                          height: 24.adaptSize,
-                          width: 24.adaptSize)),
-                  prefixConstraints: BoxConstraints(maxHeight: 50.v))
+                      child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          textDirection: TextDirection.ltr,
+                          verticalDirection: VerticalDirection.down,
+                          children: [
+                            CustomImageView(
+                                imagePath: ImageConstant.imgUserBlueGray10003,
+                                height: 24.adaptSize,
+                                width: 20.adaptSize),
+                            Padding(
+                                padding: EdgeInsets.only(
+                                    left: 8.h, top: 4.v, bottom: 4.v),
+                                child: CustomTextFormField(
+                                  //Controller
+                                    controller: fullNameController,
+                                    hintText: "Full Name",
+                                    textInputType: TextInputType.name,
+                                    alignment: Alignment.center,
+                                    textStyle: CustomTextStyles
+                                        .bodySmallInterBluegray500))
+                          ]))),
             ])));
   }
 
-  /// Section Widget
-  Widget _buildContentConatiner2(BuildContext context) {
+  /// Email Address Section Widget
+  Widget _email_Widget(BuildContext context) {
     return Card(
         clipBehavior: Clip.antiAlias,
         elevation: 0,
@@ -169,30 +171,20 @@ class InfoScreen extends StatelessWidget {
                             Padding(
                                 padding: EdgeInsets.only(
                                     left: 8.h, top: 4.v, bottom: 4.v),
-                                child: Text("Email Address",
-                                    style: CustomTextStyles
+                                child: CustomTextFormField(
+                                  //Controller
+                                    controller: emailController,
+                                    hintText: "Email",
+                                    textInputType: TextInputType.emailAddress,
+                                    alignment: Alignment.center,
+                                    textStyle: CustomTextStyles
                                         .bodySmallInterBluegray500))
                           ]))),
-              CustomTextFormField(
-                  width: 329.h,
-                  controller: emailController,
-                  hintText: "Email Address",
-                  hintStyle: CustomTextStyles.bodySmallNunitoBluegray500,
-                  textInputAction: TextInputAction.done,
-                  textInputType: TextInputType.emailAddress,
-                  alignment: Alignment.center,
-                  prefix: Container(
-                      margin: EdgeInsets.fromLTRB(12.h, 13.v, 8.h, 13.v),
-                      child: CustomImageView(
-                          imagePath: ImageConstant.imgEnvelopeBlueGray10003,
-                          height: 24.adaptSize,
-                          width: 24.adaptSize)),
-                  prefixConstraints: BoxConstraints(maxHeight: 50.v))
             ])));
   }
 
-  /// Section Widget
-  Widget _buildContentConatiner4(BuildContext context) {
+  /// Phone Number Section Widget
+  Widget _phoneNumber_Widget(BuildContext context) {
     return Card(
         clipBehavior: Clip.antiAlias,
         elevation: 0,
@@ -218,18 +210,20 @@ class InfoScreen extends StatelessWidget {
                         Padding(
                             padding: EdgeInsets.only(
                                 left: 8.h, top: 4.v, bottom: 4.v),
-                            child: Text("Phone Number",
-                                style:
-                                    CustomTextStyles.bodySmallInterBluegray500))
+                            child: CustomTextFormField(
+                              //Controller
+                                    controller: phoneNumberController,
+                                    hintText: "Phone Number",
+                                    textInputType: TextInputType.phone,
+                                    alignment: Alignment.center,
+                                    textStyle: CustomTextStyles
+                                        .bodySmallInterBluegray500))
                       ]))),
-              _buildContentConatiner(context,
-                  calendarAlt: ImageConstant.imgPhoneAlt,
-                  dDMMYY: "Phone Number")
             ])));
   }
 
-  /// Section Widget
-  Widget _buildContentConatiner6(BuildContext context) {
+  /// Date Section Widget
+  Widget _date_Widget(BuildContext context) {
     return Container(
         margin: EdgeInsets.symmetric(horizontal: 3.h),
         decoration: AppDecoration.outlineBlueGray
@@ -241,11 +235,17 @@ class InfoScreen extends StatelessWidget {
               imagePath: ImageConstant.imgCalendarAlt,
               height: 24.adaptSize,
               width: 24.adaptSize,
-              margin: EdgeInsets.symmetric(vertical: 13.v)),
+              margin: EdgeInsets.symmetric(vertical: 5.v)),
           Padding(
-              padding: EdgeInsets.only(left: 8.h, top: 17.v, bottom: 17.v),
-              child: Text("DD/MM/YY",
-                  style: CustomTextStyles.bodySmallInterBluegray500))
+              padding: EdgeInsets.only(left: 8.h, top: 15.v, bottom: 15.v),
+              child:  CustomTextFormField(
+                                  //Controller
+                                    controller: dobController,
+                                    hintText: "DD/MM/YY",
+                                    textInputType: TextInputType.datetime,
+                                    alignment: Alignment.center,
+                                    textStyle: CustomTextStyles
+                                        .bodySmallInterBluegray500))
         ]));
   }
 
@@ -283,6 +283,8 @@ class InfoScreen extends StatelessWidget {
             ])));
   }
 
+  // Navigation..........
+  
   /// Navigates to the parentLoginScreen when the action is triggered.
   onTapBtnClock(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.parentLoginScreen);

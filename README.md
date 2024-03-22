@@ -1,6 +1,6 @@
 
 # FedaAfrica
-FedaAfrica is mobile solution that educates parents and children aged 4-6 in Nigeria and Kenya about financial literacy.
+FedaAfrica is mobile solution that educates parents and children aged 4-18 years in Nigeria and Kenya about financial literacy.
 
 
 ## Team Members
@@ -27,24 +27,4 @@ FedaAfrica is mobile solution that educates parents and children aged 4-6 in Nig
     ├── routes                      - It contains all the routes of the application
     └── theme                       - It contains app theme and decoration classes
     └── widgets                     - It contains all custom widget classes
-```
-### How to format your code?
-
-- if your code is not formatted then run following command in your terminal to format code
-  ```
-  dart format .
-  ```
-
-### How you can improve code readability?
-
-Resolve the errors and warnings that are shown in the application.
-
-### Fonts
-We were unable to find the following Fonts, Please add manually to ```assets/fonts``` 
-
-```
-LatoMedium.ttf
-LatoSemiBold.ttf
-LatoExtraBold.ttf
-SanFranciscoDisplayMedium.ttf
 ```

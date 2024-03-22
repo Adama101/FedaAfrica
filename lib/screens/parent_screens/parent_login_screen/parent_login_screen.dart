@@ -230,19 +230,11 @@ class ParentLoginScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             CustomImageView(
-                                //Email Icon
-                                // imagePath: ImageConstant.imgEnvelope,
-                                // height: 24.adaptSize,
                                 width: 24.adaptSize),
-                            // Padding(
-                            //     padding: EdgeInsets.only(
-                            //         left: 8.h, top: 4.v, bottom: 4.v),
-                            //     child: Text("",
-                            //         style: CustomTextStyles
-                            //             .bodySmallInterBluegray500))
                           ]))),
               CustomTextFormField(
                   width: 330.h,
+                  //Controller
                   controller: emailController,
                   hintText: "Email Address",
                   textInputType: TextInputType.emailAddress,

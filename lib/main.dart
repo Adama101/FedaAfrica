@@ -9,7 +9,7 @@ void main() {
     DeviceOrientation.portraitUp,
   ]);
 
-  //theme 
+  // Application theme 
   ThemeHelper().changeTheme('primary');
   runApp(MyApp());
 }

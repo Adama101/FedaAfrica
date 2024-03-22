@@ -136,9 +136,9 @@ class SetPasswordScreen extends StatelessWidget {
         });
   }
 
-  /// Navigates to the infoFilledScreen when the action is triggered.
+  /// Navigates to the info Screen when the action is triggered.
   onTapClock(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.infoFilledScreen);
+    Navigator.pushNamed(context, AppRoutes.infoScreen);
   }
 
   /// Navigates to the homeScreenOneScreen when the action is triggered.

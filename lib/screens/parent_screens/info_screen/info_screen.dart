@@ -54,7 +54,7 @@ class InfoScreen extends StatelessWidget {
                                                 width: 42.adaptSize,
                                                 alignment: Alignment.topLeft,
                                                 onTap: () {
-                                                  onTapBtnClock(context);
+                                                  onTapBackBtn(context);
                                                 },
                                                 child: CustomImageView(
                                                     imagePath: ImageConstant
@@ -127,8 +127,7 @@ class InfoScreen extends StatelessWidget {
                                 height: 24.adaptSize,
                                 width: 20.adaptSize),
                             Padding(
-                                padding: EdgeInsets.only(
-                                    left: 8.h, top: 4.v, bottom: 4.v),
+                                padding: EdgeInsets.fromLTRB(12.h, 13.v, 8.h, 13.v),
                                 child: CustomTextFormField(
                                   //Controller
                                     controller: fullNameController,
@@ -229,7 +228,7 @@ class InfoScreen extends StatelessWidget {
         decoration: AppDecoration.outlineBlueGray
             .copyWith(borderRadius: BorderRadiusStyle.roundedBorder8),
         child: Row(mainAxisSize: MainAxisSize.max, children: [
-          _buildContentConatiner(context,
+          _buildContentContainer(context,
               calendarAlt: ImageConstant.imgCalendarAlt, dDMMYY: "DD/MM/YY"),
           CustomImageView(
               imagePath: ImageConstant.imgCalendarAlt,
@@ -237,7 +236,7 @@ class InfoScreen extends StatelessWidget {
               width: 24.adaptSize,
               margin: EdgeInsets.symmetric(vertical: 5.v)),
           Padding(
-              padding: EdgeInsets.only(left: 8.h, top: 15.v, bottom: 15.v),
+              padding: EdgeInsets.only(left: 8.adaptSize, top: 15.adaptSize, bottom: 15.adaptSize, right: 5.adaptSize),
               child:  CustomTextFormField(
                                   //Controller
                                     controller: dobController,
@@ -260,7 +259,7 @@ class InfoScreen extends StatelessWidget {
   }
 
   /// Common widget
-  Widget _buildContentConatiner(
+  Widget _buildContentContainer(
     BuildContext context, {
     required String calendarAlt,
     required String dDMMYY,
@@ -286,12 +285,12 @@ class InfoScreen extends StatelessWidget {
   // Navigation..........
   
   /// Navigates to the parentLoginScreen when the action is triggered.
-  onTapBtnClock(BuildContext context) {
+  onTapBackBtn(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.parentLoginScreen);
   }
 
-  /// Navigates to the infoFilledScreen when the action is triggered.
+  /// Navigates to the setPasswordScreen when the action is triggered.
   onTapNext(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.infoFilledScreen);
+    Navigator.pushNamed(context, AppRoutes.setPasswordScreen);
   }
 }

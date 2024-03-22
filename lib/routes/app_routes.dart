@@ -122,7 +122,6 @@ class AppRoutes {
     homeScreenOneScreen: (context) => HomeScreenOneScreen(),
     addChildScreenTwoScreen: (context) => AddChildScreenTwoScreen(),
     childLoginCodeScreen: (context) => ChildLoginCodeScreen(),
-    //childWelcomeScreen: (context) => ChildWelcomeScreen(),
     quizzScreen: (context) => QuizzScreen(),
     childLoginScreen: (context) => ChildLoginScreen(),
     progressScreen: (context) => ProgressScreen(),

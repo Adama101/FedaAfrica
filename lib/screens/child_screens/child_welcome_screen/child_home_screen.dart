@@ -83,7 +83,7 @@ class LessonScreen extends StatelessWidget {
                 image: "assets/images/hometab/parents.png"),
             Option(
                 text: 'By doing chores or tasks for others',
-                image: "assets/images/hometab/perfoming_task.png"),
+                image: "assets/images/hometab/performing_task.png"),
             Option(
                 text: 'By playing video games',
                 image: "assets/images/hometab/playing_games.png"),
@@ -137,16 +137,16 @@ class LessonScreen extends StatelessWidget {
           options: [
             Option(
                 text: 'Playing with toys',
-                image: "assets/images/hometab/goblin.png"),
+                image: "assets/images/hometab/playing_games.png"),
             Option(
                 text: 'Cleaning houses',
-                image: "assets/images/hometab/ogre.png"),
+                image: "assets/images/hometab/cleaning_rooms.png"),
             Option(
                 text: 'Watching movies',
-                image: "assets/images/hometab/ogre.png"),
+                image: "assets/images/hometab/watching_tv.png"),
             Option(
                 text: 'Eating snacks',
-                image: "assets/images/hometab/troll.png"),
+                image: "assets/images/hometab/eating_snacks.png"),
           ],
         ),
         Question(

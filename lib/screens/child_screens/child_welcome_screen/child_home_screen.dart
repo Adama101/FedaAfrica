@@ -324,8 +324,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
   // Declare an instance of AudioCache
   final player = AudioPlayer();
   // Define the audio file path
-  final String _correctSoundPath = "correct.wav";
-  final String _incorrecSoundPath = "incorrect.wav";
+  final String _correctSoundPath = "audios/correct.wav";
+  final String _incorrecSoundPath = "audios/incorrect.wav";
   @override
   Widget build(BuildContext context) {
     Question currentQuestion = widget.lesson.questions[_currentQuestionIndex];

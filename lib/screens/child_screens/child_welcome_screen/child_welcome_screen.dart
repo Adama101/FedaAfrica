@@ -56,14 +56,6 @@ class _ChildWelcomeScreenState extends State<ChildWelcomeScreen> {
             icon: Icon(Icons.home),
             label: 'Home',
           ),
-       /*    BottomNavigationBarItem(
-            icon: Icon(Icons.leaderboard),
-            label: 'Leaderboard',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.task_outlined),
-            label: 'Task',
-          ), */
           BottomNavigationBarItem(
             backgroundColor: Colors.white,
             icon: Icon(Icons.account_box),

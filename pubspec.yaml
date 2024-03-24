@@ -7,6 +7,7 @@ dependencies:
   flutter: 
     sdk: flutter
   cached_network_image: ^3.3.0
+  audioplayers: ^6.0.0
   flutter_svg: ^2.0.9
   smooth_page_indicator: ^1.1.0
   carousel_slider: ^4.2.1

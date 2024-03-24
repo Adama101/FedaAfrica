@@ -16,28 +16,28 @@ class CustomBottomBarState extends State<CustomBottomBar> {
 
   List<BottomMenuModel> bottomMenuList = [
     BottomMenuModel(
-      icon: ImageConstant.imgNavHome38x63,
-      activeIcon: ImageConstant.imgNavHome38x63,
+      icon: ImageConstant.imgHome,
+      activeIcon: ImageConstant.imgHome,
       title: "Home",
       type: BottomBarEnum.Home,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgNavLeaderboard,
-      activeIcon: ImageConstant.imgNavLeaderboard,
-      title: "Leaderboard",
-      type: BottomBarEnum.Leaderboard,
-    ),
-    BottomMenuModel(
-      icon: ImageConstant.imgTreasure,
-      activeIcon: ImageConstant.imgTreasure,
+      icon: ImageConstant.imgTask,
+      activeIcon: ImageConstant.imgTask,
       title: "Task",
-      type: BottomBarEnum.Task2,
+      type: BottomBarEnum.Task,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgProfilePicture,
-      activeIcon: ImageConstant.imgProfilePicture,
-      title: "Profile",
-      type: BottomBarEnum.Profile,
+      icon: ImageConstant.imgAnalytics,
+      activeIcon: ImageConstant.imgAnalytics,
+      title: "Analytics",
+      type: BottomBarEnum.Analytics,
+    ),
+    BottomMenuModel(
+      icon: ImageConstant.imgLearn,
+      activeIcon: ImageConstant.imgLearn,
+      title: "Learn",
+      type: BottomBarEnum.Learn,
     )
   ];
 
@@ -108,9 +108,9 @@ class CustomBottomBarState extends State<CustomBottomBar> {
 
 enum BottomBarEnum {
   Home,
-  Leaderboard,
-  Task2,
-  Profile,
+  Task,
+  Analytics,
+  Learn
 }
 
 class BottomMenuModel {

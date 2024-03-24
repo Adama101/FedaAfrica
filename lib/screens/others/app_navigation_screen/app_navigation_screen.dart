@@ -177,12 +177,6 @@ class AppNavigationScreen extends StatelessWidget {
                         ),
                         _buildScreenTitle(
                           context,
-                          screenTitle: "home_screen_Two",
-                          onTapScreenTitle: () => onTapScreenTitle(
-                              context, AppRoutes.homeScreenTwoScreen),
-                        ),
-                        _buildScreenTitle(
-                          context,
                           screenTitle: "task_screen",
                           onTapScreenTitle: () =>
                               onTapScreenTitle(context, AppRoutes.taskScreen),

@@ -172,7 +172,7 @@ class ChildProfileScreen extends StatelessWidget {
                   padding: EdgeInsets.only(top: 8.v),
                   child: Column(mainAxisSize: MainAxisSize.min, children: [
                     CustomImageView(
-                        imagePath: ImageConstant.imgNavHome38x63,
+                        imagePath: ImageConstant.imgHome,
                         height: 38.v,
                         width: 63.h),
                     Align(

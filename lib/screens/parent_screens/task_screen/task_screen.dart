@@ -346,11 +346,11 @@ class TaskScreen extends StatelessWidget {
     switch (type) {
       case BottomBarEnum.Home:
         return AppRoutes.leaderboardScreenPage;
-      case BottomBarEnum.Leaderboard:
+      case BottomBarEnum.Task:
         return "/";
-      case BottomBarEnum.Task2:
+      case BottomBarEnum.Analytics:
         return "/";
-      case BottomBarEnum.Profile:
+      case BottomBarEnum.Learn:
         return "/";
       default:
         return "/";

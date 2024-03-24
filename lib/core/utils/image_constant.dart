@@ -114,10 +114,9 @@ class ImageConstant {
 
   static String imgCleaningUp = '$imagePath/img_cleaning_up.png';
 
-  static String imgTreasure25x35 = '$imagePath/img_treasure_25x35.png';
+  static String imgAnalytics = '$imagePath/analytics.png';
 
-  static String imgProfilePicture41x40 =
-      '$imagePath/img_profile_picture_41x40.png';
+  static String imgLearn = '$imagePath/learn.png';
 
   // child_profile_screen images
   static String imgGroup1000001003 = '$imagePath/img_group_1000001003.png';
@@ -323,9 +322,9 @@ class ImageConstant {
 
   static String imgEllipse7 = '$imagePath/img_ellipse_7.png';
 
-  static String imgNavHome38x63 = '$imagePath/img_nav_home_38x63.png';
+  static String imgHome = '$imagePath/home.png';
 
-  static String imgNavLeaderboard = '$imagePath/img_nav_leaderboard.png';
+  static String imgTask = '$imagePath/task.png';
 
   static String imgGroupOnerrorcontainer =
       '$imagePath/img_group_onerrorcontainer.png';
@@ -349,4 +348,6 @@ class ImageConstant {
   static String imgPhonesPhoneCall = '$imagePath/img_phones_phone_call.svg';
 
   static String imageNotFound = 'assets/images/image_not_found.png';
+
+    static String imgEllipse27 = 'assets/images/img_ellipse_27.png';
 }

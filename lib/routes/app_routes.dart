@@ -22,7 +22,6 @@ import '../screens/others/task_completed_screen/task_completed_screen.dart';
 import '../screens/child_screens/child_profile_screen/child_profile_screen.dart';
 import '../screens/child_screens/coin_screen/coin_screen.dart';
 import '../screens/child_screens/activity_screen/activity_screen.dart';
-import '../screens/parent_screens/home_screen_two_screen/home_screen_two_screen.dart';
 import '../screens/parent_screens/task_screen/task_screen.dart';
 import '../screens/parent_screens/parent_learning_screen/parent_learning_screen.dart';
 import '../screens/parent_screens/more_screen/more_screen.dart';
@@ -107,6 +106,7 @@ class AppRoutes {
 
   static const String appNavigationScreen = '/app_navigation_screen';
 
+// All Routes defined
   static Map<String, WidgetBuilder> routes = {
     parentLoginScreen: (context) => ParentLoginScreen(),
     splashScreen: (context) => SplashScreen(),
@@ -132,7 +132,6 @@ class AppRoutes {
     childProfileScreen: (context) => ChildProfileScreen(),
     coinScreen: (context) => CoinScreen(),
     activityScreen: (context) => ActivityScreen(),
-    homeScreenTwoScreen: (context) => HomeScreenTwoScreen(),
     taskScreen: (context) => TaskScreen(),
     parentLearningScreen: (context) => ParentLearningScreen(),
     moreScreen: (context) => MoreScreen(),
@@ -143,4 +142,5 @@ class AppRoutes {
     languageScreen: (context) => LanguageScreen(),
     appNavigationScreen: (context) => AppNavigationScreen()
   };
+  
 }

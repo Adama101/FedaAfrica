@@ -300,13 +300,13 @@ class HomeScreenOneScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return AppRoutes.leaderboardScreenPage;
+        return AppRoutes.homeScreenOneScreen;
       case BottomBarEnum.Leaderboard:
         return "/";
       case BottomBarEnum.Task2:
         return "/";
-      case BottomBarEnum.Profile:
-        return "/";
+      case BottomBarEnum.Learn:
+        return AppRoutes.parentLearningScreen;
       default:
         return "/";
     }

@@ -16,28 +16,28 @@ class CustomBottomBarState extends State<CustomBottomBar> {
 
   List<BottomMenuModel> bottomMenuList = [
     BottomMenuModel(
-      icon: ImageConstant.imgNavHome38x63,
-      activeIcon: ImageConstant.imgNavHome38x63,
+      icon: ImageConstant.imgNavHome,
+      activeIcon: ImageConstant.imgNavHome,
       title: "Home",
       type: BottomBarEnum.Home,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgNavLeaderboard,
-      activeIcon: ImageConstant.imgNavLeaderboard,
-      title: "Leaderboard",
+      icon: ImageConstant.imgNavTask,
+      activeIcon: ImageConstant.imgNavTask,
+      title: "Task",
       type: BottomBarEnum.Leaderboard,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgTreasure,
+      icon: ImageConstant.imgNavAnalytics,
       activeIcon: ImageConstant.imgTreasure,
-      title: "Task",
+      title: "Analytics",
       type: BottomBarEnum.Task2,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgProfilePicture,
-      activeIcon: ImageConstant.imgProfilePicture,
-      title: "Profile",
-      type: BottomBarEnum.Profile,
+      icon: ImageConstant.imgNavLearn,
+      activeIcon: ImageConstant.imgNavLearn,
+      title: "Learn",
+      type: BottomBarEnum.Learn,
     )
   ];
 
@@ -110,7 +110,7 @@ enum BottomBarEnum {
   Home,
   Leaderboard,
   Task2,
-  Profile,
+  Learn,
 }
 
 class BottomMenuModel {
@@ -142,7 +142,7 @@ class DefaultWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Please replace the respective Widget here',
+              '',
               style: TextStyle(
                 fontSize: 18,
               ),

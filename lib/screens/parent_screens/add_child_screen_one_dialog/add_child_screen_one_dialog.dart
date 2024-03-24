@@ -9,6 +9,8 @@ class AddChildScreenOneDialog extends StatelessWidget {
 
   TextEditingController fullNameController = TextEditingController();
 
+  TextEditingController dateController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(child: _buildPopupQuickSaving(context));
@@ -35,6 +37,7 @@ class AddChildScreenOneDialog extends StatelessWidget {
               SizedBox(height: 7.v),
               CustomTextFormField(
                   controller: fullNameController,
+                  hintText: "Full Name",
                   textInputAction: TextInputAction.done,
                   borderDecoration:
                       TextFormFieldStyleHelper.fillOnErrorContainer,
@@ -64,8 +67,12 @@ class AddChildScreenOneDialog extends StatelessWidget {
                         width: 20.adaptSize),
                     Padding(
                         padding: EdgeInsets.only(left: 10.h, bottom: 2.v),
-                        child: Text("08/02/2015",
-                            style: CustomTextStyles.bodyMediumGray40002))
+                        child: CustomTextFormField(
+                          controller: dateController,
+                          hintText: "08/02/2015",
+                          textInputAction: TextInputAction.done,
+                          textInputType: TextInputType.datetime,
+                            textStyle: CustomTextStyles.bodySmallGray500))
                   ])),
               SizedBox(height: 24.v),
               Padding(
@@ -84,7 +91,7 @@ class AddChildScreenOneDialog extends StatelessWidget {
                             }),
                         GestureDetector(
                             onTap: () {
-                              onTapTxtButton(context);
+                              onTapCancelButton(context);
                             },
                             child: Padding(
                                 padding:
@@ -101,7 +108,7 @@ class AddChildScreenOneDialog extends StatelessWidget {
   }
 
   /// Navigates to the homeScreenOneScreen when the action is triggered.
-  onTapTxtButton(BuildContext context) {
+  onTapCancelButton(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.homeScreenOneScreen);
   }
 }

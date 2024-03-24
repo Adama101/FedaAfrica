@@ -38,45 +38,35 @@ class WalletItemWidget extends StatelessWidget {
                   height: 44.adaptSize,
                   width: 44.adaptSize,
                 ),
-                SizedBox(height: 20.v),
+                SizedBox(height: 25.v),
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: EdgeInsets.only(left: 3.h),
+                    padding: EdgeInsets.only(left: 10.h),
                     child: Text(
                       "Add a Child",
                       style: CustomTextStyles.titleLargeNunito_1,
                     ),
                   ),
                 ),
-                SizedBox(height: 49.v),
+                SizedBox(height: 20.v),
                 Text(
                   "Create",
                   style: CustomTextStyles.titleSmallLatoBluegray100,
                 ),
-                SizedBox(height: 7.v),
+                SizedBox(height: 2.v),
               ],
             ),
           ),
         ),
         SizedBox(
-          height: 167.v,
-          width: 155.h,
+          height: 130.v,
+          width: 100.h,
           child: Stack(
             alignment: Alignment.center,
             children: [
               Align(
                 alignment: Alignment.bottomRight,
-                child: Padding(
-                  padding: EdgeInsets.only(
-                    right: 15.h,
-                    bottom: 7.v,
-                  ),
-                  child: Text(
-                    "Set",
-                    style: CustomTextStyles.titleSmallLatoBluegray700,
-                  ),
-                ),
               ),
               Align(
                 alignment: Alignment.center,
@@ -92,6 +82,7 @@ class WalletItemWidget extends StatelessWidget {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         CustomImageView(
                           imagePath: ImageConstant.imgListUiAlt,
@@ -104,9 +95,8 @@ class WalletItemWidget extends StatelessWidget {
                           width: 50.h,
                           margin: EdgeInsets.only(left: 18.h),
                           child: Text(
-                            "Set a \nTask ",
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
+                            "Set a Task ",
+                            overflow: TextOverflow.clip,
                             style: CustomTextStyles.titleLargeNunito_1,
                           ),
                         ),

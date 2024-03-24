@@ -350,7 +350,7 @@ class TaskScreen extends StatelessWidget {
         return "/";
       case BottomBarEnum.Task2:
         return "/";
-      case BottomBarEnum.Profile:
+      case BottomBarEnum.Learn:
         return "/";
       default:
         return "/";

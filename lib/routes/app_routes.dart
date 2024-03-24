@@ -1,3 +1,4 @@
+import 'package:fedaafrica/screens/child_screens/child_welcome_screen/child_welcome_screen.dart';
 import 'package:flutter/material.dart';
 import '../screens/parent_screens/parent_login_screen/parent_login_screen.dart';
 import '../screens/others/splash_screen/splash_screen.dart';
@@ -141,6 +142,7 @@ class AppRoutes {
     profileScreen: (context) => ProfileScreen(),
     editProfileScreen: (context) => EditProfileScreen(),
     languageScreen: (context) => LanguageScreen(),
-    appNavigationScreen: (context) => AppNavigationScreen()
+    appNavigationScreen: (context) => AppNavigationScreen(),
+    childWelcomeScreen:(context) => ChildWelcomeScreen()
   };
 }

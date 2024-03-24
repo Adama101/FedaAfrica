@@ -80,13 +80,13 @@ class LessonScreen extends StatelessWidget {
           options: [
             Option(
                 text: 'By asking their parents for it',
-                image: "assets/images/hometab/goblin.png"),
+                image: "assets/images/hometab/parents.png"),
             Option(
                 text: 'By doing chores or tasks for others',
-                image: "assets/images/hometab/ogre.png"),
+                image: "assets/images/hometab/perfoming_task.png"),
             Option(
                 text: 'By playing video games',
-                image: "assets/images/hometab/ogre.png"),
+                image: "assets/images/hometab/playing_games.png"),
             Option(
                 text: 'By spending all their allowance',
                 image: "assets/images/hometab/troll.png"),
@@ -99,15 +99,16 @@ class LessonScreen extends StatelessWidget {
           options: [
             Option(
                 text: 'Cleaning your room',
-                image: "assets/images/hometab/goblin.png"),
+                image: "assets/images/hometab/cleaning_rooms.png"),
             Option(
                 text: 'Playing with toys',
-                image: "assets/images/hometab/ogre.png"),
+                image: "assets/images/hometab/playing_games.png"),
             Option(
-                text: 'Watching TV', image: "assets/images/hometab/ogre.png"),
+                text: 'Watching TV', 
+                image: "assets/images/hometab/watching_tv.png"),
             Option(
                 text: 'Eating snacks',
-                image: "assets/images/hometab/troll.png"),
+                image: "assets/images/hometab/eating_snacks.png"),
           ],
         ),
         Question(
@@ -567,22 +568,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
                     });
                   }
                 ),
-                /* child: FloatingActionButton(
-                  backgroundColor: Colors.lightBlue,
-                  onPressed: () {
-                    Navigator.pop(context); // Close the modal
-                    setState(() {
-                      _currentQuestionIndex++;
-                      if (_currentQuestionIndex >=
-                          widget.lesson.questions.length) {
-                        // Handle end of questions
-                        Navigator.pop(context); // Return to previous screen
-                      }
-                      _isCheckButtonActive = false;
-                    });
-                  },
-                  child: Text('CONTINUE'),
-                ), */
               ),
             ),
           ],
@@ -608,7 +593,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Sorry!...You can replay later',
+              'Sorry!...Play later again',
               style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold,color:Colors.red),
             ),
             Text(

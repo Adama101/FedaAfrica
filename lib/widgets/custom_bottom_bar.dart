@@ -16,26 +16,26 @@ class CustomBottomBarState extends State<CustomBottomBar> {
 
   List<BottomMenuModel> bottomMenuList = [
     BottomMenuModel(
-      icon: ImageConstant.imgHome,
-      activeIcon: ImageConstant.imgHome,
+      icon: ImageConstant.imgNavHome,
+      activeIcon: ImageConstant.imgNavHome,
       title: "Home",
       type: BottomBarEnum.Home,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgTask,
-      activeIcon: ImageConstant.imgTask,
+      icon: ImageConstant.imgNavTask,
+      activeIcon: ImageConstant.imgNavTask,
       title: "Task",
       type: BottomBarEnum.Task,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgAnalytics,
-      activeIcon: ImageConstant.imgAnalytics,
+      icon: ImageConstant.imgNavAnalytics,
+      activeIcon: ImageConstant.imgNavAnalytics,
       title: "Analytics",
       type: BottomBarEnum.Analytics,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgLearn,
-      activeIcon: ImageConstant.imgLearn,
+      icon: ImageConstant.imgNavLearn,
+      activeIcon: ImageConstant.imgNavLearn,
       title: "Learn",
       type: BottomBarEnum.Learn,
     )
@@ -47,8 +47,8 @@ class CustomBottomBarState extends State<CustomBottomBar> {
       height: 86.v,
       child: BottomNavigationBar(
         backgroundColor: Colors.transparent,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
         selectedFontSize: 0,
         elevation: 0,
         currentIndex: selectedIndex,
@@ -110,7 +110,7 @@ enum BottomBarEnum {
   Home,
   Task,
   Analytics,
-  Learn
+  Learn, Leaderboard
 }
 
 class BottomMenuModel {

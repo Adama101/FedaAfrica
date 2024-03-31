@@ -12,7 +12,7 @@ class CustomBottomBar extends StatefulWidget {
 }
 
 class CustomBottomBarState extends State<CustomBottomBar> {
-  int selectedIndex = 0;
+  int selectedIndex = 1;
 
   List<BottomMenuModel> bottomMenuList = [
     BottomMenuModel(
@@ -110,7 +110,7 @@ enum BottomBarEnum {
   Home,
   Task,
   Analytics,
-  Learn, Leaderboard
+  Learn, 
 }
 
 class BottomMenuModel {

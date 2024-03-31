@@ -1,4 +1,5 @@
 import 'package:fedaafrica/routes/app_routes.dart';
+import 'package:fedaafrica/widgets/custom_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
@@ -12,6 +13,8 @@ class VideoPlayerWidgetScreen extends StatefulWidget {
   _VideoPlayerWidgetScreenState createState() =>
       _VideoPlayerWidgetScreenState();
 }
+
+GlobalKey<NavigatorState> navigatorKey = GlobalKey();
 
 class _VideoPlayerWidgetScreenState extends State<VideoPlayerWidgetScreen> {
   late VideoPlayerController _controller;
@@ -30,11 +33,10 @@ class _VideoPlayerWidgetScreenState extends State<VideoPlayerWidgetScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Video Player'),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.of(context).pop();
+            Navigator.popAndPushNamed(context, AppRoutes.parentLearningScreen);
           },
         ),
       ),
@@ -48,7 +50,6 @@ class _VideoPlayerWidgetScreenState extends State<VideoPlayerWidgetScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          onTapBackArrow(context);
           setState(() {
             _controller.value.isPlaying
                 ? _controller.pause()
@@ -59,6 +60,7 @@ class _VideoPlayerWidgetScreenState extends State<VideoPlayerWidgetScreen> {
           _controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
         ),
       ),
+      bottomNavigationBar: _buildBottomBar(context),
     );
   }
 
@@ -68,8 +70,29 @@ class _VideoPlayerWidgetScreenState extends State<VideoPlayerWidgetScreen> {
     _controller.dispose();
   }
 
-  /// Navigates back to the previous screen.
-  onTapBackArrow(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.parentLearningScreen);
+  /// Section Widget
+  Widget _buildBottomBar(BuildContext context) {
+    return CustomBottomBar(
+      onChanged: (BottomBarEnum type) {
+        Navigator.pushNamed(
+            navigatorKey.currentContext!, getCurrentRoute(type));
+      },
+    );
+  }
+
+  ///Handling route based on bottom click actions
+  String getCurrentRoute(BottomBarEnum type) {
+    switch (type) {
+      case BottomBarEnum.Home:
+        return AppRoutes.homeScreenOneScreen;
+      case BottomBarEnum.Task:
+        return AppRoutes.taskScreen;
+      case BottomBarEnum.Analytics:
+        return "/";
+      case BottomBarEnum.Learn:
+        return AppRoutes.parentLearningScreen;
+      default:
+        return AppRoutes.homeScreenOneScreen;
+    }
   }
 }

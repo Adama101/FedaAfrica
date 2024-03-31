@@ -301,8 +301,6 @@ class HomeScreenOneScreen extends StatelessWidget {
     switch (type) {
       case BottomBarEnum.Home:
         return AppRoutes.homeScreenOneScreen;
-      case BottomBarEnum.Leaderboard:
-        return "/";
       case BottomBarEnum.Task:
         return "/";
       case BottomBarEnum.Learn:

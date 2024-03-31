@@ -73,15 +73,15 @@ class ParentLearningScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return AppRoutes.leaderboardScreenPage;
+        return AppRoutes.homeScreenOneScreen;
       case BottomBarEnum.Task:
-        return "/";
+        return AppRoutes.taskCompletedScreen;
       case BottomBarEnum.Analytics:
         return "/";
       case BottomBarEnum.Learn:
-        return "/";
+        return AppRoutes.parentLearningScreen;
       default:
-        return "/";
+        return AppRoutes.homeScreenOneScreen;
     }
   }
 
@@ -97,6 +97,6 @@ class ParentLearningScreen extends StatelessWidget {
 
   /// Navigates back to the previous screen.
   onTapArrowLeft(BuildContext context) {
-    Navigator.pop(context);
+    Navigator.popAndPushNamed(context, AppRoutes.homeScreenOneScreen);
   }
 }

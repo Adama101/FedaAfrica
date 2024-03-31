@@ -1,8 +1,12 @@
+import 'package:fedaafrica/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoPlayerWidgetScreen extends StatefulWidget {
-  const VideoPlayerWidgetScreen({Key? key}) : super(key: key);
+  final String videoPath;
+
+  const VideoPlayerWidgetScreen({Key? key, required this.videoPath})
+      : super(key: key);
 
   @override
   _VideoPlayerWidgetScreenState createState() =>
@@ -15,18 +19,24 @@ class _VideoPlayerWidgetScreenState extends State<VideoPlayerWidgetScreen> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset('assets/videos/portfolio.mp4')
+    _controller = VideoPlayerController.asset(widget.videoPath)
       ..initialize().then((_) {
-        // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});
-      });
+      })
+      ..addListener(() {});
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Video Demo'),
+        title: Text('Video Player'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
       ),
       body: Center(
         child: _controller.value.isInitialized
@@ -34,12 +44,15 @@ class _VideoPlayerWidgetScreenState extends State<VideoPlayerWidgetScreen> {
                 aspectRatio: _controller.value.aspectRatio,
                 child: VideoPlayer(_controller),
               )
-            : CircularProgressIndicator(), // Show loading indicator while video is being initialized
+            : CircularProgressIndicator(),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          onTapBackArrow(context);
           setState(() {
-            _controller.value.isPlaying ? _controller.pause() : _controller.play();
+            _controller.value.isPlaying
+                ? _controller.pause()
+                : _controller.play();
           });
         },
         child: Icon(
@@ -52,6 +65,11 @@ class _VideoPlayerWidgetScreenState extends State<VideoPlayerWidgetScreen> {
   @override
   void dispose() {
     super.dispose();
-    _controller.dispose(); // Dispose the video controller when the widget is disposed
+    _controller.dispose();
+  }
+
+  /// Navigates back to the previous screen.
+  onTapBackArrow(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.parentLearningScreen);
   }
 }

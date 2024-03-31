@@ -21,7 +21,7 @@ flutter:
   assets: 
     - assets/
     - assets/images/
-    - assets/videos/portfolio.mp4
+    - assets/videos/
   fonts: 
     - family: Nunito
       fonts: 

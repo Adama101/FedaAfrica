@@ -144,7 +144,7 @@ class AppRoutes {
     editProfileScreen: (context) => EditProfileScreen(),
     languageScreen: (context) => LanguageScreen(),
     appNavigationScreen: (context) => AppNavigationScreen(),
-    videoScreen: (context) => VideoPlayerWidgetScreen()
+    videoScreen: (context) => VideoPlayerWidgetScreen(videoPath: 'assets/videos/portfolio.mp4',)
   };
   
 }

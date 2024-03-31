@@ -50,7 +50,7 @@ class ParentlearningscreenItemWidget extends StatelessWidget {
                     SizedBox(
                       width: 179.h,
                       child: Text(
-                        "Investment and Retirement Planning",
+                        "Investment Planning & Diversification",
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
                         style: theme.textTheme.headlineMedium,
@@ -71,7 +71,7 @@ class ParentlearningscreenItemWidget extends StatelessWidget {
                             bottom: 3.v,
                           ),
                           child: Text(
-                            "20/3/2022 - 7:30 AM",
+                            "20/3/2024 - 7:30 AM",
                             style: CustomTextStyles.bodySmallBluegray400,
                           ),
                         ),
@@ -86,7 +86,7 @@ class ParentlearningscreenItemWidget extends StatelessWidget {
                             style: CustomTextStyles.bodySmallff878787,
                           ),
                           TextSpan(
-                            text: "Rues Dan",
+                            text: "Just Ask Ana",
                             style: CustomTextStyles.bodySmallff4e65c2,
                           ),
                         ],

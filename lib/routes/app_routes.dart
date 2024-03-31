@@ -1,3 +1,4 @@
+import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/video_player.dart';
 import 'package:flutter/material.dart';
 import '../screens/parent_screens/parent_login_screen/parent_login_screen.dart';
 import '../screens/others/splash_screen/splash_screen.dart';
@@ -106,6 +107,8 @@ class AppRoutes {
 
   static const String appNavigationScreen = '/app_navigation_screen';
 
+  static const String videoScreen = '/video_player';
+
 // All Routes defined
   static Map<String, WidgetBuilder> routes = {
     parentLoginScreen: (context) => ParentLoginScreen(),
@@ -140,7 +143,8 @@ class AppRoutes {
     profileScreen: (context) => ProfileScreen(),
     editProfileScreen: (context) => EditProfileScreen(),
     languageScreen: (context) => LanguageScreen(),
-    appNavigationScreen: (context) => AppNavigationScreen()
+    appNavigationScreen: (context) => AppNavigationScreen(),
+    videoScreen: (context) => VideoPlayerWidgetScreen()
   };
   
 }

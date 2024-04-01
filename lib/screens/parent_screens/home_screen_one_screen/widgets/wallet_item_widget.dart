@@ -18,7 +18,9 @@ class WalletItemWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         GestureDetector(
-          onTap: onTapNineteen,
+          onTap: () {
+            Navigator.pushNamed(context, AppRoutes.addChildScreenTwoScreen);
+          },
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 25.v),
             decoration: AppDecoration.fillOnError.copyWith(

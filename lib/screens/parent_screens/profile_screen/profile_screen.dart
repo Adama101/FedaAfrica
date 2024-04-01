@@ -29,25 +29,30 @@ class ProfileScreen extends StatelessWidget {
                           children: [
                             CustomImageView(
                                 imagePath: ImageConstant.imgEllipse42483x80,
-                                height: 83.v,
-                                width: 80.h,
-                                radius: BorderRadius.circular(41.h)),
+                                height: 60.v,
+                                width: 30.h,
+                                radius: BorderRadius.circular(30.h)),
                             Padding(
                                 padding: EdgeInsets.only(
-                                    left: 17.h, top: 26.v, bottom: 30.v),
+                                    left: 20.h, top: 35.v, bottom: 30.v),
                                 child: Text("Afi Ohua",
                                     style: CustomTextStyles
                                         .titleMediumPoppinsGray90001))
                           ]),
                       SizedBox(height: 21.v),
-                      Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 4.h),
-                          child: _buildPaymentsFinan(context,
-                              paymentsFinan: ImageConstant.imgLock,
-                              paymentPreferences: "Personal Information",
-                              onTapPaymentsFinan: () {
-                            onTapLock(context);
-                          })),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, AppRoutes.editProfileScreen);
+                        },
+                        child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4.h),
+                            child: _buildPaymentsFinan(context,
+                                paymentsFinan: ImageConstant.imgLock,
+                                paymentPreferences: "Personal Information",
+                                onTapPaymentsFinan: () {
+                              onTapLock(context);
+                            })),
+                      ),
                       SizedBox(height: 10.v),
                       Divider(indent: 4.h, endIndent: 4.h),
                       SizedBox(height: 21.v),
@@ -152,22 +157,27 @@ class ProfileScreen extends StatelessWidget {
 
   /// Section Widget
   Widget _buildClose(BuildContext context) {
-    return Padding(
-        padding: EdgeInsets.only(left: 4.h, right: 8.h),
-        child: Row(children: [
-          CustomImageView(
-              imagePath: ImageConstant.imgClose22x21,
-              height: 22.v,
-              width: 21.h),
-          Padding(
-              padding: EdgeInsets.only(left: 11.h, top: 3.v, bottom: 3.v),
-              child: Text("Log Out", style: theme.textTheme.bodyMedium)),
-          Spacer(),
-          CustomImageView(
-              imagePath: ImageConstant.imgArrowRightBlueGray40002,
-              height: 24.adaptSize,
-              width: 24.adaptSize)
-        ]));
+    return GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(context, AppRoutes.usertypeScreen);
+      },
+      child: Padding(
+          padding: EdgeInsets.only(left: 4.h, right: 8.h),
+          child: Row(children: [
+            CustomImageView(
+                imagePath: ImageConstant.imgClose22x21,
+                height: 20.adaptSize,
+                width: 20.adaptSize),
+            Padding(
+                padding: EdgeInsets.only(left: 15.h, top: 3.v, bottom: 3.v),
+                child: Text("Log Out", style: theme.textTheme.bodyMedium)),
+            Spacer(),
+            CustomImageView(
+                imagePath: ImageConstant.imgArrowRightBlueGray40002,
+                height: 22.adaptSize,
+                width: 22.adaptSize)
+          ])),
+    );
   }
 
   /// Section Widget

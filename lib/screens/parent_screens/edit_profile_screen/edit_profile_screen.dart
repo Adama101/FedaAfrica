@@ -1,4 +1,3 @@
-import 'package:fedaafrica/screens/child_screens/leaderboard_screen_page/leaderboard_screen_page.dart';
 import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_leading_iconbutton_four.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_subtitle_two.dart';
@@ -24,8 +23,6 @@ class EditProfileScreen extends StatelessWidget {
   TextEditingController monthController = TextEditingController();
 
   TextEditingController zipcodeController = TextEditingController();
-
-  List<String> dropdownItemList = ["Item One", "Item Two", "Item Three"];
 
   TextEditingController passwordController = TextEditingController();
 
@@ -63,18 +60,19 @@ class EditProfileScreen extends StatelessWidget {
                                             children: [
                                               Align(
                                                   alignment:
-                                                      Alignment.bottomLeft,
+                                                      Alignment.bottomCenter,
                                                   child: Text("Afi Ohua",
                                                       style: CustomTextStyles
                                                           .titleMediumPoppinsGray90001)),
                                               CustomImageView(
                                                   imagePath: ImageConstant
                                                       .imgEllipse42483x80,
-                                                  height: 83.v,
-                                                  width: 80.h,
+                                                  height: 65.v,
+                                                  width: 40.h,
                                                   radius: BorderRadius.circular(
                                                       41.h),
-                                                  alignment: Alignment.topRight)
+                                                  alignment:
+                                                      Alignment.topCenter)
                                             ])),
                                     SizedBox(height: 25.v),
                                     Align(
@@ -134,7 +132,7 @@ class EditProfileScreen extends StatelessWidget {
                                                   child: Padding(
                                                       padding: EdgeInsets.only(
                                                           left: 65.h,
-                                                          top: 13.v,
+                                                            top: 13.v,
                                                           bottom: 13.v),
                                                       child: Text("Cancel",
                                                           style: CustomTextStyles
@@ -163,7 +161,7 @@ class EditProfileScreen extends StatelessWidget {
   Widget _buildFullName(BuildContext context) {
     return CustomTextFormField(
         controller: fullNameController,
-        hintText: "Mrs Afi XX",
+        hintText: "Mrs Afi",
         hintStyle: CustomTextStyles.bodyMediumPoppins,
         prefix: Container(
             margin: EdgeInsets.only(top: 1.v, right: 16.h, bottom: 11.v),
@@ -307,8 +305,7 @@ class EditProfileScreen extends StatelessWidget {
                                 imagePath: ImageConstant.imgArrowleftGray90001,
                                 height: 15.v,
                                 width: 17.h)),
-                        hintText: "Identification type",
-                        items: dropdownItemList),
+                        child: Text("Identification type")),
                     SizedBox(height: 18.v),
                     Text("Identification Details",
                         style: CustomTextStyles.bodyMediumGray500),
@@ -325,8 +322,8 @@ class EditProfileScreen extends StatelessWidget {
                   ])),
           CustomImageView(
               imagePath: ImageConstant.imgCameraIcon1,
-              height: 21.v,
-              width: 30.h,
+              height: 21.adaptSize,
+              width: 2.adaptSize,
               alignment: Alignment.bottomLeft,
               margin: EdgeInsets.only(left: 8.h, bottom: 30.v)),
           Align(
@@ -364,13 +361,13 @@ class EditProfileScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return AppRoutes.leaderboardScreenPage;
+        return AppRoutes.homeScreenOneScreen;
       case BottomBarEnum.Task:
-        return "/";
+        return AppRoutes.taskScreen;
       case BottomBarEnum.Analytics:
         return "/";
       case BottomBarEnum.Learn:
-        return "/";
+        return AppRoutes.parentLearningScreen;
       default:
         return "/";
     }
@@ -379,8 +376,8 @@ class EditProfileScreen extends StatelessWidget {
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.leaderboardScreenPage:
-        return LeaderboardScreenPage();
+      case AppRoutes.editProfileScreen:
+        return EditProfileScreen();
       default:
         return DefaultWidget();
     }
@@ -388,7 +385,7 @@ class EditProfileScreen extends StatelessWidget {
 
   /// Navigates back to the previous screen.
   onTapArrowLeft(BuildContext context) {
-    Navigator.pop(context);
+    Navigator.popAndPushNamed(context, AppRoutes.profileScreen);
   }
 
   /// Navigates to the profileScreen when the action is triggered.

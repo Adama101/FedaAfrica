@@ -2,6 +2,7 @@ import 'package:fedaafrica/widgets/custom_text_form_field.dart';
 import 'package:fedaafrica/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
+import 'package:flutter/widgets.dart';
 
 // ignore_for_file: must_be_immutable
 class SetTaskScreenDialog extends StatelessWidget {
@@ -59,14 +60,17 @@ class SetTaskScreenDialog extends StatelessWidget {
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        CustomElevatedButton(
-                            width: 140.h,
-                            text: "Finish",
-                            buttonStyle: CustomButtonStyles.fillPrimary,
-                            buttonTextStyle: CustomTextStyles
-                                .titleSmallInterOnErrorContainer,
-                            onPressed: () {;
-                            }),
+                        GestureDetector(
+                          onTap: onTapFinish(context),
+                          child: CustomElevatedButton(
+                              width: 140.h,
+                              text: "Finish",
+                              buttonStyle: CustomButtonStyles.fillPrimary,
+                              buttonTextStyle: CustomTextStyles
+                                  .titleSmallInterOnErrorContainer,
+                              onPressed: () {;
+                              }),
+                        ),
                         Padding(
                             padding: EdgeInsets.symmetric(vertical: 13.v),
                             child: Text("Cancel",

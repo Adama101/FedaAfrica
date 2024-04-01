@@ -127,9 +127,10 @@ class InfoScreen extends StatelessWidget {
                                 height: 24.adaptSize,
                                 width: 20.adaptSize),
                             Padding(
-                                padding: EdgeInsets.fromLTRB(12.h, 13.v, 8.h, 13.v),
+                                padding:
+                                    EdgeInsets.all(8.0),
                                 child: CustomTextFormField(
-                                  //Controller
+                                    //Controller
                                     controller: fullNameController,
                                     hintText: "Full Name",
                                     textInputType: TextInputType.name,
@@ -158,7 +159,7 @@ class InfoScreen extends StatelessWidget {
               Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                      padding: EdgeInsets.only(left: 12.h),
+                      padding: EdgeInsets.all(8.0),
                       child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -172,54 +173,48 @@ class InfoScreen extends StatelessWidget {
                                     left: 8.h, top: 4.v, bottom: 4.v),
                                 child: CustomTextFormField(
                                   //Controller
-                                    controller: emailController,
-                                    hintText: "Email",
-                                    textInputType: TextInputType.emailAddress,
-                                    alignment: Alignment.center,
-                                    textStyle: CustomTextStyles
-                                        .bodySmallInterBluegray500))
+                                  controller: emailController,
+                                  hintText: "Email",
+                                  textInputType: TextInputType.emailAddress,
+                                ))
                           ]))),
             ])));
   }
 
-  /// Phone Number Section Widget
-  Widget _phoneNumber_Widget(BuildContext context) {
-    return Card(
-        clipBehavior: Clip.antiAlias,
-        elevation: 0,
-        margin: EdgeInsets.only(left: 3.h),
-        shape: RoundedRectangleBorder(
-            side: BorderSide(color: appTheme.blueGray30001, width: 1.h),
-            borderRadius: BorderRadiusStyle.roundedBorder8),
-        child: Container(
-            height: 50.v,
-            width: 329.h,
-            decoration: AppDecoration.outlineBlueGray
-                .copyWith(borderRadius: BorderRadiusStyle.roundedBorder8),
-            child: Stack(alignment: Alignment.center, children: [
-              Align(
-                  alignment: Alignment.centerLeft,
-                  child: Padding(
-                      padding: EdgeInsets.only(left: 12.h),
-                      child: Row(children: [
-                        CustomImageView(
-                            imagePath: ImageConstant.imgPhoneAlt,
-                            height: 24.adaptSize,
-                            width: 24.adaptSize),
-                        Padding(
-                            padding: EdgeInsets.only(
-                                left: 8.h, top: 4.v, bottom: 4.v),
-                            child: CustomTextFormField(
-                              //Controller
-                                    controller: phoneNumberController,
-                                    hintText: "Phone Number",
-                                    textInputType: TextInputType.phone,
-                                    alignment: Alignment.center,
-                                    textStyle: CustomTextStyles
-                                        .bodySmallInterBluegray500))
-                      ]))),
-            ])));
-  }
+ /// Phone Number Section Widget
+Widget _phoneNumber_Widget(BuildContext context) {
+  return Card(
+    clipBehavior: Clip.antiAlias,
+    elevation: 0,
+    margin: EdgeInsets.only(left: 3.h),
+    shape: RoundedRectangleBorder(
+      side: BorderSide(color: appTheme.blueGray30001, width: 1.h),
+      borderRadius: BorderRadiusStyle.roundedBorder8,
+    ),
+    child: Padding(
+      padding: EdgeInsets.symmetric(horizontal: 12.h),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          CustomImageView(
+            imagePath: ImageConstant.imgPhoneAlt,
+            height: 24.adaptSize,
+            width: 24.adaptSize,
+          ),
+          Expanded(
+            child: CustomTextFormField(
+              controller: phoneNumberController,
+              hintText: "Phone Number",
+              textInputType: TextInputType.phone,
+              alignment: Alignment.center,
+              textStyle: CustomTextStyles.bodySmallInterBluegray500,
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
+}
 
   /// Date Section Widget
   Widget _date_Widget(BuildContext context) {
@@ -236,15 +231,18 @@ class InfoScreen extends StatelessWidget {
               width: 24.adaptSize,
               margin: EdgeInsets.symmetric(vertical: 5.v)),
           Padding(
-              padding: EdgeInsets.only(left: 8.adaptSize, top: 15.adaptSize, bottom: 15.adaptSize, right: 5.adaptSize),
-              child:  CustomTextFormField(
-                                  //Controller
-                                    controller: dobController,
-                                    hintText: "DD/MM/YY",
-                                    textInputType: TextInputType.datetime,
-                                    alignment: Alignment.center,
-                                    textStyle: CustomTextStyles
-                                        .bodySmallInterBluegray500))
+              padding: EdgeInsets.only(
+                  left: 8.adaptSize,
+                  top: 15.adaptSize,
+                  bottom: 15.adaptSize,
+                  right: 5.adaptSize),
+              child: CustomTextFormField(
+                  //Controller
+                  controller: dobController,
+                  hintText: "DD/MM/YY",
+                  textInputType: TextInputType.datetime,
+                  alignment: Alignment.center,
+                  textStyle: CustomTextStyles.bodySmallInterBluegray500))
         ]));
   }
 
@@ -283,7 +281,7 @@ class InfoScreen extends StatelessWidget {
   }
 
   // Navigation..........
-  
+
   /// Navigates to the parentLoginScreen when the action is triggered.
   onTapBackBtn(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.parentLoginScreen);

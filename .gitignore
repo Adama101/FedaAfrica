@@ -3,8 +3,10 @@
 /build/
 /.vscode/
 
+/lib/core/utils/api_keys/
 /.flutter-plugins
 /.flutter-plugins-dependencies
 /.packages
 /ios/Podfile
 /pubspec.lock
+/api_keys

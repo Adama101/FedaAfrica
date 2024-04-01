@@ -161,7 +161,7 @@ class MoreScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return AppRoutes.leaderboardScreenPage;
+        return "/";
       case BottomBarEnum.Task:
         return "/";
       case BottomBarEnum.Analytics:

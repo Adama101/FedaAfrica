@@ -302,7 +302,7 @@ class HomeScreenOneScreen extends StatelessWidget {
       case BottomBarEnum.Home:
         return AppRoutes.homeScreenOneScreen;
       case BottomBarEnum.Task:
-        return "/";
+        return AppRoutes.taskScreen;
       case BottomBarEnum.Learn:
         return AppRoutes.parentLearningScreen;
       default:
@@ -313,8 +313,8 @@ class HomeScreenOneScreen extends StatelessWidget {
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.leaderboardScreenPage:
-        return LeaderboardScreenPage();
+      case AppRoutes.homeScreenOneScreen:
+        return HomeScreenOneScreen();
       default:
         return DefaultWidget();
     }

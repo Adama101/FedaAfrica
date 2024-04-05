@@ -1,3 +1,4 @@
+import 'package:fedaafrica/screens/others/account_type/account_type.dart';
 import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/video_player.dart';
 import 'package:flutter/material.dart';
 import '../screens/parent_screens/parent_login_screen/parent_login_screen.dart';
@@ -22,7 +23,7 @@ import '../screens/child_screens/leaderboard_screen_container_screen/leaderboard
 import '../screens/others/task_completed_screen/task_completed_screen.dart';
 import '../screens/child_screens/child_profile_screen/child_profile_screen.dart';
 import '../screens/child_screens/coin_screen/coin_screen.dart';
-import '../screens/child_screens/activity_screen/activity_screen.dart';
+import '../screens/parent_screens/activity_screen/activity_screen.dart';
 import '../screens/parent_screens/task_screen/task_screen.dart';
 import '../screens/parent_screens/parent_learning_screen/parent_learning_screen.dart';
 import '../screens/parent_screens/more_screen/more_screen.dart';
@@ -109,6 +110,8 @@ class AppRoutes {
 
   static const String videoScreen = '/video_player';
 
+  static const String accountType = '/account_type';
+
 // All Routes defined
   static Map<String, WidgetBuilder> routes = {
     parentLoginScreen: (context) => ParentLoginScreen(),
@@ -144,7 +147,8 @@ class AppRoutes {
     editProfileScreen: (context) => EditProfileScreen(),
     languageScreen: (context) => LanguageScreen(),
     appNavigationScreen: (context) => AppNavigationScreen(),
-    videoScreen: (context) => VideoPlayerWidgetScreen(videoPath: 'assets/videos/portfolio.mp4',)
+    videoScreen: (context) => VideoPlayerWidgetScreen(videoPath: 'assets/videos/portfolio.mp4',),
+    accountType: (context) => AccountType(),
   };
   
 }

@@ -89,6 +89,11 @@ class ImageConstant {
   // child_login_screen images
   static String imgObjects = '$imagePath/OBJECTS.png';
 
+  // account_type images
+  static String imgFamily = '$imagePath/family_acc.png';
+
+  static String singleImg = '$imagePath/single_acc.png';
+
   // progress_screen images
   static String imgGroup1000000996 = '$imagePath/img_group_1000000996.svg';
 

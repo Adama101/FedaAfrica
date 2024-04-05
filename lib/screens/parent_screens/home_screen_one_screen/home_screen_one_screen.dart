@@ -165,7 +165,7 @@ class HomeScreenOneScreen extends StatelessWidget {
                           children: [
                             Padding(
                                 padding: EdgeInsets.only(left: 4.h),
-                                child: Text("This week",
+                                child: Text("My Child's Activity",
                                     style:
                                         CustomTextStyles.titleLargeGray90002)),
                             SizedBox(height: 42.v),

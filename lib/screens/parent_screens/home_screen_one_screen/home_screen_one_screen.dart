@@ -1,4 +1,3 @@
-import 'package:fedaafrica/screens/child_screens/leaderboard_screen_page/leaderboard_screen_page.dart';
 import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_trailing_circleimage.dart';
 import 'package:carousel_slider/carousel_slider.dart';

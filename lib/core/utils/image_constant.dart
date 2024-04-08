@@ -236,6 +236,14 @@ class ImageConstant {
 
   static String imgImage95 = '$imagePath/img_image_95.png';
 
+  // New Images Added
+
+  static String moneyImage = '$imagePath/Money_management.png';
+
+  static String financialImage = '$imagePath/financial_images.png';
+
+  static String financialLiteracy = '$imagePath/Financial_literacy.png';
+
   // Common images
   static String imgArrowLeft = '$imagePath/img_arrow_left.svg';
 

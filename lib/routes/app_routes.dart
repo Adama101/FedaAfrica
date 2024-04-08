@@ -1,5 +1,5 @@
 import 'package:fedaafrica/screens/others/account_type/account_type.dart';
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/video_player.dart';
+import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/lesson_one_video.dart';
 import 'package:flutter/material.dart';
 import '../screens/parent_screens/parent_login_screen/parent_login_screen.dart';
 import '../screens/others/splash_screen/splash_screen.dart';
@@ -108,9 +108,31 @@ class AppRoutes {
 
   static const String appNavigationScreen = '/app_navigation_screen';
 
-  static const String videoScreen = '/video_player';
+    static const String accountType = '/account_type';
 
-  static const String accountType = '/account_type';
+  static const String videoOneScreen = '/video_player';
+
+  static const String videoTwoScreen = '/video_player';
+
+  static const String videoThreeScreen = '/video_player';
+
+  static const String videoFourScreen = '/video_player';
+
+  static const String videoFiveScreen = '/video_player';
+
+    static const String videoSixScreen = '/video_player';
+
+  static const String videoSevenScreen = '/video_player';
+
+  static const String videoEightScreen = '/video_player';
+
+  static const String videoNineScreen = '/video_player';
+
+  static const String videoTenScreen = '/video_player';
+
+
+
+
 
 // All Routes defined
   static Map<String, WidgetBuilder> routes = {
@@ -147,8 +169,37 @@ class AppRoutes {
     editProfileScreen: (context) => EditProfileScreen(),
     languageScreen: (context) => LanguageScreen(),
     appNavigationScreen: (context) => AppNavigationScreen(),
-    videoScreen: (context) => VideoPlayerWidgetScreen(videoPath: 'assets/videos/portfolio.mp4',),
     accountType: (context) => AccountType(),
+    videoOneScreen: (context) => VideoOnePlayer(
+          videoPath: 'assets/videos/portfolio.mp4',
+        ),
+    // videoTwoScreen: (context) => VideoTwoPlayer(
+    //       videoPath: 'assets/videos/3_ways_for_a_better_financial_life.mp4',
+    //     ),
+  //   videoThreeScreen: (context) => VideoThreePlayer(
+  //         videoPath: 'assets/videos/',
+  //       ),
+  //   videoFourScreen: (context) => VideoFourPlayer(
+  //         videoPath: 'assets/videos/',
+  //       ),
+  //   videoFiveScreen: (context) => VideoFivePlayer(
+  //         videoPath: 'assets/videos/',
+  //       ),
+  //   videoSixScreen: (context) => VideoSixPlayer(
+  //         videoPath: 'assets/videos/',
+  //       ),
+  //   videoSevenScreen: (context) => VideoSevenPlayer(
+  //         videoPath: 'assets/videos/',
+  //       ),
+  //   videoEightScreen: (context) => VideoEightPlayer(
+  //         videoPath: 'assets/videos/',
+  //       ),
+  //   videoNineScreen: (context) => VideoNinePlayer(
+  //         videoPath: 'assets/videos/',
+  //       ),
+  //   videoTenScreen: (context) => VideoTenPlayer(
+  //         videoPath: 'assets/videos/',
+  //       ),
+  //   accountType: (context) => AccountType(),
   };
-  
 }

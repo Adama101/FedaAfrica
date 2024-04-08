@@ -100,6 +100,6 @@ class SplashScreenOneScreen extends StatelessWidget {
 
   /// Navigates to the usertypeScreen when the action is triggered.
   void onTapSkip(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.usertypeScreen);
+    Navigator.pushNamed(context, AppRoutes.accountType);
   }
 }

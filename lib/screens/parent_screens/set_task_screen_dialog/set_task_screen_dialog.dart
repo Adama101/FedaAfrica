@@ -2,7 +2,6 @@ import 'package:fedaafrica/widgets/custom_text_form_field.dart';
 import 'package:fedaafrica/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
-import 'package:flutter/widgets.dart';
 
 // ignore_for_file: must_be_immutable
 class SetTaskScreenDialog extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/video_player.dart';
+import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/lesson_one_video.dart';
 import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_leading_iconbutton_two.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_title.dart';

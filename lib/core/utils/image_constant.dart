@@ -244,6 +244,12 @@ class ImageConstant {
 
   static String financialLiteracy = '$imagePath/Financial_literacy.png';
 
+  static String rewardIcon = '$imagePath/gift.png';
+
+  static String taskIcon = '$imagePath/setTask.png';
+
+    static String warningIcon = '$imagePath/warning.png';
+
   // Common images
   static String imgArrowLeft = '$imagePath/img_arrow_left.svg';
 

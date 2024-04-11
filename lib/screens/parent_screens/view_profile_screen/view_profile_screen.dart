@@ -1,4 +1,3 @@
-import 'package:fedaafrica/screens/child_screens/leaderboard_screen_page/leaderboard_screen_page.dart';
 import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_leading_iconbutton_four.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_subtitle_two.dart';
@@ -58,7 +57,7 @@ class ViewProfileScreen extends StatelessWidget {
                                               children: [
                                                 Align(
                                                     alignment:
-                                                        Alignment.bottomLeft,
+                                                        Alignment.bottomCenter,
                                                     child: Text("Afi Ohua",
                                                         style: CustomTextStyles
                                                             .titleMediumPoppinsGray90001)),
@@ -66,7 +65,7 @@ class ViewProfileScreen extends StatelessWidget {
                                                     imagePath: ImageConstant
                                                         .imgEllipse42483x80,
                                                     height: 83.v,
-                                                    width: 80.h,
+                                                    width: 50.h,
                                                     radius:
                                                         BorderRadius.circular(
                                                             41.h),
@@ -76,9 +75,9 @@ class ViewProfileScreen extends StatelessWidget {
                                                     imagePath: ImageConstant
                                                         .imgCameraIcon1,
                                                     height: 17.v,
-                                                    width: 25.h,
+                                                    width: 15.h,
                                                     alignment:
-                                                        Alignment.bottomRight,
+                                                        Alignment.bottomCenter,
                                                     margin: EdgeInsets.only(
                                                         bottom: 25.v))
                                               ]))),
@@ -249,7 +248,7 @@ class ViewProfileScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return AppRoutes.leaderboardScreenPage;
+        return AppRoutes.homeScreenOneScreen;
       case BottomBarEnum.Task:
         return "/";
       case BottomBarEnum.Analytics:
@@ -264,8 +263,8 @@ class ViewProfileScreen extends StatelessWidget {
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.leaderboardScreenPage:
-        return LeaderboardScreenPage();
+      case AppRoutes.viewProfileScreen:
+        return ViewProfileScreen();
       default:
         return DefaultWidget();
     }
@@ -273,6 +272,6 @@ class ViewProfileScreen extends StatelessWidget {
 
   /// Navigates back to the previous screen.
   onTapArrowLeft(BuildContext context) {
-    Navigator.pop(context);
+    Navigator.popAndPushNamed(context, AppRoutes.profileScreen);
   }
 }

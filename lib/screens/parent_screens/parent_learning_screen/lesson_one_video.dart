@@ -1,17 +1,16 @@
 import 'package:fedaafrica/routes/app_routes.dart';
 import 'package:fedaafrica/widgets/custom_bottom_bar.dart';
+import 'package:fedaafrica/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoOnePlayer extends StatefulWidget {
   final String videoPath;
 
-  const VideoOnePlayer({Key? key, required this.videoPath})
-      : super(key: key);
+  const VideoOnePlayer({Key? key, required this.videoPath}) : super(key: key);
 
   @override
-  _VideoOnePlayerState createState() =>
-      _VideoOnePlayerState();
+  _VideoOnePlayerState createState() => _VideoOnePlayerState();
 }
 
 GlobalKey<NavigatorState> navigatorKey = GlobalKey();
@@ -40,13 +39,32 @@ class _VideoOnePlayerState extends State<VideoOnePlayer> {
           },
         ),
       ),
-      body: Center(
-        child: _controller.value.isInitialized
-            ? AspectRatio(
-                aspectRatio: _controller.value.aspectRatio,
-                child: VideoPlayer(_controller),
-              )
-            : CircularProgressIndicator(),
+      body: Stack(
+        children: [
+          Center(
+            child: _controller.value.isInitialized
+                ? AspectRatio(
+                    aspectRatio: _controller.value.aspectRatio,
+                    child: VideoPlayer(_controller),
+                  )
+                : CircularProgressIndicator(),
+          ),
+          Positioned(
+            bottom: 20, 
+            left: 0,
+            right: 0,
+            child: Center(
+              child: CustomElevatedButton(
+                width: 200,
+                text: 'Next Lesson',
+                onPressed: () {
+                  // Navigates to the Upgrade Screen
+                  Navigator.pushNamed(context, AppRoutes.upgradeScreen);
+                },
+              ),
+            ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {

@@ -1,4 +1,3 @@
-import 'package:fedaafrica/screens/child_screens/leaderboard_screen_page/leaderboard_screen_page.dart';
 import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_leading_iconbutton_four.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_subtitle_nine.dart';
@@ -27,14 +26,17 @@ class ProfileScreen extends StatelessWidget {
                       Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            CustomImageView(
-                                imagePath: ImageConstant.imgEllipse42483x80,
-                                height: 60.v,
-                                width: 30.h,
-                                radius: BorderRadius.circular(30.h)),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: CustomImageView(
+                                  imagePath: ImageConstant.imgEllipse42483x80,
+                                  height: 60.v,
+                                  width: 30.h,
+                                  radius: BorderRadius.circular(35.h)),
+                            ),
                             Padding(
                                 padding: EdgeInsets.only(
-                                    left: 20.h, top: 35.v, bottom: 30.v),
+                                    left: 20.h, top: 35.v, bottom: 60.v),
                                 child: Text("Afi Ohua",
                                     style: CustomTextStyles
                                         .titleMediumPoppinsGray90001))
@@ -159,7 +161,7 @@ class ProfileScreen extends StatelessWidget {
   Widget _buildClose(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, AppRoutes.usertypeScreen);
+        Navigator.pushNamed(context, AppRoutes.accountType);
       },
       child: Padding(
           padding: EdgeInsets.only(left: 4.h, right: 8.h),
@@ -220,7 +222,7 @@ class ProfileScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return AppRoutes.leaderboardScreenPage;
+        return AppRoutes.homeScreenOneScreen;
       case BottomBarEnum.Task:
         return "/";
       case BottomBarEnum.Analytics:
@@ -235,8 +237,8 @@ class ProfileScreen extends StatelessWidget {
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.leaderboardScreenPage:
-        return LeaderboardScreenPage();
+      case AppRoutes.profileScreen:
+        return ProfileScreen();
       default:
         return DefaultWidget();
     }
@@ -244,7 +246,7 @@ class ProfileScreen extends StatelessWidget {
 
   /// Navigates back to the previous screen.
   onTapArrowLeft(BuildContext context) {
-    Navigator.pop(context);
+    Navigator.popAndPushNamed(context, AppRoutes.homeScreenOneScreen);
   }
 
   /// Navigates to the viewProfileScreen when the action is triggered.

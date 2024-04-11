@@ -2,13 +2,21 @@ import 'package:fedaafrica/widgets/custom_text_form_field.dart';
 import 'package:fedaafrica/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
-import 'package:fedaafrica/screens/parent_screens/add_child_screen_one_dialog/add_child_screen_one_dialog.dart';
+import 'package:intl/intl.dart';
 
 // ignore_for_file: must_be_immutable
-class AddChildScreenTwoScreen extends StatelessWidget {
+class AddChildScreenTwoScreen extends StatefulWidget {
   AddChildScreenTwoScreen({Key? key}) : super(key: key);
 
+  @override
+  State<AddChildScreenTwoScreen> createState() =>
+      _AddChildScreenTwoScreenState();
+}
+
+class _AddChildScreenTwoScreenState extends State<AddChildScreenTwoScreen> {
   TextEditingController userNameController = TextEditingController();
+
+  TextEditingController dateOfBirthController = TextEditingController();
 
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
@@ -37,9 +45,9 @@ class AddChildScreenTwoScreen extends StatelessWidget {
                                         CustomImageView(
                                             imagePath: ImageConstant
                                                 .imgFamilyValuesKid,
-                                            height: 230.v,
-                                            width: 223.h,
-                                            alignment: Alignment.centerRight,
+                                            height: 250.v,
+                                            width: 200.h,
+                                            alignment: Alignment.center,
                                             margin:
                                                 EdgeInsets.only(right: 33.h)),
                                         SizedBox(height: 31.v),
@@ -94,7 +102,10 @@ class AddChildScreenTwoScreen extends StatelessWidget {
                                                   }),
                                               GestureDetector(
                                                   onTap: () {
-                                                    onTapTxtButton(context);
+                                                    Navigator.pushNamed(
+                                                        context,
+                                                        AppRoutes
+                                                            .homeScreenOneScreen);
                                                   },
                                                   child: Padding(
                                                       padding: EdgeInsets.only(
@@ -111,37 +122,46 @@ class AddChildScreenTwoScreen extends StatelessWidget {
 
   /// Section Widget
   Widget _buildContentConatiner(BuildContext context) {
-    return Container(
-        margin: EdgeInsets.only(left: 1.h, right: 7.h),
-        padding: EdgeInsets.symmetric(horizontal: 11.h, vertical: 14.v),
-        decoration: AppDecoration.outlineBlueGray
-            .copyWith(borderRadius: BorderRadiusStyle.roundedBorder8),
+    return GestureDetector(
+      onTap: () => _selectDate(context),
+      child: Container(
         child: Row(mainAxisSize: MainAxisSize.max, children: [
           CustomImageView(
-              imagePath: ImageConstant.imgCalendarAltBlack900,
-              height: 20.adaptSize,
-              width: 20.adaptSize),
-          Padding(
-              padding: EdgeInsets.only(left: 8.h, top: 2.v, bottom: 2.v),
-              child: Text("08/02/2015",
-                  style: CustomTextStyles.bodySmallInterBluegray500))
-        ]));
+            imagePath: ImageConstant.imgCalendarAltBlack900,
+            height: 24.adaptSize,
+            width: 24.adaptSize,
+            alignment: Alignment.centerLeft,
+          ),
+          Flexible(
+            child: CustomTextFormField(
+              width: 329.h,
+              controller: dateOfBirthController,
+              hintStyle: CustomTextStyles.bodyMediumNunitoBluegray500,
+              alignment: Alignment.centerRight,
+            ),
+          )
+        ]),
+      ),
+    );
+  }
+
+  /// Method to show the date picker and update the date field
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? picked = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(1900),
+      lastDate: DateTime(2100),
+    );
+    if (picked != null && picked != DateTime.now()) {
+      setState(() {
+        dateOfBirthController.text = DateFormat('dd/MM/yyyy').format(picked);
+      });
+    }
   }
 
   /// Navigates to the childLoginCodeScreen when the action is triggered.
   onTapFinish(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.childLoginCodeScreen);
-  }
-
-  /// Displays a dialog with the [AddChildScreenOneDialog] content.
-  onTapTxtButton(BuildContext context) {
-    showDialog(
-        context: context,
-        builder: (_) => AlertDialog(
-              content: AddChildScreenOneDialog(),
-              backgroundColor: Colors.transparent,
-              contentPadding: EdgeInsets.zero,
-              insetPadding: const EdgeInsets.only(left: 0),
-            ));
   }
 }

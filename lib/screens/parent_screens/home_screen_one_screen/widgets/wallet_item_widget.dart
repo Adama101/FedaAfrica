@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
+import 'package:flutter/widgets.dart';
 
 // ignore: must_be_immutable
 class WalletItemWidget extends StatelessWidget {
   WalletItemWidget({
     Key? key,
-    this.onTapNineteen,
-    this.onTapEighteen,
+    this.onTapChild,
+    this.onTapTask,
   }) : super(key: key);
 
-  final VoidCallback? onTapNineteen;
-  final VoidCallback? onTapEighteen;
+  final VoidCallback? onTapChild;
+  final VoidCallback? onTapTask;
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +45,9 @@ class WalletItemWidget extends StatelessWidget {
           ),
         ),
         GestureDetector(
-          onTap: onTapEighteen,
+          onTap: () {
+            Navigator.pushNamed(context, AppRoutes.setTaskDialogScreen);
+          },
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 25.v),
             decoration: AppDecoration.fillOrange.copyWith(

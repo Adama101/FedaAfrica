@@ -1,5 +1,13 @@
-/.dart_tool/
-/.idea/
+# Miscellaneous
+*.DS_Store
+*.iml
+*.log
+
+# IDE/Editor specific
+.idea/
+.vscode/
+
+# Build output
 /build/
 /.vscode/
 

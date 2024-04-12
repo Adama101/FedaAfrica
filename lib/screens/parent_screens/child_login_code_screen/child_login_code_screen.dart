@@ -5,7 +5,7 @@ import 'package:fedaafrica/widgets/custom_text_form_field.dart';
 import 'package:fedaafrica/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
-import 'package:animated_text_kit/animated_text_kit.dart'; // Import the package
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class ChildLoginCodeScreen extends StatefulWidget {
   ChildLoginCodeScreen({Key? key}) : super(key: key);

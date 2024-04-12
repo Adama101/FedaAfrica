@@ -167,6 +167,7 @@ class MoreScreen extends StatelessWidget {
       case BottomBarEnum.Analytics:
         return "/";
       case BottomBarEnum.Learn:
+      case BottomBarEnum.Learn:
         return "/";
       default:
         return "/";

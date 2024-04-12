@@ -1,115 +1,171 @@
-import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
-import 'package:fedaafrica/widgets/app_bar/appbar_leading_iconbutton.dart';
+import 'package:fedaafrica/widgets/custom_icon_button.dart';
 import 'package:fedaafrica/widgets/custom_text_form_field.dart';
 import 'package:fedaafrica/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
 
 // ignore_for_file: must_be_immutable
-class SetPasswordScreen extends StatelessWidget {
+class SetPasswordScreen extends StatefulWidget {
   SetPasswordScreen({Key? key}) : super(key: key);
 
+  @override
+  State<SetPasswordScreen> createState() => _SetPasswordScreenState();
+}
+
+class _SetPasswordScreenState extends State<SetPasswordScreen> {
   TextEditingController passwordController = TextEditingController();
 
-  TextEditingController confirmpasswordController = TextEditingController();
+  TextEditingController confirmPasswordController = TextEditingController();
+
+  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
             resizeToAvoidBottomInset: false,
-            appBar: _buildAppBar(context),
-            body: Container(
-                width: double.maxFinite,
-                padding: EdgeInsets.all(19.h),
-                child: Column(children: [
-                  Align(
-                      alignment: Alignment.centerLeft,
-                      child: Padding(
-                          padding: EdgeInsets.only(left: 5.h),
-                          child: Text("Set Password",
-                              style: CustomTextStyles.headlineSmall_1))),
-                  SizedBox(height: 13.v),
-                  Container(
-                      width: 318.h,
-                      margin: EdgeInsets.only(left: 4.h, right: 13.h),
-                      child: Text(
-                          "We use state-of-the-art security measures to protect your information at all times",
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: CustomTextStyles.bodyLarge_1
-                              .copyWith(height: 1.50))),
-                  SizedBox(height: 14.v),
-                  Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text("Password",
-                          style: CustomTextStyles.bodyMediumNunitoGray500)),
-                  SizedBox(height: 13.v),
-                  CustomTextFormField(
-                      controller: passwordController,
-                      prefix: Container(
-                          margin: EdgeInsets.only(right: 30.h, bottom: 11.v),
-                          child: CustomImageView(
-                              imagePath: ImageConstant
-                                  .imgInterfaceEssentialLockPassword,
-                              height: 22.adaptSize,
-                              width: 22.adaptSize)),
-                      prefixConstraints: BoxConstraints(maxHeight: 33.v),
-                      suffix: Container(
-                          margin: EdgeInsets.only(left: 30.h, bottom: 11.v),
-                          child: CustomImageView(
-                              imagePath: ImageConstant.imgEye,
-                              height: 22.adaptSize,
-                              width: 22.adaptSize)),
-                      suffixConstraints: BoxConstraints(maxHeight: 33.v),
-                      obscureText: true,
-                      borderDecoration: TextFormFieldStyleHelper.underLineGray),
-                  SizedBox(height: 7.v),
-                  _buildConfirmpassword(context),
-                  SizedBox(height: 5.v)
-                ])),
+            body: SizedBox(
+                width: SizeUtils.width,
+                child: SingleChildScrollView(
+                    padding: EdgeInsets.only(
+                        bottom: MediaQuery.of(context).viewInsets.bottom),
+                    child: Form(
+                        key: _formKey,
+                        child: Container(
+                            width: double.maxFinite,
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 20.h, vertical: 10.v),
+                            child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(
+                                      height: 74.v,
+                                      width: 176.h,
+                                      child: Stack(
+                                          alignment: Alignment.topLeft,
+                                          children: [
+                                            Align(
+                                                alignment:
+                                                    Alignment.bottomCenter,
+                                                child: Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 40.v),
+                                                    child: Text(
+                                                        "Set Password",
+                                                        style: theme.textTheme
+                                                            .headlineSmall))),
+                                            CustomIconButton(
+                                                height: 42.adaptSize,
+                                                width: 42.adaptSize,
+                                                alignment: Alignment.topLeft,
+                                                onTap: () {
+                                                  onTapBtnClock(context);
+                                                },
+                                                child: CustomImageView(
+                                                    imagePath: ImageConstant
+                                                        .imgClockGray30001))
+                                          ])),
+                                  SizedBox(height: 15.v),
+                                  Container(
+                                      width: 294.h,
+                                      margin: EdgeInsets.only(
+                                          left: 4.h, right: 36.h),
+                                      child: Text(
+                                          "We use state-of-the-art security measures to protect your information at all times",
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: theme.textTheme.bodyLarge!
+                                              .copyWith(height: 1.50))),
+                                  SizedBox(height: 54.v),
+                                  _buildPassword(context),
+                                  SizedBox(height: 35.v),
+                                  _buildConfirmpassword(context),
+                                  SizedBox(height: 35.v),
+                                ]))))),
             bottomNavigationBar: _buildNext(context)));
   }
 
-  /// Section Widget
-  PreferredSizeWidget _buildAppBar(BuildContext context) {
-    return CustomAppBar(
-        leadingWidth: double.maxFinite,
-        leading: AppbarLeadingIconbutton(
-            imagePath: ImageConstant.imgClock,
-            margin: EdgeInsets.fromLTRB(20.h, 7.v, 313.h, 7.v),
-            onTap: () {
-              onTapClock(context);
-            }));
+  /// Password Widget
+  Widget _buildPassword(BuildContext context) {
+    return Card(
+        clipBehavior: Clip.antiAlias,
+        elevation: 0,
+        margin: EdgeInsets.only(left: 3.h),
+        shape: RoundedRectangleBorder(
+            side: BorderSide(color: appTheme.blueGray30001, width: 1.h),
+            borderRadius: BorderRadiusStyle.roundedBorder8),
+        child: Container(
+            height: 50.v,
+            width: 329.h,
+            decoration: AppDecoration.outlineBlueGray,
+            child: Stack(alignment: Alignment.center, children: [
+              Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 12.h),
+                  )),
+              CustomTextFormField(
+                  width: 329.h,
+                  controller: passwordController,
+                  hintText: "Password",
+                  hintStyle: CustomTextStyles.bodySmallNunitoBluegray500,
+                  alignment: Alignment.center,
+                  prefix: Container(
+                      margin: EdgeInsets.fromLTRB(12.h, 13.v, 8.h, 13.v),
+                      child: CustomImageView(
+                          imagePath:
+                              ImageConstant.imgInterfaceEssentialLockPassword,
+                          height: 24.adaptSize,
+                          width: 24.adaptSize)),
+                  prefixConstraints: BoxConstraints(maxHeight: 50.v))
+            ])));
   }
 
-  /// Section Widget
-  Widget _buildPassword(BuildContext context) {
-    return Align(
-        alignment: Alignment.topCenter,
-        child: Padding(
-            padding: EdgeInsets.only(left: 1.h),
-            child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Confirm Password",
-                      style: CustomTextStyles.bodyMediumPoppinsGray500),
-                  SizedBox(height: 13.v),
-                  CustomTextFormField(
-                      controller: confirmpasswordController,
-                      textInputAction: TextInputAction.done,
-                      prefix: Container(
-                          margin: EdgeInsets.only(right: 30.h, bottom: 11.v),
-                          child: CustomImageView(
-                              imagePath: ImageConstant
-                                  .imgInterfaceEssentialLockPassword,
-                              height: 22.adaptSize,
-                              width: 22.adaptSize)),
-                      prefixConstraints: BoxConstraints(maxHeight: 33.v),
-                      obscureText: true,
-                      borderDecoration: TextFormFieldStyleHelper.underLineGray)
-                ])));
+  /// Confirm Password Widget
+  Widget _buildconfirmPassword(BuildContext context) {
+    return Card(
+        clipBehavior: Clip.antiAlias,
+        elevation: 0,
+        margin: EdgeInsets.only(left: 3.h),
+        shape: RoundedRectangleBorder(
+            side: BorderSide(color: appTheme.blueGray30001, width: 1.h),
+            borderRadius: BorderRadiusStyle.roundedBorder8),
+        child: Container(
+            height: 50.v,
+            width: 329.h,
+            decoration: AppDecoration.outlineBlueGray
+                .copyWith(borderRadius: BorderRadiusStyle.roundedBorder8),
+            child: Stack(alignment: Alignment.center, children: [
+              Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                      padding: EdgeInsets.only(left: 12.h),
+                      child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            CustomImageView(
+                                imagePath: ImageConstant
+                                    .imgInterfaceEssentialLockPassword,
+                                height: 24.adaptSize,
+                                width: 24.adaptSize)
+                          ]))),
+              CustomTextFormField(
+                  width: 329.h,
+                  controller: confirmPasswordController,
+                  hintText: "Confirm Password",
+                  hintStyle: CustomTextStyles.bodySmallNunitoBluegray500,
+                  textInputAction: TextInputAction.done,
+                  textInputType: TextInputType.visiblePassword,
+                  alignment: Alignment.center,
+                  prefix: Container(
+                      margin: EdgeInsets.fromLTRB(12.h, 13.v, 8.h, 13.v),
+                      child: CustomImageView(
+                          imagePath:
+                              ImageConstant.imgInterfaceEssentialLockPassword,
+                          height: 24.adaptSize,
+                          width: 24.adaptSize)),
+                  prefixConstraints: BoxConstraints(maxHeight: 50.v))
+            ])));
   }
 
   /// Section Widget
@@ -122,26 +178,26 @@ class SetPasswordScreen extends StatelessWidget {
               alignment: Alignment.bottomLeft,
               child: Text("Both Passwords Must Match",
                   style: CustomTextStyles.bodySmallNunitoGray500)),
-          _buildPassword(context)
+          _buildconfirmPassword(context)
         ]));
   }
 
-  /// Section Widget
+  /// NEXT Button Widget
   Widget _buildNext(BuildContext context) {
     return CustomElevatedButton(
         text: "Next",
-        margin: EdgeInsets.only(left: 21.h, right: 19.h, bottom: 48.v),
+        margin: EdgeInsets.only(left: 24.h, right: 16.h, bottom: 100.v),
         onPressed: () {
           onTapNext(context);
         });
   }
 
-  /// Navigates to the info Screen when the action is triggered.
-  onTapClock(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.infoScreen);
+  /// Navigates to the parentLoginScreen when the action is triggered.
+  onTapBtnClock(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.parentLoginScreen);
   }
 
-  /// Navigates to the homeScreenOneScreen when the action is triggered.
+  /// Navigates to the infoFilledScreen when the action is triggered.
   onTapNext(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.homeScreenOneScreen);
   }

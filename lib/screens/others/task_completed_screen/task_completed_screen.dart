@@ -83,7 +83,7 @@ class TaskCompletedScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               CustomImageView(
-                                  imagePath: ImageConstant.imgNavHome38x63,
+                                  imagePath: ImageConstant.imgHome,
                                   height: 29.v,
                                   width: 63.h,
                                   onTap: () {
@@ -101,8 +101,8 @@ class TaskCompletedScreen extends StatelessWidget {
                                   margin: EdgeInsets.only(top: 4.v),
                                   decoration: BoxDecoration(
                                       image: DecorationImage(
-                                          image: AssetImage(
-                                              ImageConstant.imgTreasure25x35),
+                                          image:
+                                              AssetImage(ImageConstant.imgTask),
                                           fit: BoxFit.cover)))
                             ])),
                     SizedBox(height: 9.v),
@@ -140,8 +140,8 @@ class TaskCompletedScreen extends StatelessWidget {
                                 width: 40.h,
                                 decoration: BoxDecoration(
                                     image: DecorationImage(
-                                        image: AssetImage(ImageConstant
-                                            .imgProfilePicture41x40),
+                                        image:
+                                            AssetImage(ImageConstant.imgLearn),
                                         fit: BoxFit.cover)))),
                         SizedBox(height: 4.v),
                         Align(

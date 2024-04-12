@@ -12,7 +12,7 @@ class CustomBottomBar extends StatefulWidget {
 }
 
 class CustomBottomBarState extends State<CustomBottomBar> {
-  int selectedIndex = 0;
+  int selectedIndex = 1;
 
   List<BottomMenuModel> bottomMenuList = [
     BottomMenuModel(
@@ -25,13 +25,13 @@ class CustomBottomBarState extends State<CustomBottomBar> {
       icon: ImageConstant.imgNavTask,
       activeIcon: ImageConstant.imgNavTask,
       title: "Task",
-      type: BottomBarEnum.Leaderboard,
+      type: BottomBarEnum.Task,
     ),
     BottomMenuModel(
       icon: ImageConstant.imgNavAnalytics,
-      activeIcon: ImageConstant.imgTreasure,
+      activeIcon: ImageConstant.imgNavAnalytics,
       title: "Analytics",
-      type: BottomBarEnum.Task2,
+      type: BottomBarEnum.Analytics,
     ),
     BottomMenuModel(
       icon: ImageConstant.imgNavLearn,
@@ -47,8 +47,8 @@ class CustomBottomBarState extends State<CustomBottomBar> {
       height: 86.v,
       child: BottomNavigationBar(
         backgroundColor: Colors.transparent,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
         selectedFontSize: 0,
         elevation: 0,
         currentIndex: selectedIndex,
@@ -108,9 +108,9 @@ class CustomBottomBarState extends State<CustomBottomBar> {
 
 enum BottomBarEnum {
   Home,
-  Leaderboard,
-  Task2,
-  Learn,
+  Task,
+  Analytics,
+  Learn, 
 }
 
 class BottomMenuModel {
@@ -142,7 +142,7 @@ class DefaultWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '',
+              'Please replace the respective Widget here',
               style: TextStyle(
                 fontSize: 18,
               ),

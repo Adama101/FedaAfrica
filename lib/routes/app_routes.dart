@@ -1,4 +1,8 @@
-import 'package:fedaafrica/screens/child_screens/child_welcome_screen/child_welcome_screen.dart';
+import 'package:fedaafrica/screens/others/account_type/account_type.dart';
+import 'package:fedaafrica/screens/parent_screens/info_screen/info_screen.dart';
+import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/lesson_one_video.dart';
+import 'package:fedaafrica/screens/parent_screens/set_task_dialog_screen/set_task_dialog_screen.dart';
+import 'package:fedaafrica/screens/parent_screens/upgrade_screen/upgrade_screen.dart';
 import 'package:flutter/material.dart';
 import '../screens/parent_screens/parent_login_screen/parent_login_screen.dart';
 import '../screens/others/splash_screen/splash_screen.dart';
@@ -7,7 +11,6 @@ import '../screens/others/splash_screen_two_screen/splash_screen_two_screen.dart
 import '../screens/others/splash_screen_three_screen/splash_screen_three_screen.dart';
 import '../screens/others/usertype_screen/usertype_screen.dart';
 import '../screens/others/change_password_screen/child_intro_screen/child_intro_screen.dart';
-import '../screens/parent_screens/info_screen/info_screen.dart';
 import '../screens/others/set_password_screen/set_password_screen.dart';
 import '../screens/others/reset_password_screen/reset_password_screen.dart';
 import '../screens/others/terms_conditions_screen/terms_conditions_screen.dart';
@@ -22,8 +25,7 @@ import '../screens/child_screens/leaderboard_screen_container_screen/leaderboard
 import '../screens/others/task_completed_screen/task_completed_screen.dart';
 import '../screens/child_screens/child_profile_screen/child_profile_screen.dart';
 import '../screens/child_screens/coin_screen/coin_screen.dart';
-import '../screens/child_screens/activity_screen/activity_screen.dart';
-import '../screens/parent_screens/home_screen_two_screen/home_screen_two_screen.dart';
+import '../screens/parent_screens/activity_screen/activity_screen.dart';
 import '../screens/parent_screens/task_screen/task_screen.dart';
 import '../screens/parent_screens/parent_learning_screen/parent_learning_screen.dart';
 import '../screens/parent_screens/more_screen/more_screen.dart';
@@ -108,6 +110,33 @@ class AppRoutes {
 
   static const String appNavigationScreen = '/app_navigation_screen';
 
+  static const String accountType = '/account_type';
+
+  static const String videoOneScreen = '/video_player';
+
+  static const String videoTwoScreen = '/video_player';
+
+  static const String videoThreeScreen = '/video_player';
+
+  static const String videoFourScreen = '/video_player';
+
+  static const String videoFiveScreen = '/video_player';
+
+  static const String videoSixScreen = '/video_player';
+
+  static const String videoSevenScreen = '/video_player';
+
+  static const String videoEightScreen = '/video_player';
+
+  static const String videoNineScreen = '/video_player';
+
+  static const String videoTenScreen = '/video_player';
+
+  static const String setTaskDialogScreen = '/set_task_dialog_screen.dart';
+
+  static const String upgradeScreen = '/upgrade_screen.dart';
+
+// All Routes defined
   static Map<String, WidgetBuilder> routes = {
     parentLoginScreen: (context) => ParentLoginScreen(),
     splashScreen: (context) => SplashScreen(),
@@ -133,7 +162,6 @@ class AppRoutes {
     childProfileScreen: (context) => ChildProfileScreen(),
     coinScreen: (context) => CoinScreen(),
     activityScreen: (context) => ActivityScreen(),
-    homeScreenTwoScreen: (context) => HomeScreenTwoScreen(),
     taskScreen: (context) => TaskScreen(),
     parentLearningScreen: (context) => ParentLearningScreen(),
     moreScreen: (context) => MoreScreen(),
@@ -143,6 +171,39 @@ class AppRoutes {
     editProfileScreen: (context) => EditProfileScreen(),
     languageScreen: (context) => LanguageScreen(),
     appNavigationScreen: (context) => AppNavigationScreen(),
-    childWelcomeScreen:(context) => ChildWelcomeScreen()
+    accountType: (context) => AccountType(),
+    setTaskDialogScreen: (context) => SetTaskScreenDialogScreen(),
+    upgradeScreen: (context) => UpgradeScreen(),
+    videoOneScreen: (context) => VideoOnePlayer(
+          videoPath: 'assets/videos/portfolio.mp4',
+        ),
+    // videoTwoScreen: (context) => VideoTwoPlayer(
+    //       videoPath: 'assets/videos/3_ways_for_a_better_financial_life.mp4',
+    //     ),
+    //   videoThreeScreen: (context) => VideoThreePlayer(
+    //         videoPath: 'assets/videos/',
+    //       ),
+    //   videoFourScreen: (context) => VideoFourPlayer(
+    //         videoPath: 'assets/videos/',
+    //       ),
+    //   videoFiveScreen: (context) => VideoFivePlayer(
+    //         videoPath: 'assets/videos/',
+    //       ),
+    //   videoSixScreen: (context) => VideoSixPlayer(
+    //         videoPath: 'assets/videos/',
+    //       ),
+    //   videoSevenScreen: (context) => VideoSevenPlayer(
+    //         videoPath: 'assets/videos/',
+    //       ),
+    //   videoEightScreen: (context) => VideoEightPlayer(
+    //         videoPath: 'assets/videos/',
+    //       ),
+    //   videoNineScreen: (context) => VideoNinePlayer(
+    //         videoPath: 'assets/videos/',
+    //       ),
+    //   videoTenScreen: (context) => VideoTenPlayer(
+    //         videoPath: 'assets/videos/',
+    //       ),
+    //   accountType: (context) => AccountType(),
   };
 }

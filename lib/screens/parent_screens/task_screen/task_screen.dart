@@ -1,8 +1,8 @@
-import 'package:fedaafrica/screens/child_screens/leaderboard_screen_page/leaderboard_screen_page.dart';
+import 'package:fedaafrica/screens/parent_screens/home_screen_one_screen/home_screen_one_screen.dart';
 import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_leading_iconbutton_one.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'widgets/ninetytwo_item_widget.dart';
+import 'widgets/item_widget.dart';
 import 'package:fedaafrica/widgets/custom_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
@@ -160,7 +160,7 @@ class TaskScreen extends StatelessWidget {
             imagePath: ImageConstant.imgArrowLeft,
             margin: EdgeInsets.fromLTRB(16.h, 7.v, 317.h, 7.v),
             onTap: () {
-              onTapArrowLeft(context);
+              onTapBtnClock(context);
             }));
   }
 
@@ -345,13 +345,13 @@ class TaskScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return AppRoutes.leaderboardScreenPage;
-      case BottomBarEnum.Leaderboard:
-        return "/";
-      case BottomBarEnum.Task2:
+        return AppRoutes.homeScreenOneScreen;
+      case BottomBarEnum.Task:
+        return AppRoutes.taskScreen;
+      case BottomBarEnum.Analytics:
         return "/";
       case BottomBarEnum.Learn:
-        return "/";
+        return AppRoutes.parentLearningScreen;
       default:
         return "/";
     }
@@ -360,15 +360,16 @@ class TaskScreen extends StatelessWidget {
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.leaderboardScreenPage:
-        return LeaderboardScreenPage();
+      case AppRoutes.homeScreenOneScreen:
+        return HomeScreenOneScreen();
       default:
         return DefaultWidget();
     }
   }
 
-  /// Navigates back to the previous screen.
-  onTapArrowLeft(BuildContext context) {
-    Navigator.pop(context);
+  
+  /// Navigates back to the previous screen. 
+  onTapBtnClock(BuildContext context) {
+    Navigator.popAndPushNamed(context, AppRoutes.homeScreenOneScreen);
   }
 }

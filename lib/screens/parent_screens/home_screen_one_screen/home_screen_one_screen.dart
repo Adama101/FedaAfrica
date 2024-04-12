@@ -1,4 +1,5 @@
-import 'package:fedaafrica/screens/child_screens/leaderboard_screen_page/leaderboard_screen_page.dart';
+import 'package:fedaafrica/screens/parent_screens/add_child_screen_two_screen/add_child_screen_two_screen.dart';
+import 'package:fedaafrica/screens/parent_screens/set_task_dialog_screen/set_task_dialog_screen.dart';
 import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_trailing_circleimage.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -9,7 +10,6 @@ import 'package:fedaafrica/widgets/custom_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
 import 'package:fedaafrica/screens/parent_screens/add_child_screen_one_dialog/add_child_screen_one_dialog.dart';
-import 'package:fedaafrica/screens/parent_screens/set_task_screen_dialog/set_task_screen_dialog.dart';
 
 // ignore_for_file: must_be_immutable
 class HomeScreenOneScreen extends StatelessWidget {
@@ -127,10 +127,10 @@ class HomeScreenOneScreen extends StatelessWidget {
                 }),
             itemCount: 1,
             itemBuilder: (context, index, realIndex) {
-              return WalletItemWidget(onTapNineteen: () {
-                onTapNineteen(context);
-              }, onTapEighteen: () {
-                onTapEighteen(context);
+              return WalletItemWidget(onTapChild: () {
+                onTapChildWidget(context);
+              }, onTapTask: () {
+                onTapTaskWidget(context);
               });
             }));
   }
@@ -165,7 +165,7 @@ class HomeScreenOneScreen extends StatelessWidget {
                           children: [
                             Padding(
                                 padding: EdgeInsets.only(left: 4.h),
-                                child: Text("This week",
+                                child: Text("My Child's Activity",
                                     style:
                                         CustomTextStyles.titleLargeGray90002)),
                             SizedBox(height: 42.v),
@@ -183,7 +183,7 @@ class HomeScreenOneScreen extends StatelessWidget {
                                             MonthPickerType.switcher,
                                         showHeader: false),
                                     dayProps:
-                                        EasyDayProps(width: 65.h, height: 71.v),
+                                        EasyDayProps(width: 50.h, height: 71.v),
                                     onDateChange: (selectedDate) {},
                                     itemBuilder: (context, dayNumber, dayName,
                                         monthName, fullDate, isSelected) {
@@ -301,10 +301,8 @@ class HomeScreenOneScreen extends StatelessWidget {
     switch (type) {
       case BottomBarEnum.Home:
         return AppRoutes.homeScreenOneScreen;
-      case BottomBarEnum.Leaderboard:
-        return "/";
-      case BottomBarEnum.Task2:
-        return "/";
+      case BottomBarEnum.Task:
+        return AppRoutes.taskScreen;
       case BottomBarEnum.Learn:
         return AppRoutes.parentLearningScreen;
       default:
@@ -315,8 +313,8 @@ class HomeScreenOneScreen extends StatelessWidget {
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.leaderboardScreenPage:
-        return LeaderboardScreenPage();
+      case AppRoutes.homeScreenOneScreen:
+        return HomeScreenOneScreen();
       default:
         return DefaultWidget();
     }
@@ -328,11 +326,12 @@ class HomeScreenOneScreen extends StatelessWidget {
   }
 
   /// Displays a dialog with the [AddChildScreenOneDialog] content.
-  onTapNineteen(BuildContext context) {
+  onTapChildWidget(context) {
+    Navigator.pushNamed(context, AppRoutes.addChildScreenTwoScreen);
     showDialog(
         context: context,
         builder: (_) => AlertDialog(
-              content: AddChildScreenOneDialog(),
+              content: AddChildScreenTwoScreen(),
               backgroundColor: Colors.transparent,
               contentPadding: EdgeInsets.zero,
               insetPadding: const EdgeInsets.only(left: 0),
@@ -340,11 +339,11 @@ class HomeScreenOneScreen extends StatelessWidget {
   }
 
   /// Displays a dialog with the [SetTaskScreenDialog] content.
-  onTapEighteen(BuildContext context) {
+  onTapTaskWidget(BuildContext context) {
     showDialog(
         context: context,
         builder: (_) => AlertDialog(
-              content: SetTaskScreenDialog(),
+              content: SetTaskScreenDialogScreen(),
               backgroundColor: Colors.transparent,
               contentPadding: EdgeInsets.zero,
               insetPadding: const EdgeInsets.only(left: 0),

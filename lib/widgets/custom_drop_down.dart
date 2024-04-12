@@ -22,7 +22,7 @@ class CustomDropDown extends StatelessWidget {
     this.fillColor,
     this.filled = false,
     this.validator,
-    this.onChanged,
+    this.onChanged, required Text child,
   }) : super(
           key: key,
         );

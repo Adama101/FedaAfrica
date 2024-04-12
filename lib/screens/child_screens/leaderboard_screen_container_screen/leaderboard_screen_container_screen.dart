@@ -37,9 +37,9 @@ class LeaderboardScreenContainerScreen extends StatelessWidget {
     switch (type) {
       case BottomBarEnum.Home:
         return AppRoutes.leaderboardScreenPage;
-      case BottomBarEnum.Leaderboard:
+      case BottomBarEnum.Task:
         return "/";
-      case BottomBarEnum.Task2:
+      case BottomBarEnum.Analytics:
         return "/";
       case BottomBarEnum.Learn:
         return "/";

@@ -13,7 +13,7 @@ class parentUsertypescreenItemWidget extends StatelessWidget {
   VoidCallback? onTapFrame;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return SizedBox(
       width: 158.h,
       child: GestureDetector(

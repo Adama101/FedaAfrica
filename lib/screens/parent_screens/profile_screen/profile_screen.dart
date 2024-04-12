@@ -1,4 +1,3 @@
-import 'package:fedaafrica/screens/child_screens/leaderboard_screen_page/leaderboard_screen_page.dart';
 import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_leading_iconbutton_four.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_subtitle_nine.dart';
@@ -27,27 +26,35 @@ class ProfileScreen extends StatelessWidget {
                       Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            CustomImageView(
-                                imagePath: ImageConstant.imgEllipse42483x80,
-                                height: 83.v,
-                                width: 80.h,
-                                radius: BorderRadius.circular(41.h)),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: CustomImageView(
+                                  imagePath: ImageConstant.imgEllipse42483x80,
+                                  height: 60.v,
+                                  width: 30.h,
+                                  radius: BorderRadius.circular(35.h)),
+                            ),
                             Padding(
                                 padding: EdgeInsets.only(
-                                    left: 17.h, top: 26.v, bottom: 30.v),
+                                    left: 20.h, top: 35.v, bottom: 60.v),
                                 child: Text("Afi Ohua",
                                     style: CustomTextStyles
                                         .titleMediumPoppinsGray90001))
                           ]),
                       SizedBox(height: 21.v),
-                      Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 4.h),
-                          child: _buildPaymentsFinan(context,
-                              paymentsFinan: ImageConstant.imgLock,
-                              paymentPreferences: "Personal Information",
-                              onTapPaymentsFinan: () {
-                            onTapLock(context);
-                          })),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, AppRoutes.editProfileScreen);
+                        },
+                        child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4.h),
+                            child: _buildPaymentsFinan(context,
+                                paymentsFinan: ImageConstant.imgLock,
+                                paymentPreferences: "Personal Information",
+                                onTapPaymentsFinan: () {
+                              onTapLock(context);
+                            })),
+                      ),
                       SizedBox(height: 10.v),
                       Divider(indent: 4.h, endIndent: 4.h),
                       SizedBox(height: 21.v),
@@ -152,22 +159,27 @@ class ProfileScreen extends StatelessWidget {
 
   /// Section Widget
   Widget _buildClose(BuildContext context) {
-    return Padding(
-        padding: EdgeInsets.only(left: 4.h, right: 8.h),
-        child: Row(children: [
-          CustomImageView(
-              imagePath: ImageConstant.imgClose22x21,
-              height: 22.v,
-              width: 21.h),
-          Padding(
-              padding: EdgeInsets.only(left: 11.h, top: 3.v, bottom: 3.v),
-              child: Text("Log Out", style: theme.textTheme.bodyMedium)),
-          Spacer(),
-          CustomImageView(
-              imagePath: ImageConstant.imgArrowRightBlueGray40002,
-              height: 24.adaptSize,
-              width: 24.adaptSize)
-        ]));
+    return GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(context, AppRoutes.accountType);
+      },
+      child: Padding(
+          padding: EdgeInsets.only(left: 4.h, right: 8.h),
+          child: Row(children: [
+            CustomImageView(
+                imagePath: ImageConstant.imgClose22x21,
+                height: 20.adaptSize,
+                width: 20.adaptSize),
+            Padding(
+                padding: EdgeInsets.only(left: 15.h, top: 3.v, bottom: 3.v),
+                child: Text("Log Out", style: theme.textTheme.bodyMedium)),
+            Spacer(),
+            CustomImageView(
+                imagePath: ImageConstant.imgArrowRightBlueGray40002,
+                height: 22.adaptSize,
+                width: 22.adaptSize)
+          ])),
+    );
   }
 
   /// Section Widget
@@ -210,10 +222,10 @@ class ProfileScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return AppRoutes.leaderboardScreenPage;
-      case BottomBarEnum.Leaderboard:
+        return AppRoutes.homeScreenOneScreen;
+      case BottomBarEnum.Task:
         return "/";
-      case BottomBarEnum.Task2:
+      case BottomBarEnum.Analytics:
         return "/";
       case BottomBarEnum.Learn:
         return "/";
@@ -225,8 +237,8 @@ class ProfileScreen extends StatelessWidget {
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.leaderboardScreenPage:
-        return LeaderboardScreenPage();
+      case AppRoutes.profileScreen:
+        return ProfileScreen();
       default:
         return DefaultWidget();
     }
@@ -234,7 +246,7 @@ class ProfileScreen extends StatelessWidget {
 
   /// Navigates back to the previous screen.
   onTapArrowLeft(BuildContext context) {
-    Navigator.pop(context);
+    Navigator.popAndPushNamed(context, AppRoutes.homeScreenOneScreen);
   }
 
   /// Navigates to the viewProfileScreen when the action is triggered.

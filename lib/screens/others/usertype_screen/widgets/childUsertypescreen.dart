@@ -59,7 +59,7 @@ class childUsertypescreenItemWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           border: Border.all(
-            color: const Color.fromARGB(255, 213, 215, 216),
+            color: Color.fromARGB(255, 253, 254, 255),
           ),
           borderRadius: BorderRadius.circular(16),
         ),

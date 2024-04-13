@@ -26,6 +26,7 @@ flutter:
     - assets/
     - assets/audios/
     - assets/images/
+    - assets/images/hometab/
     - assets/videos/
   fonts: 
     - family: Nunito

@@ -369,4 +369,15 @@ class ImageConstant {
   static String imageNotFound = 'assets/images/image_not_found.png';
 
   static String imgEllipse27 = 'assets/images/img_ellipse_27.png';
+
+  
+  // KOssi's Additional images
+
+  // static String bankImage = '$imagePath/bank.png';
+
+  // static String bitcoinImage = '$imagePath/bitcoin.png';
+
+  // static String cleaingRoomsImage = '$imagePath/cleaning_rooms.png';
+
+  // static String eatingSnacksImage = '$imagePath/eating_snacks.png';
 }

@@ -4,6 +4,7 @@ import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/lesson_
 import 'package:fedaafrica/screens/parent_screens/set_task_dialog_screen/set_task_dialog_screen.dart';
 import 'package:fedaafrica/screens/parent_screens/upgrade_screen/upgrade_screen.dart';
 import 'package:flutter/material.dart';
+import '../screens/child_screens/child_welcome_screen/child_home_screen.dart';
 import '../screens/parent_screens/parent_login_screen/parent_login_screen.dart';
 import '../screens/others/splash_screen/splash_screen.dart';
 import '../screens/others/splash_screen_one_screen/splash_screen_one_screen.dart';
@@ -136,6 +137,8 @@ class AppRoutes {
 
   static const String upgradeScreen = '/upgrade_screen.dart';
 
+  static const String childHomeScreen = '/child_home_screen.dart';
+
 // All Routes defined
   static Map<String, WidgetBuilder> routes = {
     parentLoginScreen: (context) => ParentLoginScreen(),
@@ -174,6 +177,7 @@ class AppRoutes {
     accountType: (context) => AccountType(),
     setTaskDialogScreen: (context) => SetTaskScreenDialogScreen(),
     upgradeScreen: (context) => UpgradeScreen(),
+    childHomeScreen: (context) => HomeScreen(),
     videoOneScreen: (context) => VideoOnePlayer(
           videoPath: 'assets/videos/portfolio.mp4',
         ),

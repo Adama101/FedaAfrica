@@ -75,6 +75,6 @@ class ChildLoginScreen extends StatelessWidget {
 
   //Navigates to the childWelcomeScreen when clicked "Continue Button"
   onTapContinue(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.childWelcomeScreen);
+    Navigator.pushNamed(context, AppRoutes.childHomeScreen);
   }
 }

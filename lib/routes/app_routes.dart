@@ -1,3 +1,4 @@
+import 'package:fedaafrica/screens/child_screens/kid_entry.dart';
 import 'package:fedaafrica/screens/others/account_type/account_type.dart';
 import 'package:fedaafrica/screens/parent_screens/info_screen/info_screen.dart';
 import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/lesson_one_video.dart';
@@ -133,11 +134,11 @@ class AppRoutes {
 
   static const String videoTenScreen = '/video_player';
 
-  static const String setTaskDialogScreen = '/set_task_dialog_screen.dart';
+  static const String setTaskDialogScreen = '/set_task_dialog_screen';
 
-  static const String upgradeScreen = '/upgrade_screen.dart';
+  static const String upgradeScreen = '/upgrade_screen';
 
-  static const String childHomeScreen = '/child_home_screen.dart';
+  static const String childHomeScreen = '/child_home_screen';
 
 // All Routes defined
   static Map<String, WidgetBuilder> routes = {
@@ -177,7 +178,7 @@ class AppRoutes {
     accountType: (context) => AccountType(),
     setTaskDialogScreen: (context) => SetTaskScreenDialogScreen(),
     upgradeScreen: (context) => UpgradeScreen(),
-    childHomeScreen: (context) => HomeScreen(),
+    childHomeScreen: (context) => KidEntry(),
     videoOneScreen: (context) => VideoOnePlayer(
           videoPath: 'assets/videos/portfolio.mp4',
         ),

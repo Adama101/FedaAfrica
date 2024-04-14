@@ -314,10 +314,6 @@ xml
 3.2
 file:///Users/kossiadanou/.pub-cache/hosted/pub.dev/xml-6.5.0/
 file:///Users/kossiadanou/.pub-cache/hosted/pub.dev/xml-6.5.0/lib/
-fedaafrica
-2.12
-file:///Volumes/DevData/softwaredev/feda.africa/FedaAfrica/
-file:///Volumes/DevData/softwaredev/feda.africa/FedaAfrica/lib/
 sky_engine
 3.2
 file:///Volumes/DevData/softwaredev/mobiledev/flutter/bin/cache/pkg/sky_engine/
@@ -334,4 +330,8 @@ flutter_web_plugins
 3.2
 file:///Volumes/DevData/softwaredev/mobiledev/flutter/packages/flutter_web_plugins/
 file:///Volumes/DevData/softwaredev/mobiledev/flutter/packages/flutter_web_plugins/lib/
+fedaafrica
+2.12
+file:///Volumes/DevData/softwaredev/mobiledev/mobileprojects/fluttter_projects/FedaAfrica/
+file:///Volumes/DevData/softwaredev/mobiledev/mobileprojects/fluttter_projects/FedaAfrica/lib/
 2

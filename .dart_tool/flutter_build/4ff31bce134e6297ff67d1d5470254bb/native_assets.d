@@ -1,0 +1,1 @@
+ C:\\Users\\User\\FedaAfrica\\.dart_tool\\flutter_build\\4ff31bce134e6297ff67d1d5470254bb\\native_assets.yaml: 

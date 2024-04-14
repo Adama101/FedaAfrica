@@ -9,7 +9,6 @@ import 'package:easy_date_timeline/easy_date_timeline.dart';
 import 'package:fedaafrica/widgets/custom_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
-import 'package:fedaafrica/screens/parent_screens/add_child_screen_one_dialog/add_child_screen_one_dialog.dart';
 
 // ignore_for_file: must_be_immutable
 class HomeScreenOneScreen extends StatelessWidget {

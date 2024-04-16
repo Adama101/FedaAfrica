@@ -1,0 +1,166 @@
+{
+   "checksum": "070d72836ec244c6f2a0fead0c296bff",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13234020107553963",
+            "date_last_used": "13342798635812471",
+            "guid": "26bfc3f3-7a8f-40c4-adf3-0bf140e3b65f",
+            "id": "16",
+            "name": "Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://accounts.google.com/b/0/AddMailService"
+         }, {
+            "date_added": "13234020107554802",
+            "date_last_used": "13354608961066777",
+            "guid": "a6ca667a-3fd3-4418-8ccb-61bf29939aa8",
+            "id": "17",
+            "name": "YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://youtube.com/"
+         }, {
+            "date_added": "13353662093718028",
+            "date_last_used": "0",
+            "guid": "71261d4f-5fe2-4d93-a6b2-e387a5d90267",
+            "id": "18",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "HSBC Kids Banking App Design Concept - Bonguyen (Community) – Figma",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.figma.com/file/jptoDe3OiWTB84DtoQsOBl/HSBC-Kids-Banking-App-Design-Concept---Bonguyen-(Community)?type=design&node-id=96-3223&mode=design&t=lFPTELRUiTWNxhuz-0"
+         } ],
+         "date_added": "13357615957467427",
+         "date_last_used": "0",
+         "date_modified": "13353662093718028",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13232136462916200",
+                  "date_last_used": "0",
+                  "guid": "f0ca2539-1ef2-4ae3-853f-f2f0a1726107",
+                  "id": "11",
+                  "name": "Advantages of Mobile Money | disadvantages of Mobile Money",
+                  "show_icon": false,
+                  "source": "sync",
+                  "type": "url",
+                  "url": "file:///C:/Users/X1/Downloads/Advantages%20of%20Mobile%20Money%20%20%20disadvantages%20of%20Mobile%20Money.htm"
+               }, {
+                  "date_added": "13232136462916200",
+                  "date_last_used": "0",
+                  "guid": "15035048-5e35-4aa8-9515-89fbc50bfe96",
+                  "id": "12",
+                  "name": "Kuringo_Digest_March 2020.pdf",
+                  "show_icon": false,
+                  "source": "sync",
+                  "type": "url",
+                  "url": "file:///C:/Users/X1/Downloads/Kuringo_Digest_March%202020.pdf"
+               }, {
+                  "date_added": "13232136462916200",
+                  "date_last_used": "0",
+                  "guid": "b30df2b9-83c6-4d8f-8667-976078580b73",
+                  "id": "13",
+                  "name": "mobile_money.pdf",
+                  "show_icon": false,
+                  "source": "sync",
+                  "type": "url",
+                  "url": "file:///C:/Users/X1/Downloads/mobile_money.pdf"
+               } ],
+               "date_added": "13238854269339709",
+               "date_last_used": "0",
+               "date_modified": "13238854269339709",
+               "guid": "8595d569-9c90-4cc4-b406-e75efc3d1fb3",
+               "id": "10",
+               "name": "Group 1",
+               "source": "unknown",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13237882721244572",
+                  "date_last_used": "0",
+                  "guid": "6a07001b-8021-47ac-b7e8-f6f0caec8fdf",
+                  "id": "15",
+                  "name": "You’re not connected",
+                  "show_icon": false,
+                  "source": "sync",
+                  "type": "url",
+                  "url": "ms-appx-web://microsoft.microsoftedge/assets/errorpages/dnserror.html?ErrorStatus=0x800C0005&DNSError=11001#https://www.msn.com/spartan/dhp?locale=en-US&market=US&enableregulatorypsm=0&enablecpsm=0&ishostisolationenforced=0&targetexperience=enterprise"
+               } ],
+               "date_added": "13238854269340355",
+               "date_last_used": "0",
+               "date_modified": "13238854269340355",
+               "guid": "add03a94-9517-4699-b7d9-61aef72c5b2e",
+               "id": "14",
+               "name": "Group 2",
+               "source": "unknown",
+               "type": "folder"
+            } ],
+            "date_added": "13238854269339273",
+            "date_last_used": "0",
+            "date_modified": "13238854269339273",
+            "guid": "22a64b27-a06d-4b92-883a-e2f4c8130407",
+            "id": "9",
+            "name": "Tabs set aside",
+            "source": "unknown",
+            "type": "folder"
+         } ],
+         "date_added": "13357615957467438",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13340461678088865",
+               "date_last_used": "0",
+               "guid": "fe297b1d-d0fa-46d0-96b1-c4f75ce7e005",
+               "id": "8",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "AHAA PITCH DECK - Presentation",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.canva.com/design/DAFvqSXSl48/7ChjnSw-4AibC-8lBHIRNA/edit"
+            } ],
+            "date_added": "13266435255828559",
+            "date_last_used": "0",
+            "date_modified": "13340461678088865",
+            "guid": "1e493752-2460-4fd3-a3d2-ee342657fdbe",
+            "id": "7",
+            "name": "Reading List Saves",
+            "source": "unknown",
+            "type": "folder"
+         } ],
+         "date_added": "13357615957467446",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCITWPt+OAQAAEgAqGFAxNGdhRlJ5K0h3UGJ0b2ZtVS9LL1E9PUgDoAYMEqcBCBISogEKHHYrUS9WbWZzd0tTQWtrV1RaTytuUHNPSlMrYz0SJDcxMjYxZDRmLTVmZTItNGQ5My1hNmIyLWUzODdhNWQ5MDI2NxgAIAIoAjC9tfr57TE4tYXLnN8xQPjs+PntMUocdENhTTdEOVNwZTZrNXo2aENBNE1qaTRuMlNBPVoeIhxvaFNLblhGM21UVmdKelRrMzYyWXpyaS81RjA9Ze8AjocSiQEIARKEAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRIkMTUwMmE2N2YtMWE1OS01MjdjLWJiNjYtMjY3NjEyYjY4N2M3GAAgACgAMKnG+cOzLjiH1sve/y9Ah9bL3v8vShxhUkNXTGdoRjliNUlucUtJRHZ1Si9qdlFrRmM9WgBlAAAAABKnAQgQEqIBChwxVzk2MkJuZ05qTU13cGd1UTlWTzZhVW9LeFk9EiQ0MTdhZDZjNy1lOWIwLTQ2YjEtYWZhYS0yOTllMGUyODg5ZjAYACACKAIwu7X6+e0xOL3fy97/L0D27Pj57TFKHE5vS1kyQ0hDd3NXd2lTMmxTZ29PNC82Wit5bz1aHiIca3VDbWF3a1lWdk5OTnB3N0xUb2dmaWNLTUdBPWWbPYW2EqcBCAsSogEKHDNQMkZiT1ptR3dSSFBOSlladE1ZTkVtajVOYz0SJGQxYjAwZDA2LTQyNmQtNGEyYS1hOWQ1LTY1MTcwYTEyYTZlZhgAIAAoADC46YXEsy44gdjL3v8vQIHYy97/L0ocekNnbGdvZFBPV1BHVlp5VkV4T3lCOUYvVDVJPVoeIhxQOWlIcjF6aDRlL3A0R2IrRzYvck45bzR4UUE9ZQAAAAASqAEIDhKjAQocUXk5cTRFeWtva1kwVkhQeTFJYzh5MWp0SEU0PRIkM2Y1M2QwMmQtY2Y0NC00YTQwLWI3NDItY2E4N2MzNWM4ZDM0GAAgACgAMP3rhcSzLjig2Mve/y9AoNjL3v8vShxZQUhhUFVLUElDdnpHWG1yQkgrWk5YeENDUWM9Wh8iHbVPOU81amRZWk9QMGhSTWUxclplb1A5dDRQU2M9ZQAAAAASpwEIDRKiAQoca3U2Rmp4ZzhzWnBRTkgzbWk0K0l5dzh4Y0tFPRIkNjE0YmNhNTEtNGIyZS00OGMwLWJiMWEtMjE0Y2I3MDFmOWFiGAAgACgAMKPUytzSLjiw3sve/y9AsN7L3v8vShwyZkliZFJMRGVqeGZFYUNaRjJraHEzMCs1Yjg9Wh4iHG9UUUkyRzFWSFk3eGhicmNTU1p2bjB1WDIzVT1ld3BsoxKnAQgJEqIBChxkcExJa3RZeG8weWsvbDBlNW5ZYTNCRkVWTHc9EiQ4N2NiOWNmZS0yODUxLTQ1MWYtYmQ0Zi0yZGExMmYwN2YxMDYYACAAKAAwtumFxLMuOOLXy97/L0Di18ve/y9KHEZzbU9PN2gycmZnOFYwdVBQR2d6c1NaL1ZEMD1aHiIccVM3bXhPOFNIQ2VBSHRseFNZNDk1MVRrV2c4PWUAAAAAEqcBCA8SogEKHHBGNHZsemtESzE5b0tHQVNTSXV3Wjlqckc2OD0SJGRlOWM5OGQ3LTgyYTQtNDhjMC04YTk5LTUyMzE4ZTBlOGFhOBgAIAAoADD+64XEsy44sNjL3v8vQLDYy97/L0ocWlZZWFdNQWV3bWRaNTRKL0Y2M0F4RlQ3MStVPVoeIhxaNWRRSUJOYWxGUGNUKys2K0N6K21mVHlUYTg9ZQAAAAASiQEIAxKEAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkMjVlOWRlZDUtYmE2Yy01OTVlLWI2ZDYtOGE1YzE0OTAyNGJmGAAgACgAMK7G+cOzLjjS18ve/y9A0tfL3v8vShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAABKnAQgKEqIBChxSalJhOFc1OGRTQzRsditBV01OeFBjQ2sxZ1U9EiRjMjFmNzc3Yi01NDljLTRiZTUtYWYzNC02N2U5ZWZmZjJjYzgYACAAKAAwt+mFxLMuOPHXy97/L0Dx18ve/y9KHDFOcy85M3BqYU5jU2VxYkJtV0pQSTA3U1dsaz1aHiIca2NBcmhSOVExWFUyL21xYTlYTTdhczdzNW53PWUAAAAAEqcBCAwSogEKHHlhRlczbExRZGlJNjN2K0lISW94bUZKU3pFST0SJDg0ODc0MmRmLTcxNGMtNGY1Zi1hZmE5LThjYTY4NjVhMTNlMRgAIAAoADCi1Mrc0i44od7L3v8vQKHey97/L0ocUnJQaDJVSGJLQUx2ZkZBU2FidmUyTnVraFhRPVoeIhxTOGFlQ1Ayc0N6cnRTYWFpelZDUDlJZXdUYjA9ZXdwbKMSpwEIBxKiAQocaEtPQkl0VTg2QldSQ0ptbHBtR1pqencrMzYwPRIkMWU0OTM3NTItMjQ2MC00ZmQzLWEzZDItZWUzNDI2NTdmZGJlGAAgACgAMPfSy6OaLzjp4Mve/y9A6eDL3v8vShxOVFNGRjg2cnJ0QXMxeXNJaUlEdm1KYVdDd1E9Wh4iHDRrdmZ0TEtrcmltaElJTUJBa2haT0d2SnZzZz1lAAAAABKnAQgREqIBChx2eCtSb3RBQUphREQyUGtQYXB6Z3gxUEh5U2s9EiRlMDAxY2UwYS04OTkxLTQ3Y2EtOTM2Zi1lMDI2ZDA2ZjhiM2UYACACKAIwvLX6+e0xOM/ey97/L0D27Pj57TFKHHMxMUxVOWk2NjNoNkYvR1ZJV0dnNVhMRnNQWT1aHiIcby9QTjBDWjRWM1hqUis0WmYrYjFpU0ZOVnowPWU4+TkzEokBCAIShAEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDBlNGZlNDNjLTAxMzMtNThjMS04NzI2LTVjMDZmM2UzNzhlNBgAIAAoADCqxvnDsy44lNfL3v8vQJTXy97/L0ocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAAASpwEICBKiAQocKzhzQ2d0OGRETXBESVNMS0p3ZmZOWWJhUHFjPRIkZmUyOTdiMWQtZDBmYS00NmQwLTk2YjEtYzRmNzVjZTdlMDA1GAAgACgAMOnekYauMTir4ZGGrjFAq+GRhq4xShxpdnQvRm1pMXZXQWJXeXhzaG9sOFQyeDk2SDg9Wh4iHHE0NDdNL0VBcGYwS3JEaW9yeDZya2V2Z3pMOD1lUh2jZTAAOAA=",
+   "version": 1
+}

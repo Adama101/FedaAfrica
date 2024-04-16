@@ -248,7 +248,7 @@ class ImageConstant {
 
   static String taskIcon = '$imagePath/setTask.png';
 
-    static String warningIcon = '$imagePath/warning.png';
+  static String warningIcon = '$imagePath/warning.png';
 
   // Common images
   static String imgArrowLeft = '$imagePath/img_arrow_left.svg';
@@ -369,4 +369,21 @@ class ImageConstant {
   static String imageNotFound = 'assets/images/image_not_found.png';
 
   static String imgEllipse27 = 'assets/images/img_ellipse_27.png';
+
+  // ...........................
+
+  static const String MoneyImage = "assets/images/money.png";
+  static const String bankImage = "assets/images/bank.png";
+  static const String treeImage = "assets/images/tree.png";
+  static const String parentImage = "assets/images/parent.png";
+  static const String schoolImage = "assets/images/school.png";
+  static const String performingTaskImage = "assets/images/performing_task.png";
+  static const String playingGamesImage = "assets/images/playing_games.png";
+  static const String trollImage = "assets/images/troll.png";
+  static const String cleaningRoomsImage = "assets/images/cleaning_rooms.png";
+  static const String watchingTVImage = "assets/images/watching_tv.png";
+  static const String eatingSnacksImage = "assets/images/eating_snacks.png";
+  static const String goblinImage = "assets/images/goblin.png";
+  static const String ogreImage = "assets/images/ogre.png";
+  static const String bitcoinImage = "assets/images/bitcoin.png";
 }

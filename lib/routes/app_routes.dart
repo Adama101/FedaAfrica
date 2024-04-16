@@ -1,3 +1,4 @@
+import 'package:fedaafrica/screens/child_screens/child_welcome_screen/child_welcome_screen.dart';
 import 'package:fedaafrica/screens/others/account_type/account_type.dart';
 import 'package:fedaafrica/screens/parent_screens/info_screen/info_screen.dart';
 import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/lesson_one_video.dart';
@@ -174,11 +175,12 @@ class AppRoutes {
     accountType: (context) => AccountType(),
     setTaskDialogScreen: (context) => SetTaskScreenDialogScreen(),
     upgradeScreen: (context) => UpgradeScreen(),
+    childWelcomeScreen: (context) => Childwelcomescreen(),
     videoOneScreen: (context) => VideoOnePlayer(
           videoPath: 'assets/videos/portfolio.mp4',
         ),
     // videoTwoScreen: (context) => VideoTwoPlayer(
-    //       videoPath: 'assets/videos/3_ways_for_a_better_financial_life.mp4',
+    //       videoPath: 'assets/videos/,
     //     ),
     //   videoThreeScreen: (context) => VideoThreePlayer(
     //         videoPath: 'assets/videos/',

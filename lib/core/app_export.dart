@@ -1,4 +1,5 @@
 export 'package:fedaafrica/core/utils/image_constant.dart';
+export 'package:fedaafrica/core/utils/child_image_constant.dart';
 export 'package:fedaafrica/core/utils/size_utils.dart';
 export 'package:fedaafrica/routes/app_routes.dart';
 export 'package:fedaafrica/theme/app_decoration.dart';

@@ -27,6 +27,9 @@ flutter:
     - assets/audios/
     - assets/images/
     - assets/videos/
+    - assets/images/hometab/money.png
+    - assets/images/hometab/investNow.png
+    - assets/images/hometab/bitcoin.png
   fonts: 
     - family: Nunito
       fonts: 

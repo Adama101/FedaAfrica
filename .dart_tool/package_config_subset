@@ -74,6 +74,14 @@ collection
 2.18
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0/
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0/lib/
+contained_tab_bar_view
+2.12
+file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/contained_tab_bar_view-0.8.0/
+file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/contained_tab_bar_view-0.8.0/lib/
+container_tab_indicator
+2.12
+file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/container_tab_indicator-0.3.0/
+file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/container_tab_indicator-0.3.0/lib/
 crypto
 2.19
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.3/
@@ -114,6 +122,10 @@ flutter_svg
 2.19
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_svg-2.0.10+1/
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_svg-2.0.10+1/lib/
+google_fonts
+2.14
+file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-6.2.1/
+file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-6.2.1/lib/
 html
 2.19
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.4/
@@ -190,6 +202,10 @@ path_provider_windows
 2.19
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_windows-2.2.1/
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_windows-2.2.1/lib/
+percent_indicator
+2.12
+file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/percent_indicator-4.2.3/
+file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/percent_indicator-4.2.3/lib/
 petitparser
 3.2
 file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/petitparser-6.0.2/

@@ -1,4 +1,4 @@
-import 'package:fedaafrica/screens/child_screens/leaderboard_screen_page/leaderboard_screen_page.dart';
+ import 'package:fedaafrica/screens/parent_screens/home_screen_one_screen/home_screen_one_screen.dart';
 import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_leading_iconbutton_four.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_subtitle_nine.dart';
@@ -161,24 +161,24 @@ class MoreScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return "/";
+        return AppRoutes.homeScreenOneScreen;
       case BottomBarEnum.Task:
-        return "/";
+        return AppRoutes.taskScreen;
       case BottomBarEnum.Analytics:
         return "/";
       case BottomBarEnum.Learn:
       case BottomBarEnum.Learn:
         return "/";
       default:
-        return "/";
+        return AppRoutes.homeScreenOneScreen;
     }
   }
 
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.leaderboardScreenPage:
-        return LeaderboardScreenPage();
+      case AppRoutes.homeScreenOneScreen:
+        return HomeScreenOneScreen();
       default:
         return DefaultWidget();
     }

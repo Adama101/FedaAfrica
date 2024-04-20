@@ -1,18 +1,9 @@
-import 'package:fedaafrica/screens/child_screens/leaderboard_screen_page/leaderboard_screen_page.dart';
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/widgets/lesson_eight_screen.dart';
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/widgets/lesson_five_screen.dart';
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/widgets/lesson_four_screen.dart';
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/widgets/lesson_nine_screen.dart';
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/widgets/lesson_seven_screen.dart';
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/widgets/lesson_six_screen.dart';
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/widgets/lesson_ten_screen.dart';
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/widgets/lesson_three_screen.dart';
-import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/widgets/lesson_two_screen.dart';
-import 'package:fedaafrica/widgets/app_bar/appbar_leading_iconbutton_three.dart';
+import 'package:fedaafrica/screens/parent_screens/home_screen_one_screen/home_screen_one_screen.dart';
 import 'package:fedaafrica/widgets/app_bar/appbar_subtitle_one.dart';
 import 'package:fedaafrica/widgets/app_bar/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:fedaafrica/core/app_export.dart';
+import '../../../widgets/app_bar/appbar_leading_iconbutton_three.dart';
 import 'widgets/lesson_one_screen.dart';
 import 'package:fedaafrica/widgets/custom_bottom_bar.dart';
 
@@ -40,15 +31,6 @@ class ParentLearningScreen extends StatelessWidget {
               ),
               SizedBox(height: 20.v),
               _buildParentlearningscreen(context),
-              _buildParentlearningscreen2(context),
-              _buildParentlearningscreen3(context),
-              _buildParentlearningscreen4(context),
-              _buildParentlearningscreen5(context),
-              _buildParentlearningscreen6(context),
-              _buildParentlearningscreen7(context),
-              _buildParentlearningscreen8(context),
-              _buildParentlearningscreen9(context),
-              _buildParentlearningscreen10(context),
             ],
           ),
         ),
@@ -76,69 +58,6 @@ class ParentLearningScreen extends StatelessWidget {
   /// Lesson One Section Widget
   Widget _buildParentlearningscreen(BuildContext context) {
     return lessonOneScreen(
-      videoPath: '',
-    );
-  }
-
-  /// Lesson Two Section Widget
-  Widget _buildParentlearningscreen2(BuildContext context) {
-    return lessonTwoScreen(
-      videoPath: '',
-    );
-  }
-
-  /// Lesson Three Section Widget
-  Widget _buildParentlearningscreen3(BuildContext context) {
-    return lessonThreeScreen(
-      videoPath: '',
-    );
-  }
-
-  /// Lesson Four Section Widget
-  Widget _buildParentlearningscreen4(BuildContext context) {
-    return lessonFourScreen(
-      videoPath: '',
-    );
-  }
-
-  /// Lesson Five Section Widget
-  Widget _buildParentlearningscreen5(BuildContext context) {
-    return lessonFiveScreen(
-      videoPath: '',
-    );
-  }
-
-  /// Lesson Six Section Widget
-  Widget _buildParentlearningscreen6(BuildContext context) {
-    return lessonSixScreen(
-      videoPath: '',
-    );
-  }
-
-  /// Lesson Seven Section Widget
-  Widget _buildParentlearningscreen7(BuildContext context) {
-    return lessonSevenScreen(
-      videoPath: '',
-    );
-  }
-
-  /// Lesson Eight Section Widget
-  Widget _buildParentlearningscreen8(BuildContext context) {
-    return lessonEightScreen(
-      videoPath: '',
-    );
-  }
-
-  /// Lesson Nine Section Widget
-  Widget _buildParentlearningscreen9(BuildContext context) {
-    return lessonNineScreen(
-      videoPath: '',
-    );
-  }
-
-  /// Lesson Ten Section Widget
-  Widget _buildParentlearningscreen10(BuildContext context) {
-    return lessonTenScreen(
       videoPath: '',
     );
   }
@@ -172,8 +91,8 @@ class ParentLearningScreen extends StatelessWidget {
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.leaderboardScreenPage:
-        return LeaderboardScreenPage();
+      case AppRoutes.homeScreenOneScreen:
+        return HomeScreenOneScreen();
       default:
         return DefaultWidget();
     }

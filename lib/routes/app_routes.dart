@@ -1,10 +1,13 @@
-import 'package:fedaafrica/screens/child_screens/child_welcome_screen/child_welcome_screen.dart';
 import 'package:fedaafrica/screens/others/account_type/account_type.dart';
 import 'package:fedaafrica/screens/parent_screens/info_screen/info_screen.dart';
 import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/lesson_one_video.dart';
 import 'package:fedaafrica/screens/parent_screens/set_task_dialog_screen/set_task_dialog_screen.dart';
 import 'package:fedaafrica/screens/parent_screens/upgrade_screen/upgrade_screen.dart';
 import 'package:flutter/material.dart';
+import '../screens/child_screens/views/home_screen/home_screen.dart';
+import '../screens/child_screens/views/lesson_screen/lesson_one_screen.dart';
+import '../screens/child_screens/views/lesson_screen/lesson_two_screen.dart';
+import '../screens/child_screens/views/quiz_screen/quiz_screen.dart';
 import '../screens/parent_screens/parent_login_screen/parent_login_screen.dart';
 import '../screens/others/splash_screen/splash_screen.dart';
 import '../screens/others/splash_screen_one_screen/splash_screen_one_screen.dart';
@@ -18,14 +21,8 @@ import '../screens/others/terms_conditions_screen/terms_conditions_screen.dart';
 import '../screens/parent_screens/home_screen_one_screen/home_screen_one_screen.dart';
 import '../screens/parent_screens/add_child_screen_two_screen/add_child_screen_two_screen.dart';
 import '../screens/parent_screens/child_login_code_screen/child_login_code_screen.dart';
-import '../screens/child_screens/quizz_screen/quizz_screen.dart';
 import '../screens/child_screens/child_login_screen/child_login_screen.dart';
-import '../screens/child_screens/progress_screen/progress_screen.dart';
-import '../screens/child_screens/stages_screen/stages_screen.dart';
-import '../screens/child_screens/leaderboard_screen_container_screen/leaderboard_screen_container_screen.dart';
 import '../screens/others/task_completed_screen/task_completed_screen.dart';
-import '../screens/child_screens/child_profile_screen/child_profile_screen.dart';
-import '../screens/child_screens/coin_screen/coin_screen.dart';
 import '../screens/parent_screens/activity_screen/activity_screen.dart';
 import '../screens/parent_screens/task_screen/task_screen.dart';
 import '../screens/parent_screens/parent_learning_screen/parent_learning_screen.dart';
@@ -70,7 +67,7 @@ class AppRoutes {
 
   static const String childWelcomeScreen = '/child_welcome_screen';
 
-  static const String quizzScreen = '/quizz_screen';
+  static const String quizScreen = '/quiz_screen';
 
   static const String childLoginScreen = '/child_login_screen';
 
@@ -115,27 +112,15 @@ class AppRoutes {
 
   static const String videoOneScreen = '/video_player';
 
-  static const String videoTwoScreen = '/video_player';
-
-  static const String videoThreeScreen = '/video_player';
-
-  static const String videoFourScreen = '/video_player';
-
-  static const String videoFiveScreen = '/video_player';
-
-  static const String videoSixScreen = '/video_player';
-
-  static const String videoSevenScreen = '/video_player';
-
-  static const String videoEightScreen = '/video_player';
-
-  static const String videoNineScreen = '/video_player';
-
-  static const String videoTenScreen = '/video_player';
-
   static const String setTaskDialogScreen = '/set_task_dialog_screen.dart';
 
   static const String upgradeScreen = '/upgrade_screen.dart';
+
+  static const String childLessonScreen = '/lesson_one_screen.dart';
+
+  static const String childLessonTwoScreen = '/lesson_two_screen.dart';
+
+  static const String childHomeScreen = '/home_screen.dart';
 
 // All Routes defined
   static Map<String, WidgetBuilder> routes = {
@@ -153,15 +138,8 @@ class AppRoutes {
     homeScreenOneScreen: (context) => HomeScreenOneScreen(),
     addChildScreenTwoScreen: (context) => AddChildScreenTwoScreen(),
     childLoginCodeScreen: (context) => ChildLoginCodeScreen(),
-    quizzScreen: (context) => QuizzScreen(),
     childLoginScreen: (context) => ChildLoginScreen(),
-    progressScreen: (context) => ProgressScreen(),
-    stagesScreen: (context) => StagesScreen(),
-    leaderboardScreenContainerScreen: (context) =>
-        LeaderboardScreenContainerScreen(),
     taskCompletedScreen: (context) => TaskCompletedScreen(),
-    childProfileScreen: (context) => ChildProfileScreen(),
-    coinScreen: (context) => CoinScreen(),
     activityScreen: (context) => ActivityScreen(),
     taskScreen: (context) => TaskScreen(),
     parentLearningScreen: (context) => ParentLearningScreen(),
@@ -175,37 +153,16 @@ class AppRoutes {
     accountType: (context) => AccountType(),
     setTaskDialogScreen: (context) => SetTaskScreenDialogScreen(),
     upgradeScreen: (context) => UpgradeScreen(),
-    childWelcomeScreen: (context) => Childwelcomescreen(),
+    childHomeScreen: (context) => HomeScreen(),
+    childLessonScreen: (context) => childVideoPlayer(
+          videoPath: 'assets/videos/kids_video.mp4',
+        ),
+    childLessonTwoScreen: (context) => childVideoPlayerTwo(
+          videoPath: 'assets/videos/kids_video.mp4',
+        ),   
     videoOneScreen: (context) => VideoOnePlayer(
           videoPath: 'assets/videos/portfolio.mp4',
         ),
-    // videoTwoScreen: (context) => VideoTwoPlayer(
-    //       videoPath: 'assets/videos/,
-    //     ),
-    //   videoThreeScreen: (context) => VideoThreePlayer(
-    //         videoPath: 'assets/videos/',
-    //       ),
-    //   videoFourScreen: (context) => VideoFourPlayer(
-    //         videoPath: 'assets/videos/',
-    //       ),
-    //   videoFiveScreen: (context) => VideoFivePlayer(
-    //         videoPath: 'assets/videos/',
-    //       ),
-    //   videoSixScreen: (context) => VideoSixPlayer(
-    //         videoPath: 'assets/videos/',
-    //       ),
-    //   videoSevenScreen: (context) => VideoSevenPlayer(
-    //         videoPath: 'assets/videos/',
-    //       ),
-    //   videoEightScreen: (context) => VideoEightPlayer(
-    //         videoPath: 'assets/videos/',
-    //       ),
-    //   videoNineScreen: (context) => VideoNinePlayer(
-    //         videoPath: 'assets/videos/',
-    //       ),
-    //   videoTenScreen: (context) => VideoTenPlayer(
-    //         videoPath: 'assets/videos/',
-    //       ),
-    //   accountType: (context) => AccountType(),
+    quizScreen: (context) => KidsMoneyQuizScreen(),
   };
 }

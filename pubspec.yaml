@@ -17,6 +17,13 @@ dependencies:
   calendar_date_picker2: ^0.5.5
   animated_text_kit: ^4.2.2
   flutter_screenutil: ^5.9.0
+  google_fonts: ^6.2.1
+  percent_indicator: ^4.2.3
+  # youtube_player_flutter: ^9.0.1
+  # firebase_core: ^2.30.0
+  # firebase_auth: ^4.19.2
+  # google_sign_in: ^6.2.1
+  contained_tab_bar_view: ^0.8.0
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
@@ -27,9 +34,38 @@ flutter:
     - assets/audios/
     - assets/images/
     - assets/videos/
+    - assets/images/hometab/
+    - assets/images/tasktab/
+    - assets/images/profiletab/
     - assets/images/hometab/money.png
     - assets/images/hometab/investNow.png
     - assets/images/hometab/bitcoin.png
+    - assets/images/hometab/parent.png
+    - assets/images/hometab/parents.png
+    - assets/images/hometab/performing_task.png
+    - assets/images/hometab/playing_games.png
+    - assets/images/hometab/playing_sports.png
+    - assets/images/hometab/tree.png
+    - assets/images/hometab/bank.png
+    - assets/images/hometab/school.png
+    - assets/images/hometab/profile.png
+    - assets/images/hometab/task.png
+    - assets/images/hometab/home.png
+    - assets/images/heart.png
+    - assets/images/streak.png
+    - assets/images/crown.png
+    - assets/images/hometab/saving.png
+    - assets/images/hometab/budgeting.png
+    - assets/images/street.png
+    - assets/images/jumping.png
+    - assets/images/pillow.png
+    - assets/images/pizza.png
+    - assets/images/sleep.png
+    - assets/images/fridge.png
+    - assets/images/thinking.png
+    - assets/images/crown.png
+    
+
   fonts: 
     - family: Nunito
       fonts: 

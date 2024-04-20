@@ -123,9 +123,9 @@ class AppNavigationScreen extends StatelessWidget {
                         ),
                         _buildScreenTitle(
                           context,
-                          screenTitle: "quizz_screen",
+                          screenTitle: "quiz_screen",
                           onTapScreenTitle: () =>
-                              onTapScreenTitle(context, AppRoutes.quizzScreen),
+                              onTapScreenTitle(context, AppRoutes.quizScreen),
                         ),
                         _buildScreenTitle(
                           context,

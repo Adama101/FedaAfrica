@@ -370,20 +370,46 @@ class ImageConstant {
 
   static String imgEllipse27 = 'assets/images/img_ellipse_27.png';
 
-  // ...........................
+  // ...........................//
 
-  static const String MoneyImage = "assets/images/money.png";
-  static const String bankImage = "assets/images/bank.png";
-  static const String treeImage = "assets/images/tree.png";
-  static const String parentImage = "assets/images/parent.png";
-  static const String schoolImage = "assets/images/school.png";
-  static const String performingTaskImage = "assets/images/performing_task.png";
-  static const String playingGamesImage = "assets/images/playing_games.png";
-  static const String trollImage = "assets/images/troll.png";
-  static const String cleaningRoomsImage = "assets/images/cleaning_rooms.png";
-  static const String watchingTVImage = "assets/images/watching_tv.png";
-  static const String eatingSnacksImage = "assets/images/eating_snacks.png";
-  static const String goblinImage = "assets/images/goblin.png";
-  static const String ogreImage = "assets/images/ogre.png";
-  static const String bitcoinImage = "assets/images/bitcoin.png";
+  static String MoneyImage = "$imagePath/money.png";
+  static String bankImage = "$imagePath/bank.png";
+  static String treeImage = "$imagePath/tree.png";
+  static String parentImage = "$imagePath/parent.png";
+  static String schoolImage = "$imagePath/school.png";
+  static String performingTaskImage = "$imagePath/performing_task.png";
+  static String playingGamesImage = "$imagePath/playing_games.png";
+  static String trollImage = "$imagePath/troll.png";
+  static String cleaningRoomsImage = "$imagePath/cleaning_rooms.png";
+  static String watchingTVImage = "$imagePath/watching_tv.png";
+  static String eatingSnacksImage = "$imagePath/eating_snacks.png";
+  static String goblinImage = "$imagePath/goblin.png";
+  static String ogreImage = "$imagePath/ogre.png";
+  static String bitcoinImage = "$imagePath/bitcoin.png";
+  static String profileImage = "$imagePath/hometab/profile.png";
+  static String taskImage = "$imagePath/hometab/task.png";
+  static String homeImage = "$imagePath/hometab/home.png";
+  static String heartImage = "$imagePath/heart.png";
+  static String streakImage = "$imagePath/streak.png";
+  static String crownImage = "$imagePath/crown.png";
+  static String savingImage = "$imagePath/hometab/saving.png";
+  static String budgetingImage = "$imagePath/hometab/budgeting.png";
+  static String badgeLockedImage = '$imagePath/badge_locked.png';
+  static String badgeBronzeImage = '$imagePath/badge_bronze_blank.png';
+  static String badgeSilverImage = '$imagePath/badge_silver_blank.png';
+  static String badgeGoldImage = '$imagePath/badge_gold_blank.png';
+  static String badgeDiamondImage = '$imagePath/badge_diamond_blank.png';
+  static String badgeRubyImage = '$imagePath/badge_ruby_blank.png';
+  static String badgeEmaraldImage = '$imagePath/badge_emerald_blank.png';
+  static String badgeAmethystImage = '$imagePath/badge_amethyst.png';
+  static String infinityImage = '$imagePath/infinity.png';
+  static String koreaFlagImage = '$imagePath/korea-flag-transparent.png';
+  static String lingotImage = '$imagePath/lingot.png';
+  static String streetImage = '$imagePath/street.png';
+  static String jumpingImage = '$imagePath/jumping.png';
+  static String pillowImage = '$imagePath/pillow.png';
+  static String pizzaImage = '$imagePath/pizza.png';
+  static String sleepImage = '$imagePath/sleep.png';
+  static String fridgeImage = '$imagePath/fridge.png';
+  static String thinkingImage = '$imagePath/thinking.png';
 }

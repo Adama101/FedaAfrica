@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'components/account_app_bar.dart';
 import 'components/achievements.dart';
 import 'components/friend_suggestions.dart';

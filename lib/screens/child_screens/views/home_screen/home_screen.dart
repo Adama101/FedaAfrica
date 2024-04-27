@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import '../course_screen/course_tree.dart';
-//import '../leaderboard_screen/leaderboard_screen_v0.dart';
 import '../profile_screen/profile_screen_v0.dart';
 import '../task_screen/task_screen.dart';
 import 'components/bottom_navigation.dart';
-//import 'components/leaderboard_app_bar.dart';
 import 'components/profile_app_bar.dart';
 import 'components/shop_app_bar.dart';
 import 'components/stat_app_bar.dart';

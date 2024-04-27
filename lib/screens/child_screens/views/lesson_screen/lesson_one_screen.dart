@@ -35,7 +35,7 @@ class _childVideoPlayerState extends State<childVideoPlayer> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.popAndPushNamed(context, AppRoutes.childHomeScreen);
+            Navigator.popAndPushNamed(context, AppRoutes.stageOneScreen);
           },
         ),
       ),
@@ -56,10 +56,10 @@ class _childVideoPlayerState extends State<childVideoPlayer> {
             child: Center(
               child: CustomElevatedButton(
                 width: 200,
-                text: 'Next Lesson',
+                text: 'Play Quiz',
                 onPressed: () {
                   // Navigates to the Child Lesson Two Screen
-                  Navigator.pushNamed(context, AppRoutes.childLessonTwoScreen);
+                  Navigator.pushNamed(context, AppRoutes.quizScreen);
                 },
               ),
             ),

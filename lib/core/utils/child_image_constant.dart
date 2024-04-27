@@ -42,4 +42,9 @@ class childImageConstant {
   static String sleepImage = 'assets/images/sleep.png';
   static String fridgeImage = 'assets/images/fridge.png';
   static String thinkingImage = 'assets/images/thinking.png';
+  static String stageOneImage = 'assets/images/stage_1.png';
+  static String stageTwoImage = 'assets/images/stage_2.png';
+  static String stageThreeImage = 'assets/images/stage_3.png';
+  static String stageFourImage = 'assets/images/stage_4.png';
+  static String leaderbardImage = 'assets/images/leaderboard.png ';
 }

@@ -19,10 +19,6 @@ dependencies:
   flutter_screenutil: ^5.9.0
   google_fonts: ^6.2.1
   percent_indicator: ^4.2.3
-  # youtube_player_flutter: ^9.0.1
-  # firebase_core: ^2.30.0
-  # firebase_auth: ^4.19.2
-  # google_sign_in: ^6.2.1
   contained_tab_bar_view: ^0.8.0
 dev_dependencies: 
   flutter_test: 
@@ -64,7 +60,11 @@ flutter:
     - assets/images/fridge.png
     - assets/images/thinking.png
     - assets/images/crown.png
-    
+    - assets/images/stage_1.png
+    - assets/images/stage_2.png
+    - assets/images/stage_3.png
+    - assets/images/stage_4.png
+    - assets/images/leaderboard.png    
 
   fonts: 
     - family: Nunito

@@ -12,29 +12,12 @@ class StatAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: CourseHeader(
-        score: '2',
+        score: '3',
         numberLessons_started: 1,
         progress: "2%",
         streak: 1,
       ),
     );
-    /* AppBar(
-      toolbarHeight: 120,
-      backgroundColor: Colors.white,
-      elevation: 1.5,
-      leading: flag(),
-      title: Row(
-        children: [
-          const Padding(padding: EdgeInsets.all(20)),
-          crown(137),
-          const Padding(padding: EdgeInsets.all(20)),
-          streak(31),
-        ],
-      ),
-      actions: [
-        heart(),
-      ],
-    ) */
   }
 
   Widget heart() {

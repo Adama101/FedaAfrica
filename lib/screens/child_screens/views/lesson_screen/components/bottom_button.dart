@@ -1,6 +1,4 @@
-
 import 'package:flutter/material.dart';
-
 import '../../../common/hex_color.dart';
 import '../../../model/lesson_model.dart';
 import '../../../model/level_model.dart';

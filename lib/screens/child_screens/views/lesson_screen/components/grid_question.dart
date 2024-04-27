@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../common/hex_color.dart';
 import '../../../model/option_model.dart';
 import '../../../model/question_model.dart';

@@ -36,7 +36,7 @@ class _childVideoPlayerTwoState extends State<childVideoPlayerTwo> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.popAndPushNamed(context, AppRoutes.childHomeScreen);
+            Navigator.popAndPushNamed(context, AppRoutes.stageOneScreen);
           },
         ),
       ),

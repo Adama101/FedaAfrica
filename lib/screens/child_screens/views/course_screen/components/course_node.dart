@@ -1,17 +1,12 @@
-
-
+import 'package:fedaafrica/core/app_export.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-
 import '../../../common/hex_color.dart';
-import '../../../model/course_model.dart';
 import '../../../model/lesson_model.dart';
 import '../../../model/level_model.dart';
 import '../../../model/option_model.dart';
 import '../../../model/question_model.dart';
-import '../../lesson_screen/lesson_one_screen.dart';
-import '../../level_screen/levels_screen.dart';
 
 // ignore: must_be_immutable
 class CourseNode extends StatelessWidget {
@@ -227,6 +222,7 @@ class CourseNode extends StatelessWidget {
       // Add more lessons as needed
     ];
 
+    // ignore: unused_local_variable
     final List<LevelModel> course_levels = [
       LevelModel(
           levelName: 'Level 1',
@@ -256,15 +252,10 @@ class CourseNode extends StatelessWidget {
 
     return Column(
       children: [
+        // Routing to Video Player Screen
         GestureDetector(
           onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => childVideoPlayer(
-                  videoPath: '',
-                ),
-              ),
-            );
+            Navigator.pushNamed(context, AppRoutes.stageOneScreen);
           },
           child: node(),
         ),

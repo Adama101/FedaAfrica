@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'course_node.dart';
 
 class TripleCourseNode extends StatelessWidget {

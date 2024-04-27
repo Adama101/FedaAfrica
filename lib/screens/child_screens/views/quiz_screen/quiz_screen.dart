@@ -1,5 +1,6 @@
-import 'package:fedaafrica/core/app_export.dart';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import '../../../../routes/app_routes.dart';
 
 class KidsMoneyQuizScreen extends StatefulWidget {
   @override
@@ -7,6 +8,8 @@ class KidsMoneyQuizScreen extends StatefulWidget {
 }
 
 class _KidsMoneyQuizScreenState extends State<KidsMoneyQuizScreen> {
+  AudioPlayer audioPlayer = AudioPlayer(playerId: 'assets/images/audio/');
+
   int _currentQuestionIndex = 0;
   int _totalScore = 0;
 
@@ -46,9 +49,12 @@ class _KidsMoneyQuizScreenState extends State<KidsMoneyQuizScreen> {
   void _checkAnswer(int selectedIndex) {
     int correctIndex = _questions[_currentQuestionIndex]['correctIndex'];
     if (selectedIndex == correctIndex) {
+      audioPlayer.play('correct.wav' as Source);
       setState(() {
         _totalScore++;
       });
+    } else {
+      audioPlayer.play('incorrect.wav' as Source);
     }
     _nextQuestion();
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
-
 import '../../../common/hex_color.dart';
 
 class LessonAppBar extends StatelessWidget implements PreferredSizeWidget {

@@ -32,3 +32,7 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+// 'assets/images/profiletab/streak.png'
+// 'assets/images/profiletab/totalStreak.png'
+// 'assets/images/profiletab/achievement.png'
+// 'assets/images/profiletab/perfomance.png' image: AssetImage('assets/images/profiletab/streak.png'),

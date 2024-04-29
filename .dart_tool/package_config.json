@@ -9,9 +9,9 @@
     },
     {
       "name": "args",
-      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/args-2.4.2",
+      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/args-2.5.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "async",
@@ -87,7 +87,7 @@
     },
     {
       "name": "calendar_date_picker2",
-      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/calendar_date_picker2-0.5.5",
+      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/calendar_date_picker2-0.5.6",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
@@ -177,7 +177,7 @@
     },
     {
       "name": "flutter_cache_manager",
-      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_cache_manager-3.3.1",
+      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_cache_manager-3.3.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -291,15 +291,15 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider-2.1.2",
+      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider-2.1.3",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.1"
     },
     {
       "name": "path_provider_android",
-      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_android-2.2.2",
+      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_android-2.2.4",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "path_provider_foundation",
@@ -381,9 +381,9 @@
     },
     {
       "name": "sqflite",
-      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite-2.3.2",
+      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite-2.3.3",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.3"
     },
     {
       "name": "sqflite_common",
@@ -435,7 +435,7 @@
     },
     {
       "name": "uuid",
-      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/uuid-4.3.3",
+      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/uuid-4.4.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -471,7 +471,7 @@
     },
     {
       "name": "video_player_android",
-      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.4.13",
+      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.4.14",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -507,7 +507,7 @@
     },
     {
       "name": "win32",
-      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.3.0",
+      "rootUri": "file:///C:/Users/User/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.5.0",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -530,7 +530,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2024-04-27T19:30:51.418519Z",
+  "generated": "2024-04-29T01:04:03.435670Z",
   "generator": "pub",
   "generatorVersion": "3.3.3"
 }

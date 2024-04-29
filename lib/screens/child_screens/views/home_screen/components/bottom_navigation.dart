@@ -1,3 +1,4 @@
+import 'package:fedaafrica/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigator extends StatelessWidget {
@@ -51,9 +52,13 @@ class BottomNavigator extends StatelessWidget {
           label: 'Profile',
         ),
         BottomNavigationBarItem(
-          icon: Image.asset(
-            'assets/images/leaderboard.png',
-            height: 40,
+          icon: GestureDetector(
+            onTap: (){
+              Navigator.pushNamed(context, AppRoutes.leaderboardScreen);},
+            child: Image.asset(
+              'assets/images/leaderboard.png',
+              height: 40,
+            ),
           ),
           activeIcon: Image.asset(
             'assets/images/leaderboard.png',

@@ -46,5 +46,6 @@ class childImageConstant {
   static String stageTwoImage = 'assets/images/stage_2.png';
   static String stageThreeImage = 'assets/images/stage_3.png';
   static String stageFourImage = 'assets/images/stage_4.png';
-  static String leaderbardImage = 'assets/images/leaderboard.png ';
+  static String leaderbardImage = 'assets/images/leaderboard.png';
+  static String profilePictureImage = 'assets/images/profile_picture.jpg';
 }

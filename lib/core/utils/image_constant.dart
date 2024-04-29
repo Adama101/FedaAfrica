@@ -415,5 +415,6 @@ class ImageConstant {
   static String stageOneImage = '$imagePath/stage_1.png';
   static String stageTwoImage = '$imagePath/stage_2.png';
   static String stageThreeImage = '$imagePath/stage_3.png';
-  static String leaderboardImage = '$imagePath/leaderboardpng';
+  static String leaderboardImage = '$imagePath/leaderboard.png';
+  static String profilePicutureImage = '$imagePath/profile_picture.jpg';
 }

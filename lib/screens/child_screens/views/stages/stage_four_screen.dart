@@ -15,43 +15,11 @@ class StageFourScreen extends StatelessWidget {
               'assets/images/stage_4.png', // Background image asset
               fit: BoxFit.fill,
             ),
-            // BouncingIcon(
-            //   icon: Icons.star,
-            //   title: 'Level 1',
-            //   position: Offset(300, 150),
-            //   onPressed: () {
-            //     Navigator.pushNamed(context, AppRoutes.childLessonScreen);
-            //   },
-            // ),
-            // BouncingIcon(
-            //   icon: Icons.star,
-            //   title: 'Level 2',
-            //   position: Offset(150, 295),
-            //   onPressed: () {},
-            // ),
-            // BouncingIcon(
-            //   icon: Icons.star,
-            //   title: 'Level 3',
-            //   position: Offset(70, 450),
-            //   onPressed: () {},
-            // ),
-            // BouncingIcon(
-            //   icon: Icons.star,
-            //   title: 'Level 4',
-            //   position: Offset(300, 550),
-            //   onPressed: () {},
-            // ),
-            // BouncingIcon(
-            //   icon: Icons.star,
-            //   title: 'Level 5',
-            //   position: Offset(130, 670),
-            //   onPressed: () {},
-            // ),
           ],
         ),
       ),
       floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           FloatingActionButton(
             backgroundColor: Colors.white,

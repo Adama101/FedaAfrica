@@ -1,7 +1,6 @@
 import 'package:fedaafrica/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-
 import '../../../../widgets/custom_elevated_button.dart';
 
 class childVideoPlayer extends StatefulWidget {

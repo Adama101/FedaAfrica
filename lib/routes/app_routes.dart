@@ -6,6 +6,7 @@ import 'package:fedaafrica/screens/parent_screens/set_task_dialog_screen/set_tas
 import 'package:fedaafrica/screens/parent_screens/upgrade_screen/upgrade_screen.dart';
 import 'package:flutter/material.dart';
 import '../screens/child_screens/views/home_screen/home_screen.dart';
+import '../screens/child_screens/views/leaderboard_screen/leaderboard_screen.dart';
 import '../screens/child_screens/views/lesson_screen/lesson_one_screen.dart';
 import '../screens/child_screens/views/lesson_screen/lesson_two_screen.dart';
 import '../screens/child_screens/views/quiz_screen/quiz_screen.dart';
@@ -132,6 +133,8 @@ class AppRoutes {
 
   static const String stageFourScreen = '/stage_four_screen.dart';
 
+  static const String leaderboardScreen = '/leaderbpard_screen.dart';
+
 // All Routes defined
   static Map<String, WidgetBuilder> routes = {
     parentLoginScreen: (context) => ParentLoginScreen(),
@@ -182,5 +185,7 @@ class AppRoutes {
     stageThreeScreen: (context) => StageThreeScreen(),
 
     stageFourScreen: (context) => StageFourScreen(),
+
+    leaderboardScreen: (context) => LeaderboardScreen(),
   };
 }

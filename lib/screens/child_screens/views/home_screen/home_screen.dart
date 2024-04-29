@@ -23,23 +23,14 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final screens = [
       CourseTree(),
-
-      //LeaderboardScreenV0(),
       TaskScreen(),
       ProfileScreenV0(),
-      //ProfileScreen(),
-      //LeaderboardScreen(),
-      //ShopScreen(),
-      //ExploreScreen(),
     ];
 
     final List<PreferredSizeWidget> appBars = [
       StatAppBar(),
-
-      //LeaderboardAppBar(),
       ShopAppBar(),
       ProfileAppBar(),
-      //ExploreAppBar(),
     ];
 
     return Scaffold(

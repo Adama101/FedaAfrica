@@ -64,7 +64,23 @@ flutter:
     - assets/images/stage_2.png
     - assets/images/stage_3.png
     - assets/images/stage_4.png
-    - assets/images/leaderboard.png    
+    - assets/images/leaderboard.png 
+    - assets/images/profile_picture.jpg
+    # Top 3 Champions
+    - assets/images/champion1.png 
+    - assets/images/champion2.png 
+    - assets/images/champion3.png 
+    # Avatar Rankings
+    - assets/images/avatar1.jpg 
+    - assets/images/avatar2.jpg
+    - assets/images/avatar3.jpg
+    - assets/images/avatar4.jpg 
+    - assets/images/avatar5.jpg
+    - assets/images/avatar6.jpg 
+    - assets/images/avatar7.jpg 
+    - assets/images/avatar8.png 
+    - assets/images/avatar9.png 
+    - assets/images/avatar10.png 
 
   fonts: 
     - family: Nunito

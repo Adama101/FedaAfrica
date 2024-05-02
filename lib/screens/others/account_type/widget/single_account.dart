@@ -36,10 +36,10 @@ class SingleAccountWidget extends StatelessWidget {
               children: [
                 SizedBox(height: 20.v),
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: CustomImageView(
                     imagePath: ImageConstant.singleImg,
-                    height: 60.v,
+                    height: 65.v,
                     width: 45.h,
                   ),
                 ),
@@ -64,7 +64,7 @@ class SingleAccountWidget extends StatelessWidget {
           border: Border.all(
             color: Colors.blue,
           ),
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(15),
         ),
         child: child,
       ),

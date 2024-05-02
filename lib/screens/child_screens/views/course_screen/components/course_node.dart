@@ -255,7 +255,7 @@ class CourseNode extends StatelessWidget {
         // Routing to Video Player Screen
         GestureDetector(
           onTap: () {
-            Navigator.pushNamed(context, AppRoutes.stageOneScreen);
+            Navigator.pushNamed(context, AppRoutes.stageScreen);
           },
           child: node(),
         ),

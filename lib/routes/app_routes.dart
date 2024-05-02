@@ -1,4 +1,4 @@
-import 'package:fedaafrica/screens/child_screens/views/stages/stage_one_screen.dart';
+import 'package:fedaafrica/screens/child_screens/views/stages/stage_screen.dart';
 import 'package:fedaafrica/screens/others/account_type/account_type.dart';
 import 'package:fedaafrica/screens/parent_screens/info_screen/info_screen.dart';
 import 'package:fedaafrica/screens/parent_screens/parent_learning_screen/lesson_one_video.dart';
@@ -10,9 +10,6 @@ import '../screens/child_screens/views/leaderboard_screen/leaderboard_screen.dar
 import '../screens/child_screens/views/lesson_screen/lesson_one_screen.dart';
 import '../screens/child_screens/views/lesson_screen/lesson_two_screen.dart';
 import '../screens/child_screens/views/quiz_screen/quiz_screen.dart';
-import '../screens/child_screens/views/stages/stage_four_screen.dart';
-import '../screens/child_screens/views/stages/stage_three_screen.dart';
-import '../screens/child_screens/views/stages/stage_two_screen.dart';
 import '../screens/parent_screens/parent_login_screen/parent_login_screen.dart';
 import '../screens/others/splash_screen/splash_screen.dart';
 import '../screens/others/splash_screen_one_screen/splash_screen_one_screen.dart';
@@ -87,11 +84,7 @@ class AppRoutes {
 
   static const String childProfileScreen = '/child_profile_screen';
 
-  static const String coinScreen = '/coin_screen';
-
   static const String activityScreen = '/activity_screen';
-
-  static const String homeScreenTwoScreen = '/home_screen_two_screen';
 
   static const String taskScreen = '/task_screen';
 
@@ -125,13 +118,7 @@ class AppRoutes {
 
   static const String childHomeScreen = '/home_screen.dart';
 
-  static const String stageOneScreen = '/stage_one_screen.dart';
-
-  static const String stageTwoScreen = '/stage_two_screen.dart';
-
-  static const String stageThreeScreen = '/stage_three_screen.dart';
-
-  static const String stageFourScreen = '/stage_four_screen.dart';
+  static const String stageScreen = '/stage_screen.dart';
 
   static const String leaderboardScreen = '/leaderbpard_screen.dart';
 
@@ -178,13 +165,7 @@ class AppRoutes {
         ),
     quizScreen: (context) => KidsMoneyQuizScreen(),
 
-    stageOneScreen: (context) => StageOneScreen(),
-
-    stageTwoScreen: (context) => StageTwoScreen(),
-
-    stageThreeScreen: (context) => StageThreeScreen(),
-
-    stageFourScreen: (context) => StageFourScreen(),
+    stageScreen: (context) => StageScreen(),
 
     leaderboardScreen: (context) => LeaderboardScreen(),
   };

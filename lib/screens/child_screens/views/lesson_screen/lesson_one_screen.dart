@@ -34,7 +34,7 @@ class _childVideoPlayerState extends State<childVideoPlayer> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.popAndPushNamed(context, AppRoutes.stageOneScreen);
+            Navigator.popAndPushNamed(context, AppRoutes.stageScreen);
           },
         ),
       ),

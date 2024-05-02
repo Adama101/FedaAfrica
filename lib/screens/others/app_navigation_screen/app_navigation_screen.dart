@@ -142,29 +142,8 @@ class AppNavigationScreen extends StatelessWidget {
                         _buildScreenTitle(
                           context,
                           screenTitle: "stage_one_screen",
-                          onTapScreenTitle: () =>
-                              onTapScreenTitle(context, AppRoutes.stageOneScreen),
-                        ),
-                        
-                        _buildScreenTitle(
-                          context,
-                          screenTitle: "stage_two_screen",
-                          onTapScreenTitle: () =>
-                              onTapScreenTitle(context, AppRoutes.stageTwoScreen),
-                        ),
-                        
-                        _buildScreenTitle(
-                          context,
-                          screenTitle: "stage_three_screen",
-                          onTapScreenTitle: () =>
-                              onTapScreenTitle(context, AppRoutes.stageThreeScreen),
-                        ),
-                        
-                        _buildScreenTitle(
-                          context,
-                          screenTitle: "stage_four_screen",
-                          onTapScreenTitle: () =>
-                              onTapScreenTitle(context, AppRoutes.stageFourScreen),
+                          onTapScreenTitle: () => onTapScreenTitle(
+                              context, AppRoutes.stageScreen),
                         ),
                         _buildScreenTitle(
                           context,
@@ -183,12 +162,6 @@ class AppNavigationScreen extends StatelessWidget {
                           screenTitle: "child_profile_screen",
                           onTapScreenTitle: () => onTapScreenTitle(
                               context, AppRoutes.childProfileScreen),
-                        ),
-                        _buildScreenTitle(
-                          context,
-                          screenTitle: "coin_screen",
-                          onTapScreenTitle: () =>
-                              onTapScreenTitle(context, AppRoutes.coinScreen),
                         ),
                         _buildScreenTitle(
                           context,

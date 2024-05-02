@@ -806,6 +806,13 @@
    }, {
       "auto_open_v2": [ {
          "approved_channels": [ "canary", "dev", "beta", "stable" ],
+         "arbitration_settings": {
+            "force_auto_open": {
+               "edge_db_count": 0,
+               "edge_non_db_count": 4,
+               "enabled": true
+            }
+         },
          "enabled": false,
          "enabled|flight:msEdgeHubAppsAutoOpenOutlookV2": true,
          "fallback_notification": {
@@ -815,7 +822,7 @@
          "footer": {
             "enabled": true,
             "open_count": 3,
-            "text": "We opened Outlook to show your email side-by-side with the link you opened"
+            "text": "See your email side-by-side with the link you opened"
          },
          "force_auto_open": true,
          "id": "f5b8c725-cb2e-4c12-accd-73e500d88d47",
@@ -903,9 +910,9 @@
       "description": "Check email while staying in your flow",
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_dark.png/1.11.8/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_hc.png/1.11.8/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_light.png/1.11.8/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_dark.png/1.12.9/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_hc.png/1.12.9/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_light.png/1.12.9/asset"
          }
       },
       "id": "8682d0fa-50b3-4ece-aa5b-e0b33f9919e2",
@@ -950,7 +957,7 @@
       },
       "trusted_domains": [ "live.com", "office.com", "microsoftonline.com", "microsoft.com", "office365.com" ],
       "trusted_types": [ "default", "dompurify" ],
-      "version": "1.11.8"
+      "version": "1.12.9"
    }, {
       "capabilities|flight:msDesignerSinglePrompt": {
          "enable_force_dark_mode": true
@@ -1005,9 +1012,9 @@
          },
          "icon": {
             "raster_icon": {
-               "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_settings_dark.png/1.1.16/asset",
-               "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_settings_hc.png/1.1.16/asset",
-               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_settings_light.png/1.1.16/asset"
+               "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_settings_dark.png/1.1.17/asset",
+               "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_settings_hc.png/1.1.17/asset",
+               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_settings_light.png/1.1.17/asset"
             }
          },
          "icon|flight:msEdgeEDropSharedHeaderVectorIcon": {
@@ -1021,14 +1028,7 @@
             "type": "event_action"
          },
          "icon": {
-            "raster_icon": {
-               "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_refresh_dark.png/1.1.16/asset",
-               "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_refresh_hc.png/1.1.16/asset",
-               "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_refresh_light.png/1.1.16/asset"
-            }
-         },
-         "icon|flight:msEdgeEDropSharedHeaderVectorIcon": {
-            "builtin_icon": "Sync"
+            "builtin_icon": "Reload"
          },
          "location": "header_button",
          "name": "Refresh"
@@ -1038,9 +1038,9 @@
       "disabled|device:xbox": true,
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_edrop_maximal_dark.png/1.1.16/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_edrop_hc.png/1.1.16/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_edrop_maximal_light.png/1.1.16/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_edrop_maximal_dark.png/1.1.17/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_edrop_hc.png/1.1.17/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_edrop_maximal_light.png/1.1.17/asset"
          }
       },
       "id": "92f1b743-e26b-433b-a1ec-912d1f0ad1fa",
@@ -1060,7 +1060,7 @@
       "target": {
          "url": "edge://e-drop/?shared_header=1"
       },
-      "version": "1.1.16"
+      "version": "1.1.17"
    }, {
       "capabilities": {
          "resize_disabled": true
@@ -1603,6 +1603,13 @@
    }, {
       "auto_open_v2": [ {
          "approved_channels": [ "canary", "dev", "beta", "stable" ],
+         "arbitration_settings": {
+            "force_auto_open": {
+               "edge_db_count": 0,
+               "edge_non_db_count": 4,
+               "enabled": true
+            }
+         },
          "enabled": false,
          "enabled|flight:msEdgeAutoOpenTeamsHubAppV2": true,
          "fallback_notification": {
@@ -1612,7 +1619,7 @@
          "footer": {
             "enabled": true,
             "open_count": 3,
-            "text": "We opened Teams to show your chat side-by-side with the link you opened"
+            "text": "See your chat side-by-side with the link you opened"
          },
          "force_auto_open": true,
          "id": "68b8a884-6e08-46e6-8a3b-7e06ffe48ecf",
@@ -1673,9 +1680,9 @@
       },
       "icon": {
          "raster_icon": {
-            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_dark.png/1.4.5/asset",
-            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_hc.png/1.4.5/asset",
-            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_light.png/1.4.5/asset"
+            "dark_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_dark.png/1.5.6/asset",
+            "high_contrast": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_hc.png/1.5.6/asset",
+            "light_mode": "https://edgeassetservice.azureedge.net/assets/edge_hub_apps_teams_light.png/1.5.6/asset"
          }
       },
       "id": "bc25fcef-8964-4e72-8287-23e2b496c128",
@@ -1714,7 +1721,7 @@
       "target": {
          "url": "https://teams.microsoft.com/embed-client/chats/list?layout=singlePane&hostCtx=edge"
       },
-      "version": "1.4.5"
+      "version": "1.5.6"
    }, {
       "capabilities": {
          "show_domain_in_header": true

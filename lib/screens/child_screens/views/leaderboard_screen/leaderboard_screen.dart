@@ -10,11 +10,7 @@ class LeaderboardScreen extends StatelessWidget {
           onPressed: () {
             Navigator.popAndPushNamed(context, AppRoutes.childHomeScreen);
           },
-          color: const Color.fromARGB(255, 15, 15, 15),
-          style: ButtonStyle(
-              backgroundColor:
-                  MaterialStatePropertyAll(Color.fromARGB(255, 235, 232, 232)),
-              elevation: MaterialStatePropertyAll(2.0)),
+          color: const Color.fromARGB(255, 15, 15, 15), // Set back button color
         ),
         title: Text(
           'Leaderboard',

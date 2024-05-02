@@ -27,7 +27,7 @@ class SplashScreenThreeScreen extends StatelessWidget {
                               activeDotColor: theme.colorScheme.primary,
                               dotColor: appTheme.gray40001,
                               dotHeight: 8.v,
-                              dotWidth: 8.h))),
+                              dotWidth: 6.h))),
                   SizedBox(height: 21.v),
                   Text("Money Adventures",
                       style: theme.textTheme.headlineSmall),
@@ -61,8 +61,8 @@ class SplashScreenThreeScreen extends StatelessWidget {
               SizedBox(height: 20.v),
               CustomImageView(
                   imagePath: ImageConstant.imgHttpsLottief183x250,
-                  height: 150.v,
-                  width: 110.h)
+                  height: 145.v,
+                  width: 100.h)
             ]));
   }
 

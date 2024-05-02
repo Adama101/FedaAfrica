@@ -60,10 +60,7 @@ flutter:
     - assets/images/fridge.png
     - assets/images/thinking.png
     - assets/images/crown.png
-    - assets/images/stage_1.png
-    - assets/images/stage_2.png
-    - assets/images/stage_3.png
-    - assets/images/stage_4.png
+    - assets/images/stage.png
     - assets/images/leaderboard.png 
     - assets/images/profile_picture.jpg
     # Top 3 Champions

@@ -23,8 +23,8 @@ class ChildLoginScreen extends StatelessWidget {
                   CustomImageView(
                       //Welcome banner image
                       imagePath: ImageConstant.imgObjects,
-                      height: 150.v,
-                      width: 360.h),
+                      height: 120.v,
+                      width: 300.h),
                   Spacer(flex: 31),
                   Align(
                       alignment: Alignment.centerLeft,

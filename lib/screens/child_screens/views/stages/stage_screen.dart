@@ -20,7 +20,7 @@ class StageScreen extends StatelessWidget {
             BouncingIcon(
               icon: Icons.star,
               title: 'Level 1',
-              position: Offset(430, 170),
+              position: Offset(330, 200),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -54,13 +54,13 @@ class StageScreen extends StatelessWidget {
             BouncingIcon(
               icon: Icons.star,
               title: 'Level 4',
-              position: Offset(330, 450),
+              position: Offset(300, 450),
               onPressed: () {},
             ),
             BouncingIcon(
               icon: Icons.star,
               title: 'Level 5',
-              position: Offset(100, 560),
+              position: Offset(80, 560),
               onPressed: () {},
             ),
             BouncingIcon(
@@ -72,26 +72,26 @@ class StageScreen extends StatelessWidget {
             BouncingIcon(
               icon: Icons.star,
               title: 'Level 7',
-              position: Offset(370, 650),
+              position: Offset(170, 650),
               onPressed: () {},
             ),
             BouncingIcon(
               icon: Icons.star,
               title: 'Level 8',
-              position: Offset(300, 780),
+              position: Offset(300, 750),
               onPressed: () {},
             ),
             BouncingIcon(
               icon: Icons.star,
               title: 'Level 9',
-              position: Offset(100, 820),
+              position: Offset(100, 720),
               onPressed: () {},
             ),
     
             BouncingIcon(
               icon: Icons.star,
               title: 'Level 10',
-              position: Offset(390, 895),
+              position: Offset(390, 800),
               onPressed: () {},
             ),
           ],
